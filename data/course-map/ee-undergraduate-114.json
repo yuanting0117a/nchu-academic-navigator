@@ -1,0 +1,676 @@
+{
+  "schemaVersion": "1.0",
+  "datasetId": "ee-undergraduate-course-map-114",
+  "department": "電機工程學系",
+  "program": "學士班",
+  "admissionYear": {
+    "from": 114,
+    "to": 114,
+    "label": "114學年度起入學適用",
+    "status": "verified"
+  },
+  "verifiedAt": "2026-11-13",
+  "sources": [
+    {
+      "title": "電機系學士班學生畢業條件明細表（114學年度起入學適用）",
+      "url": "https://www.ee.nchu.edu.tw/Pic/DocRegulation/17466153950240%281%29.pdf",
+      "type": "official-regulation"
+    },
+    {
+      "title": "電機系學士班課程規劃",
+      "url": "https://www.ee.nchu.edu.tw/wb_introduce01.asp?cno=7&url=22",
+      "type": "official-curriculum-map"
+    },
+    {
+      "title": "電機系學程課程介紹",
+      "url": "https://www.ee.nchu.edu.tw/wb_introduce01.asp?cno=6&url=22",
+      "type": "official-program-description"
+    },
+    {
+      "title": "中興大學課程查詢系統",
+      "url": "https://onepiece.nchu.edu.tw/cofsys/plsql/crseqry_home",
+      "type": "official-live-course-query"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "ee-required",
+      "name": "電機系專業必修",
+      "credits": 55,
+      "relation": "required",
+      "status": "verified",
+      "description": "系專業必修最低55學分；課程需依適用年度與開課單位核對。"
+    },
+    {
+      "id": "ee-elective",
+      "name": "電機系專業選修",
+      "credits": 27,
+      "relation": "elective",
+      "status": "verified",
+      "description": "系專業選修最低27學分；具體可採計課程仍依當年度課程規劃與系上認定。"
+    },
+    {
+      "id": "general",
+      "name": "校共同通識",
+      "credits": 28,
+      "relation": "category",
+      "status": "verified",
+      "description": "通識28學分，含核心、語文、領域素養及相關限制。此處顯示的是規定類別，不是完整開課清單。"
+    },
+    {
+      "id": "project",
+      "name": "畢業專題",
+      "credits": 4,
+      "relation": "required",
+      "status": "verified",
+      "description": "畢業專題(一)、(二)各2學分，兩科均須及格並完成專題展示；是否列入55或27學分仍待系辦確認，不重複加總。"
+    },
+    {
+      "id": "pe",
+      "name": "體育必修",
+      "credits": 2,
+      "relation": "non-credit",
+      "status": "verified",
+      "description": "必修2學分，不計入128畢業總學分。"
+    },
+    {
+      "id": "english",
+      "name": "英文能力門檻",
+      "credits": 0,
+      "relation": "milestone",
+      "status": "verified",
+      "description": "依校級英文能力畢業標準，非學分課程。"
+    },
+    {
+      "id": "communication",
+      "name": "通訊學程",
+      "relation": "program",
+      "status": "verified-partial",
+      "description": "至少選一個專業學程；通訊核心課程及相關實驗依114版明細表核對。"
+    },
+    {
+      "id": "control",
+      "name": "系統與控制學程",
+      "relation": "program",
+      "status": "verified-partial",
+      "description": "至少選一個專業學程；核心課程依四選三規則核對，並需相關實驗。"
+    },
+    {
+      "id": "information",
+      "name": "資訊學程",
+      "relation": "program",
+      "status": "verified-partial",
+      "description": "至少選一個專業學程；核心課程依四選三規則核對，並需相關實驗。"
+    },
+    {
+      "id": "electronics",
+      "name": "電子電路學程",
+      "relation": "program",
+      "status": "verified-partial",
+      "description": "核心課程列於官方課程規劃；114版畢業條件表的四選三適用細節待確認。"
+    },
+    {
+      "id": "solidstate",
+      "name": "固態電子與光電學程",
+      "relation": "program",
+      "status": "verified-partial",
+      "description": "至少選一個專業學程；核心課程依四選三規則核對，並需相關實驗。"
+    }
+  ],
+  "courses": [
+    {
+      "id": "req-0",
+      "name": "微積分(一)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-1",
+      "name": "微積分(二)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-2",
+      "name": "普通物理",
+      "credits": 6,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-3",
+      "name": "普物實驗",
+      "credits": 2,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-4",
+      "name": "工程倫理",
+      "credits": 2,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-5",
+      "name": "交換電路與邏輯設計",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-6",
+      "name": "計算機程式設計",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-7",
+      "name": "工程數學(一)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-8",
+      "name": "工程數學(二)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-9",
+      "name": "工程數學(三)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-10",
+      "name": "工程數學(四)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-11",
+      "name": "電磁學(一)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-12",
+      "name": "電磁學(二)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-13",
+      "name": "電路學(一)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-14",
+      "name": "電路學(二)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-15",
+      "name": "電子學(一)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-16",
+      "name": "電子學(二)",
+      "credits": 3,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-17",
+      "name": "電工實驗(一)",
+      "credits": 1,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-18",
+      "name": "電工實驗(二)",
+      "credits": 1,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "req-19",
+      "name": "電工實驗(三)",
+      "credits": 1,
+      "group": "專業必修",
+      "plans": [
+        "ee-required"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "prog-0",
+      "name": "信號與系統",
+      "credits": null,
+      "group": "通訊學程",
+      "plans": [
+        "ee-elective",
+        "communication"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-1",
+      "name": "通訊系統",
+      "credits": null,
+      "group": "通訊學程",
+      "plans": [
+        "ee-elective",
+        "communication"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-2",
+      "name": "數位訊號處理",
+      "credits": null,
+      "group": "通訊學程",
+      "plans": [
+        "ee-elective",
+        "communication"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-3",
+      "name": "通訊理論",
+      "credits": null,
+      "group": "通訊學程",
+      "plans": [
+        "ee-elective",
+        "communication"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-4",
+      "name": "自動控制",
+      "credits": null,
+      "group": "系統與控制學程",
+      "plans": [
+        "ee-elective",
+        "control"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-5",
+      "name": "現代控制",
+      "credits": null,
+      "group": "系統與控制學程",
+      "plans": [
+        "ee-elective",
+        "control"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-6",
+      "name": "電機機械",
+      "credits": null,
+      "group": "系統與控制學程",
+      "plans": [
+        "ee-elective",
+        "control"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-7",
+      "name": "資料結構",
+      "credits": null,
+      "group": "資訊學程",
+      "plans": [
+        "ee-elective",
+        "information"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-8",
+      "name": "計算機組織",
+      "credits": null,
+      "group": "資訊學程",
+      "plans": [
+        "ee-elective",
+        "information"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-9",
+      "name": "微處理機",
+      "credits": null,
+      "group": "資訊學程",
+      "plans": [
+        "ee-elective",
+        "information"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-10",
+      "name": "作業系統",
+      "credits": null,
+      "group": "資訊學程",
+      "plans": [
+        "ee-elective",
+        "information"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-11",
+      "name": "硬體描述語言設計",
+      "credits": null,
+      "group": "電子電路學程",
+      "plans": [
+        "ee-elective",
+        "electronics"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-12",
+      "name": "類比電路設計",
+      "credits": null,
+      "group": "電子電路學程",
+      "plans": [
+        "ee-elective",
+        "electronics"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-13",
+      "name": "超大型積體電路設計導論",
+      "credits": null,
+      "group": "電子電路學程",
+      "plans": [
+        "ee-elective",
+        "electronics"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-14",
+      "name": "半導體工程",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-15",
+      "name": "半導體元件",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-16",
+      "name": "光電元件",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "prog-17",
+      "name": "近代物理",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "114學年度畢業條件明細表／系網課程規劃"
+    },
+    {
+      "id": "lab-0",
+      "name": "基本通訊實驗",
+      "credits": null,
+      "group": "專業實驗",
+      "plans": [
+        "ee-elective",
+        "communication"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班課程規劃／學程介紹"
+    },
+    {
+      "id": "lab-1",
+      "name": "微處理機實驗",
+      "credits": null,
+      "group": "專業實驗",
+      "plans": [
+        "ee-elective",
+        "information"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班課程規劃／學程介紹"
+    },
+    {
+      "id": "lab-2",
+      "name": "自動控制實驗",
+      "credits": null,
+      "group": "專業實驗",
+      "plans": [
+        "ee-elective",
+        "control"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班課程規劃／學程介紹"
+    },
+    {
+      "id": "lab-3",
+      "name": "電機機械實驗",
+      "credits": null,
+      "group": "專業實驗",
+      "plans": [
+        "ee-elective",
+        "control"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班課程規劃／學程介紹"
+    },
+    {
+      "id": "lab-4",
+      "name": "微電子實驗",
+      "credits": null,
+      "group": "專業實驗",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班課程規劃／學程介紹"
+    },
+    {
+      "id": "lab-5",
+      "name": "超大型積體電路設計實驗",
+      "credits": null,
+      "group": "專業實驗",
+      "plans": [
+        "ee-elective",
+        "electronics"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班課程規劃／學程介紹"
+    },
+    {
+      "id": "project-1",
+      "name": "畢業專題(一)",
+      "credits": 2,
+      "group": "畢業專題",
+      "plans": [
+        "project"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "project-2",
+      "name": "畢業專題(二)",
+      "credits": 2,
+      "group": "畢業專題",
+      "plans": [
+        "project"
+      ],
+      "status": "verified",
+      "source": "114學年度畢業條件明細表"
+    }
+  ],
+  "generalEducation": [
+    {
+      "name": "核心素養",
+      "credits": 3,
+      "detail": "至少3學分；資訊素養：程式設計與AI應用免修，若修不得採計。"
+    },
+    {
+      "name": "語文素養",
+      "credits": 10,
+      "detail": "大學國文4學分、外國語文6學分。"
+    },
+    {
+      "name": "領域素養",
+      "credits": 10,
+      "detail": "人文、社會、自然各至少1門；統合領域至少4學分。"
+    }
+  ],
+  "limitations": [
+    "114學年度起入學適用；115學年度適用性尚未取得電機系獨立新版本確認。",
+    "專業選修27學分的完整課號級清單尚未取得；課程清單不代表每一門都可無條件採計。",
+    "五大學程核心選擇規則與實驗要求須依114版明細表核對；電子電路學程規則細節待確認。",
+    "畢業專題4學分在55學分必修與27學分選修中的歸類待系辦確認，不重複加總。",
+    "目前資料不是全校當學期實際開課清單；開課學期、課號、教師及選課限制需由官方課程查詢系統匯入。"
+  ]
+}
