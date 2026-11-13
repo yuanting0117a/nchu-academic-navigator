@@ -32,14 +32,14 @@ class MockElement {
   }
   click() { this.dispatch("click"); }
   querySelectorAll(selector) {
-    const attr = selector === "[data-plan]" ? "plan" : selector === "[data-course]" ? "course" : null;
+    const attr = selector === "[data-plan]" ? "plan" : selector === "[data-course]" ? "course" : selector === "[data-toggle-course]" ? "toggleCourse" : null;
     if (!attr) return [];
     if (this._cacheHTML !== this.innerHTML) {
       this._cacheHTML = this.innerHTML;
       this._cache = {};
     }
     if (!this._cache[selector]) {
-      const re = new RegExp('data-' + attr + '="([^"]+)"', "g");
+      const re = new RegExp('data-' + (attr === 'toggleCourse' ? 'toggle-course' : attr) + '="([^"]+)"', "g");
       this._cache[selector] = [...this.innerHTML.matchAll(re)].map(match => {
         const el = new MockElement();
         el.dataset[attr] = match[1];
@@ -49,7 +49,7 @@ class MockElement {
     return this._cache[selector];
   }
 }
-const ids = ["searchCourse","planTiles","courseGroups","courseCount","detailBody","yearNotice","dataLoadStatus","admissionYear","importStatus"];
+const ids = ["searchCourse","planTiles","courseGroups","courseCount","detailBody","yearNotice","dataLoadStatus","admissionYear","importStatus","myCourseCount","myCourseCredits","showMyCourses","clearMyCourses"];
 const elements = Object.fromEntries(ids.map(id => [id, new MockElement(id)]));
 elements.admissionYear.value = "114";
 const filters = ["all","required","program","lab","project"].map(value => {
@@ -67,7 +67,7 @@ const window = {
   dispatchEvent: event => (windowListeners[event.type] || []).forEach(fn => fn(event))
 };
 const context = {
-  document, window, localStorage: { getItem: () => "[]", setItem: () => {} },
+  document, window, localStorageData: {}, localStorage: { getItem: key => context.localStorageData[key] || "[]", setItem: (key,value) => { context.localStorageData[key] = value; } },
   CustomEvent: class { constructor(type, options) { this.type = type; this.detail = options?.detail; } },
   fetch: async () => ({ ok: true, json: async () => data }),
   console, Set, Map, Promise
@@ -103,6 +103,15 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   elements.searchCourse.dispatch("input");
   assert(elements.courseCount.textContent === "20 / 69 項", "required filter should show 20 courses");
 
+  const addButtons = elements.courseGroups.querySelectorAll("[data-toggle-course]");
+  addButtons.find(x => x.dataset.toggleCourse === "req-0").click();
+  addButtons.find(x => x.dataset.toggleCourse === "req-1").click();
+  assert(elements.myCourseCount.textContent === "2 門", "multiple courses should be selectable");
+  assert(elements.myCourseCredits.textContent.startsWith("6 學分"), "selected course credits should be summed");
+  assert(context.localStorageData["nchu-my-courses-v1"].includes("req-0") && context.localStorageData["nchu-my-courses-v1"].includes("req-1"), "selected courses should persist");
+  elements.showMyCourses.click();
+  assert(elements.courseCount.textContent === "2 / 69 項", "my-course filter should show selected courses only");
+  elements.showMyCourses.click();
   elements.admissionYear.value = "115";
   elements.admissionYear.dispatch("change");
   assert(elements.yearNotice.textContent.includes("115入學適用性尚待系辦確認"), "115 year should show applicability warning");
