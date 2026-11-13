@@ -98,7 +98,7 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   assert(elements.courseCount.textContent === "1 / 69 項", "course search should filter the tile list");
 
   filters.find(x => x.dataset.filter === "required").click();
-  assert(elements.courseCount.textContent === "1 / 20 項", "category filter should combine with search");
+  assert(elements.courseCount.textContent === "1 / 69 項", "category filter should combine with search");
   elements.searchCourse.value = "";
   elements.searchCourse.dispatch("input");
   assert(elements.courseCount.textContent === "20 / 69 項", "required filter should show 20 courses");
