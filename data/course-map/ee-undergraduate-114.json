@@ -161,35 +161,35 @@
       "name": "通訊學程",
       "relation": "program",
       "status": "verified-partial",
-      "description": "至少選一個專業學程；通訊核心課程及相關實驗依114版明細表核對。"
+      "description": "五大學程之一；通訊核心課程四選三，另須完成相關實驗，並符合其他四個學程各選一門核心及跨學程實驗規定。"
     },
     {
       "id": "control",
       "name": "系統與控制學程",
       "relation": "program",
       "status": "verified-partial",
-      "description": "至少選一個專業學程；核心課程依四選三規則核對，並需相關實驗。"
+      "description": "五大學程之一；系統與控制核心課程四選三，另須完成相關實驗，並符合其他四個學程各選一門核心及跨學程實驗規定。"
     },
     {
       "id": "information",
       "name": "資訊學程",
       "relation": "program",
       "status": "verified-partial",
-      "description": "至少選一個專業學程；核心課程依四選三規則核對，並需相關實驗。"
+      "description": "五大學程之一；資訊核心課程四選三，另須完成相關實驗，並符合其他四個學程各選一門核心及跨學程實驗規定。"
     },
     {
       "id": "electronics",
       "name": "電子電路學程",
       "relation": "program",
       "status": "verified-partial",
-      "description": "核心課程列於官方課程規劃；114版畢業條件表的四選三適用細節待確認。"
+      "description": "五大學程之一；電子電路學程列有3門核心課程，依明細表完成核心課程及相關實驗，並符合其他四個學程各選一門核心及跨學程實驗規定。"
     },
     {
       "id": "solidstate",
       "name": "固態電子與光電學程",
       "relation": "program",
       "status": "verified-partial",
-      "description": "至少選一個專業學程；核心課程依四選三規則核對，並需相關實驗。"
+      "description": "五大學程之一；固態電子與光電核心課程四選三，另須完成相關實驗，並符合其他四個學程各選一門核心及跨學程實驗規定。"
     },
     {
       "id": "ee-minor",
@@ -225,7 +225,11 @@
         "ee-double"
       ],
       "status": "verified",
-      "source": "114學年度畢業條件明細表"
+      "source": "114學年度畢業條件明細表",
+      "aliases": [
+        "微積分（一）",
+        "微積分 I"
+      ]
     },
     {
       "id": "req-1",
@@ -238,7 +242,11 @@
         "ee-double"
       ],
       "status": "verified",
-      "source": "114學年度畢業條件明細表"
+      "source": "114學年度畢業條件明細表",
+      "aliases": [
+        "微積分（二）",
+        "微積分 II"
+      ]
     },
     {
       "id": "req-2",
@@ -251,7 +259,10 @@
         "ee-double"
       ],
       "status": "verified",
-      "source": "114學年度畢業條件明細表"
+      "source": "114學年度畢業條件明細表",
+      "aliases": [
+        "普通物理學"
+      ]
     },
     {
       "id": "req-3",
@@ -264,7 +275,11 @@
         "ee-double"
       ],
       "status": "verified",
-      "source": "114學年度畢業條件明細表"
+      "source": "114學年度畢業條件明細表",
+      "aliases": [
+        "普通物理學實驗",
+        "普通物理實驗"
+      ]
     },
     {
       "id": "req-4",
@@ -489,7 +504,10 @@
         "solidstate"
       ],
       "status": "verified-partial",
-      "source": "114學年度畢業條件明細表／系網課程規劃"
+      "source": "114學年度畢業條件明細表／系網課程規劃",
+      "aliases": [
+        "訊號與系統"
+      ]
     },
     {
       "id": "prog-1",
@@ -523,7 +541,11 @@
         "solidstate"
       ],
       "status": "verified-partial",
-      "source": "114學年度畢業條件明細表／系網課程規劃"
+      "source": "114學年度畢業條件明細表／系網課程規劃",
+      "aliases": [
+        "數位信號處理",
+        "數位信號處理"
+      ]
     },
     {
       "id": "prog-3",
@@ -591,7 +613,10 @@
         "solidstate"
       ],
       "status": "verified-partial",
-      "source": "114學年度畢業條件明細表／系網課程規劃"
+      "source": "114學年度畢業條件明細表／系網課程規劃",
+      "aliases": [
+        "電機機械學"
+      ]
     },
     {
       "id": "prog-7",
@@ -1210,7 +1235,10 @@
         "solidstate"
       ],
       "status": "verified-partial",
-      "source": "114學年度起畢業條件明細表：系統與控制學程核心課程；系網課程規劃"
+      "source": "114學年度起畢業條件明細表：系統與控制學程核心課程；系網課程規劃",
+      "aliases": [
+        "訊號與系統"
+      ]
     }
   ],
   "generalEducation": [
@@ -1252,7 +1280,7 @@
   ],
   "programRules": {
     "sourceRule": "五大學程中，至少選其中之一作為個人的專業學程，並修完該學程全部核心課程（原文另註「通訊、系統與控制、資訊、固態電子與光電為四選三」）及其相關實驗；另須就其他各學程選修一門核心課程。每門課程只能採計一次。實驗課除自己學程相關實驗外，還須加選一個其他學程的實驗。",
-    "interpretation": "官方條文括號中的「四選三」與個別課程的計算方式，網站只呈現原文及清單，不自行推算通過條件；如需正式判定，應由系辦確認。",
+    "interpretation": "本頁依114學年度畢業條件明細表，將通訊、系統與控制、資訊、固態電子與光電呈現為核心課程四選三，電子電路呈現3門核心課程；但不根據未匯入的個人修課紀錄自動判定通過，也不替系辦判定課程抵認。",
     "programs": [
       {
         "id": "communication",
