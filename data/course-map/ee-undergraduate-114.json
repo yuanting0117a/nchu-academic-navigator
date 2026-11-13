@@ -647,6 +647,234 @@
       ],
       "status": "verified",
       "source": "114學年度畢業條件明細表"
+    },
+    {
+      "id": "elective-0",
+      "name": "寬頻網路",
+      "credits": null,
+      "group": "通訊學程",
+      "plans": [
+        "ee-elective",
+        "communication"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-1",
+      "name": "無線通訊導論",
+      "credits": null,
+      "group": "通訊學程",
+      "plans": [
+        "ee-elective",
+        "communication"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-2",
+      "name": "通訊系統模擬",
+      "credits": null,
+      "group": "通訊學程",
+      "plans": [
+        "ee-elective",
+        "communication"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-3",
+      "name": "物件導向語言",
+      "credits": null,
+      "group": "資訊學程",
+      "plans": [
+        "ee-elective",
+        "information"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-4",
+      "name": "計算機結構",
+      "credits": null,
+      "group": "資訊學程",
+      "plans": [
+        "ee-elective",
+        "information"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-5",
+      "name": "計算機網路",
+      "credits": null,
+      "group": "資訊學程",
+      "plans": [
+        "ee-elective",
+        "information"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-6",
+      "name": "數位控制",
+      "credits": null,
+      "group": "系統與控制學程",
+      "plans": [
+        "ee-elective",
+        "control"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-7",
+      "name": "電力電子",
+      "credits": null,
+      "group": "系統與控制學程",
+      "plans": [
+        "ee-elective",
+        "control"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-8",
+      "name": "近代物理(一)",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-9",
+      "name": "近代物理(二)",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-10",
+      "name": "固態工程",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-11",
+      "name": "固態電子元件",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-12",
+      "name": "固態物理導論",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-13",
+      "name": "半導體製程技術概論",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-14",
+      "name": "平面顯示器概論",
+      "credits": null,
+      "group": "固態電子與光電學程",
+      "plans": [
+        "ee-elective",
+        "solidstate"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-15",
+      "name": "數位系統之快速雛型製作",
+      "credits": null,
+      "group": "電子電路學程",
+      "plans": [
+        "ee-elective",
+        "electronics"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-16",
+      "name": "超大型積體電路設計",
+      "credits": null,
+      "group": "電子電路學程",
+      "plans": [
+        "ee-elective",
+        "electronics"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-17",
+      "name": "射頻電路設計",
+      "credits": null,
+      "group": "電子電路學程",
+      "plans": [
+        "ee-elective",
+        "electronics"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "elective-18",
+      "name": "元件特性模擬",
+      "credits": null,
+      "group": "電子電路學程",
+      "plans": [
+        "ee-elective",
+        "electronics"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學程課程介紹（系網公開課程清單）"
     }
   ],
   "generalEducation": [
