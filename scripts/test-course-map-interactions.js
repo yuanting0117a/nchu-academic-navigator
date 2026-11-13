@@ -28,7 +28,7 @@ class MockElement {
     (this.listeners[type] ||= []).push(fn);
   }
   dispatch(type, event = {}) {
-    for (const fn of this.listeners[type] || []) fn({ target: this, ...event });
+    for (const fn of this.listeners[type] || []) fn({ target: this, stopPropagation: () => {}, ...event });
   }
   click() { this.dispatch("click"); }
   querySelectorAll(selector) {
