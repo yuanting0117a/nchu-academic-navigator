@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "baseline": {
+    "university": "國立中興大學",
+    "department": "電機工程學系",
+    "programLevel": "學士班"
+  },
+  "status": "pending",
+  "lastVerified": null,
+  "principle": "只有具備適用入學年度正式課程表、系所公告或核准紀錄的課號級對應，才能標記 mapping_verified。課名相似不得自動認列。",
+  "schemes": [
+    {
+      "id": "ee-required",
+      "name": "電機系專業必修",
+      "mappings": []
+    },
+    {
+      "id": "ee-elective",
+      "name": "電機系專業選修",
+      "mappings": []
+    },
+    {
+      "id": "general",
+      "name": "通識學分",
+      "mappings": []
+    },
+    {
+      "id": "cross",
+      "name": "跨系／跨域修課",
+      "mappings": []
+    },
+    {
+      "id": "minor",
+      "name": "輔系／學分學程",
+      "mappings": []
+    },
+    {
+      "id": "double",
+      "name": "雙主修",
+      "mappings": []
+    }
+  ],
+  "mappingRecordSchema": {
+    "courseNo": "官方課號／選課號碼",
+    "department": "開課單位",
+    "classType": "系所班／通識班／微課程等班別",
+    "schemeId": "上述方案 ID",
+    "admissionYear": "適用入學年度；不確定時不可留空後自動套用",
+    "decision": "eligible／ineligible／conditional",
+    "creditLimit": "正式規則規定的採計上限（如有）",
+    "evidenceUrl": "官方規則或核准依據",
+    "evidenceSection": "條文、附件頁碼或公告段落",
+    "verifiedAt": "YYYY-MM-DD",
+    "status": "mapping_verified／mapping_pending"
+  }
+}
