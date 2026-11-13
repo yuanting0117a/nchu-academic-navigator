@@ -13,7 +13,7 @@
     "創新產業暨國際學院未列入該115學年度簡稱表的學位授予單位，故不自行加入為畢業目標。",
     "校級微生物基因體學博士學位學程列為不分院學程。"
   ],
-  "collegeCount": 12,
+  "collegeCount": 11,
   "unitCount": 96,
   "units": [
     {
@@ -784,5 +784,6 @@
       "undergraduateDegreeCandidate": false,
       "requirementDataStatus": "not_yet_imported"
     }
-  ]
+  ],
+  "unassignedProgramCount": 1
 }
