@@ -1,0 +1,295 @@
+{
+  "schemaVersion": "1.0",
+  "recordId": "nchu-ee-bachelor-entry-114",
+  "institution": "國立中興大學",
+  "college": "電機資訊學院",
+  "department": "電機工程學系",
+  "program": "學士班",
+  "credential": "學士",
+  "admissionYear": {
+    "from": 114,
+    "to": null,
+    "label": "114學年度起入學適用",
+    "status": "officially_published_but_115_entry_version_not_independently_confirmed"
+  },
+  "verifiedAt": "2026-11-13",
+  "officialSources": [
+    {
+      "title": "電機工程學系學士班學生畢業條件明細表（114學年度起入學適用）",
+      "url": "https://www.ee.nchu.edu.tw/Pic/DocRegulation/17466153950240%281%29.pdf",
+      "updatedAt": "2025-09-01",
+      "documentRevision": "113年12月30日修訂",
+      "evidence": "PDF lines 13-119"
+    },
+    {
+      "title": "電機工程學系課程規章－大學部",
+      "url": "https://www.ee.nchu.edu.tw/wb_regulation01.asp?ano=167&cno=19&pageno=1&url=13",
+      "evidence": "Official department listing"
+    }
+  ],
+  "graduation": {
+    "minimumTotalCredits": 128,
+    "peCreditsExcludedFromTotal": true,
+    "minimumStudyYears": 4,
+    "maximumExtensionYears": 2,
+    "extensionExcludesLeaveYears": true,
+    "departmentEnglishRequirementAboveUniversityStandard": false
+  },
+  "universityRequirements": {
+    "physicalEducation": {
+      "requiredCredits": 2,
+      "countsTowardGraduationTotal": false,
+      "extraCreditsAcceptedAsOtherDepartmentCreditsMaximum": 2
+    },
+    "englishProficiency": {
+      "creditValue": 0,
+      "departmentAdditionalThreshold": "無；依校級英文能力畢業標準"
+    },
+    "generalEducation": {
+      "requiredCredits": 28,
+      "categories": [
+        {
+          "name": "核心素養",
+          "minimumCredits": 3,
+          "categoryCount": 10,
+          "specialRule": {
+            "course": "資訊素養：程式設計與AI應用",
+            "status": "免修",
+            "ifTaken": "不得採計為通識畢業學分"
+          }
+        },
+        {
+          "name": "語文素養",
+          "minimumCredits": 10,
+          "details": [
+            {
+              "name": "大學國文",
+              "credits": 4
+            },
+            {
+              "name": "外國語文",
+              "credits": 6,
+              "departmentDescription": "大一英文4學分＋學術英文讀寫2學分"
+            }
+          ]
+        },
+        {
+          "name": "領域素養",
+          "minimumCredits": 10,
+          "details": [
+            {
+              "name": "人文領域",
+              "requirement": "至少1門"
+            },
+            {
+              "name": "社會領域",
+              "requirement": "至少1門"
+            },
+            {
+              "name": "自然領域",
+              "requirement": "至少1門"
+            },
+            {
+              "name": "統合領域",
+              "minimumCredits": 4
+            }
+          ]
+        }
+      ],
+      "restrictedCounting": [
+        "國防教育類課程最多1門可採計為通識畢業學分，超修不得採計為外系學分",
+        "工程科技學群課程最多1門可採計為通識畢業學分，超修不得採計為外系學分",
+        "超修通識課不得採計為外系學分"
+      ]
+    }
+  },
+  "collegeProfessionalRequired": {
+    "status": "none"
+  },
+  "departmentProfessionalRequired": {
+    "minimumCredits": 55,
+    "courses": [
+      {
+        "name": "微積分(一)",
+        "credits": 3
+      },
+      {
+        "name": "微積分(二)",
+        "credits": 3
+      },
+      {
+        "name": "普通物理",
+        "credits": 6
+      },
+      {
+        "name": "普物實驗",
+        "credits": 2
+      },
+      {
+        "name": "工程倫理",
+        "credits": 2
+      },
+      {
+        "name": "交換電路與邏輯設計",
+        "credits": 3
+      },
+      {
+        "name": "計算機程式設計",
+        "credits": 3
+      },
+      {
+        "name": "工程數學(一)",
+        "credits": 3
+      },
+      {
+        "name": "工程數學(二)",
+        "credits": 3
+      },
+      {
+        "name": "工程數學(三)",
+        "credits": 3
+      },
+      {
+        "name": "工程數學(四)",
+        "credits": 3
+      },
+      {
+        "name": "電磁學(一)",
+        "credits": 3
+      },
+      {
+        "name": "電磁學(二)",
+        "credits": 3
+      },
+      {
+        "name": "電路學(一)",
+        "credits": 3
+      },
+      {
+        "name": "電路學(二)",
+        "credits": 3
+      },
+      {
+        "name": "電子學(一)",
+        "credits": 3
+      },
+      {
+        "name": "電子學(二)",
+        "credits": 3
+      },
+      {
+        "name": "電工實驗(一)",
+        "credits": 1
+      },
+      {
+        "name": "電工實驗(二)",
+        "credits": 1
+      },
+      {
+        "name": "電工實驗(三)",
+        "credits": 1
+      }
+    ],
+    "courseCount": 20
+  },
+  "departmentProfessionalElective": {
+    "minimumCredits": 27
+  },
+  "professionalProgramRequirements": {
+    "programs": [
+      {
+        "name": "通訊",
+        "coreCourses": [
+          "信號與系統",
+          "通訊系統",
+          "數位訊號處理",
+          "通訊理論"
+        ],
+        "coreCourseSelectionRule": "依系上條文的四選三規則核對；需以該屆課程表確認具體適用"
+      },
+      {
+        "name": "系統與控制",
+        "coreCourses": [
+          "自動控制",
+          "現代控制",
+          "電機機械",
+          "信號與系統"
+        ],
+        "coreCourseSelectionRule": "依系上條文的四選三規則核對；需以該屆課程表確認具體適用"
+      },
+      {
+        "name": "資訊",
+        "coreCourses": [
+          "資料結構",
+          "計算機組織",
+          "微處理機",
+          "作業系統"
+        ],
+        "coreCourseSelectionRule": "依系上條文的四選三規則核對；需以該屆課程表確認具體適用"
+      },
+      {
+        "name": "電子電路",
+        "coreCourses": [
+          "硬體描述語言設計",
+          "類比電路設計",
+          "超大型積體電路設計導論"
+        ],
+        "coreCourseSelectionRule": "正式明細表未明確寫出與其他四學程相同的四選三規則，待課程表／系辦確認"
+      },
+      {
+        "name": "固態電子與光電",
+        "coreCourses": [
+          "半導體工程",
+          "半導體元件",
+          "光電元件",
+          "近代物理"
+        ],
+        "coreCourseSelectionRule": "依系上條文的四選三規則核對；需以該屆課程表確認具體適用"
+      }
+    ],
+    "mustChooseAtLeast": 1,
+    "requirements": [
+      "至少選擇一個專業學程作為個人專業學程",
+      "修完該學程全部核心課程（其中通訊、系統與控制、資訊、固態電子與光電的核心課程有四選三規定，須依課程表落實）及相關實驗",
+      "另須從其他各學程選修一門核心課程",
+      "另須加選一個其他學程的實驗",
+      "每門課程只能採計一次"
+    ],
+    "verificationStatus": "official_summary_transcribed_with_selection_detail_partly_pending"
+  },
+  "graduationProject": {
+    "courses": [
+      {
+        "name": "畢業專題(一)",
+        "credits": 2,
+        "semesterPattern": "下學期開授"
+      },
+      {
+        "name": "畢業專題(二)",
+        "credits": 2,
+        "semesterPattern": "上學期開授"
+      }
+    ],
+    "mustPassBoth": true,
+    "mustCompleteProjectDemonstration": true,
+    "courseNameDifferenceAllowed": true,
+    "creditCategory": "official sheet does not explicitly state whether the 4 credits are included in the 55 required credits or 27 professional elective credits; do not double count pending department confirmation"
+  },
+  "otherRequirements": {
+    "crossDisciplinaryExpertise": "系上有開設；重複主系、雙主修、輔系或其他跨域專長課程時，須由開課系／學院指定相關選修補足",
+    "overseasSecondaryEducation": "如入學資格屬修業年限少於國內高中及專科學校之國外同等學校（例：海外中五學制畢業），畢業學分至少增加12學分，科目見正式明細表附表"
+  },
+  "unverifiedOrPending": {
+    "items": [
+      "115學年度入學是否已公告取代114學年度起適用明細表的新版本，需再向系網確認",
+      "五大專業學程的四選三規則與電子電路學程適用方式，需對照同屆正式課程規劃表",
+      "畢業專題4學分在55系必修／27系專業選修中的歸類，需系辦確認",
+      "電機系輔系、雙主修、跨域專長的最新個別課程清單及版本仍需另建檔"
+    ]
+  },
+  "automationPolicy": {
+    "unverifiedRulesMustNotBeCountedAsSatisfied": true,
+    "courseEquivalenceRequiresOfficialApproval": true,
+    "inProgressCoursesAreNotCompleted": true
+  }
+}
