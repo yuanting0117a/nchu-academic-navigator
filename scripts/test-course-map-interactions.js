@@ -82,7 +82,8 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   assert(elements.courseGroups.innerHTML.includes("本系電機學士班必修"), "course eligibility label should render");
   assert(elements.courseGroups.querySelectorAll("[data-course]").length === data.courses.length, "all course tiles should render");
   assert(elements.courseGroups.innerHTML.includes("本系電機學士班必修"), "course eligibility label should render");
-  assert(elements.courseCount.textContent === "69 / 69 項", "initial course count should be complete");\n  assert(elements.courseGroups.innerHTML.includes("本系電機學士班必修"), "course eligibility should be visible");
+  assert(elements.courseCount.textContent === "69 / 69 項", "initial course count should be complete");
+  assert(elements.courseGroups.innerHTML.includes("本系電機學士班必修"), "course eligibility should be visible");
 
   const requiredPlan = elements.planTiles.querySelectorAll("[data-plan]").find(x => x.dataset.plan === "ee-required");
   requiredPlan.click();
