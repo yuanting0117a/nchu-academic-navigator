@@ -1,7 +1,7 @@
 (function(){
 const $=id=>document.getElementById(id);
 const DATA_URL="data/course-map/ee-undergraduate-114.json";
-let data=null,pathwayData=null,selectedPlan=null,selectedCourse=null,filter="all",query="",admissionYear="114",imported=[],myCourses=[],showOnlyMyCourses=false,departmentFilter="";
+let data=null,pathwayData=null,selectedPlan=null,selectedCourse=null,filter="all",query="",admissionYear="114",imported=[],myCourses=[],showOnlyMyCourses=false,departmentFilter="",geCategoryFilter="";
 try{myCourses=JSON.parse(localStorage.getItem("nchu-my-courses-v1")||"[]")}catch(e){myCourses=[]}
 const myCourseSet=()=>new Set(myCourses);
 function toggleMyCourse(id){myCourses=myCourses.includes(id)?myCourses.filter(x=>x!==id):[...myCourses,id];localStorage.setItem("nchu-my-courses-v1",JSON.stringify(myCourses));render();}
@@ -76,6 +76,21 @@ function renderCourses(){
  host.querySelectorAll("[data-course]").forEach(b=>b.addEventListener("click",()=>setSelection("course",b.dataset.course)));
  host.querySelectorAll("[data-toggle-course]").forEach(b=>b.addEventListener("click",e=>{e.stopPropagation();toggleMyCourse(b.dataset.toggleCourse)}));
 }
+function renderGeneralEducationCourses(){
+ const host=$("geCourseGroups");if(!host)return;
+ const all=imported.filter(c=>c.category==="general");
+ const categories=[...new Set(all.map(c=>c.courseType||c.categoryLabel||"通識類別待確認"))].sort((a,b)=>a.localeCompare(b,"zh-Hant"));
+ const select=$("geCategoryFilter");
+ if(select){const current=geCategoryFilter;select.innerHTML='<option value="">全部通識類別</option>'+categories.map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join("");select.value=categories.includes(current)?current:"";geCategoryFilter=select.value;}
+ const q=query.trim().toLowerCase();
+ const visible=all.filter(c=>(!geCategoryFilter||(c.courseType||c.categoryLabel||"通識類別待確認")===geCategoryFilter)&&(!q||(c.name+" "+c.courseNo+" "+(c.courseType||"")+" "+(c.dept||"")+" "+(c.teacher||"")).toLowerCase().includes(q)));
+ $("geCourseCount").textContent=visible.length+" / "+all.length+" 門";
+ if(!all.length){host.innerHTML='<div class="empty-state">目前尚未匯入通識課程。請在下方選擇「通識課程」，匯入官方通識查詢匯出的 Excel／CSV；通識清單會與非通識課程分開保存及呈現。</div>';return;}
+ if(!visible.length){host.innerHTML='<div class="empty-state">沒有符合搜尋／類別條件的通識課程。</div>';return;}
+ const grouped=[...new Set(visible.map(c=>c.courseType||c.categoryLabel||"通識類別待確認"))];
+ host.innerHTML=grouped.map(g=>{const items=visible.filter(c=>(c.courseType||c.categoryLabel||"通識類別待確認")===g);return '<section class="ge-course-group"><div class="group-head"><h3>'+esc(g)+'</h3><small>'+items.length+' 門</small></div><div class="ge-course-tiles">'+items.map(c=>{const mine=myCourses.includes(c.id);return '<article class="ge-course-card"><div><b>'+esc(c.name)+'</b><small>'+(c.credits===null?"學分待確認":c.credits+" 學分")+' · '+esc(c.courseNo||"無課號")+'</small><small>'+esc(c.dept||"開課單位未提供")+(c.term?" · "+esc(c.term):"")+'</small></div><button type="button" class="course-add '+(mine?"added":"")+'" data-ge-toggle-course="'+esc(c.id)+'" aria-pressed="'+mine+'">'+(mine?"✓ 已加入我的修課":"＋ 加入修課規劃")+'</button></article>';}).join("")+'</div></section>';}).join("");
+ host.querySelectorAll("[data-ge-toggle-course]").forEach(b=>b.addEventListener("click",()=>toggleMyCourse(b.dataset.geToggleCourse)));
+}
 function renderDetail(){
  const host=$("detailBody");
  if(selectedCourse){
@@ -125,10 +140,11 @@ function renderPathways(){
  host.innerHTML=pathwayData.categories.map(cat=>'<section class="pathway-category"><h3>'+esc(cat.name)+'</h3><div class="pathway-grid">'+cat.items.map(item=>'<details class="pathway-card"><summary><b>'+esc(item.name)+'</b><small>'+esc(item.award)+'</small></summary><div class="pathway-content"><p>'+esc(item.eligibility)+'</p><ul>'+item.requirements.map(x=>'<li>'+esc(x)+'</li>').join("")+'</ul><span class="pathway-status">'+esc(item.status)+'</span></div></details>').join("")+'</div></section>').join("");
 }
 function render(){
- renderPlans();renderCourses();renderDetail();renderMyCourseSummary();renderPathways();
+ renderPlans();renderCourses();renderGeneralEducationCourses();renderDetail();renderMyCourseSummary();renderPathways();
  $("yearNotice").textContent=admissionYear==="114"?"目前以114學年度起入學版本判讀。":"電機系目前可核實的明細表為114學年度起版本；115入學適用性尚待系辦確認，因此不會自動判定符合。";
 }
-$("searchCourse").addEventListener("input",e=>{query=e.target.value;renderCourses()});
+$("searchCourse").addEventListener("input",e=>{query=e.target.value;renderCourses();renderGeneralEducationCourses()});
+const geCategoryControl=$("geCategoryFilter");if(geCategoryControl)geCategoryControl.addEventListener("change",e=>{geCategoryFilter=e.target.value;renderGeneralEducationCourses()});
 const departmentFilterControl=$("departmentFilter");if(departmentFilterControl)departmentFilterControl.addEventListener("change",e=>{departmentFilter=e.target.value;renderCourses()});
 $("showMyCourses").addEventListener("click",()=>{showOnlyMyCourses=!showOnlyMyCourses;renderCourses()});
 $("clearMyCourses").addEventListener("click",clearMyCourses);
