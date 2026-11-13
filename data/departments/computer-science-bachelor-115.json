@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "1.0",
+  "recordId": "nchu-cs-bachelor-entry-115",
+  "institution": "國立中興大學",
+  "college": "電機資訊學院",
+  "department": "資訊工程學系",
+  "program": "學士班",
+  "credential": "學士",
+  "admissionYear": {
+    "from": 115,
+    "to": null,
+    "label": "115學年度起入學適用",
+    "status": "115學年度畢業條件明細表已於115年5月5日修訂，系網列示校課程會議115年10月22日通過版本",
+    "autoApplyThroughAdmissionYear": 115,
+    "requiresManualConfirmationForAdmissionYear": [
+      116
+    ],
+    "latestOfficialDepartmentListing": "https://cs.nchu.edu.tw/p/412-1002-214.php?Lang=zh-tw"
+  },
+  "verifiedAt": "2026-11-13",
+  "officialSources": [
+    {
+      "title": "資訊工程學系學士班學生畢業條件明細表（115學年度起入學適用）",
+      "url": "https://cs.nchu.edu.tw/p/450-1002-3723,c0.php?Lang=zh-tw",
+      "documentRevision": "115年5月5日修訂；系網列示115年10月22日校課程會議通過",
+      "evidence": "PDF page 1-2, lines 1-118"
+    },
+    {
+      "title": "資訊工程學系大學部課程資訊與畢業條件列表",
+      "url": "https://cs.nchu.edu.tw/p/412-1002-214.php?Lang=zh-tw",
+      "evidence": "Official department page, undergraduate graduation requirement list"
+    }
+  ],
+  "graduation": {
+    "minimumTotalCredits": 128,
+    "peCreditsExcludedFromTotal": true,
+    "minimumStudyYears": 4,
+    "maximumExtensionYears": 2,
+    "extensionExcludesLeaveYears": true,
+    "departmentEnglishRequirementAboveUniversityStandard": false
+  },
+  "universityRequirements": {
+    "physicalEducation": {
+      "requiredCredits": 2,
+      "countsTowardGraduationTotal": false,
+      "extraCreditsAcceptedAsOtherDepartmentCreditsMaximum": 2
+    },
+    "englishProficiency": {
+      "creditValue": 0,
+      "departmentAdditionalThreshold": "無；依校級英文能力畢業標準"
+    },
+    "generalEducation": {
+      "requiredCredits": 28,
+      "categories": [
+        {
+          "name": "核心素養",
+          "minimumCredits": 3,
+          "categoryCount": 10,
+          "restrictedCategory": {
+            "name": "資訊素養",
+            "countsTowardGraduation": false,
+            "rule": "資訊素養類課程皆不計入畢業學分"
+          }
+        },
+        {
+          "name": "語文素養",
+          "minimumCredits": 10,
+          "details": [
+            {
+              "name": "本國語文：敘事表達－語文素養",
+              "credits": 2
+            },
+            {
+              "name": "本國語文：敘事表達－語文應用",
+              "credits": 2
+            },
+            {
+              "name": "英語溝通與表達",
+              "credits": 2
+            },
+            {
+              "name": "學術英文聽讀",
+              "credits": 2
+            },
+            {
+              "name": "學術英文說寫",
+              "credits": 2
+            }
+          ]
+        },
+        {
+          "name": "領域素養",
+          "minimumCredits": 10,
+          "details": [
+            {
+              "name": "人文領域",
+              "requirement": "至少1門"
+            },
+            {
+              "name": "社會領域",
+              "requirement": "至少1門"
+            },
+            {
+              "name": "自然領域",
+              "requirement": "至少1門",
+              "combinedMinimumCreditsWithHumanitiesAndSocial": 6
+            },
+            {
+              "name": "統合領域",
+              "minimumCredits": 4
+            }
+          ]
+        }
+      ],
+      "restrictedCounting": [
+        "國防教育類課程最多1門可採計為通識畢業學分，超修不得採計為外系學分",
+        "本系隸屬工程科技學群，該學群課程最多1門可採計為通識畢業學分，超修不得採計為外系學分",
+        "超修通識課程不得採計為外系學分"
+      ]
+    }
+  },
+  "collegeProfessionalRequired": {
+    "status": "none"
+  },
+  "departmentProfessionalRequired": {
+    "minimumCredits": 55,
+    "courses": [
+      {
+        "name": "微積分（一）",
+        "credits": 3
+      },
+      {
+        "name": "微積分（二）",
+        "credits": 3
+      },
+      {
+        "name": "普通物理學",
+        "credits": 3
+      },
+      {
+        "name": "普通物理學實驗",
+        "credits": 1
+      },
+      {
+        "name": "離散數學",
+        "credits": 3
+      },
+      {
+        "name": "計算機程式設計",
+        "credits": 3
+      },
+      {
+        "name": "物件導向程式設計",
+        "credits": 3
+      },
+      {
+        "name": "機率",
+        "credits": 3
+      },
+      {
+        "name": "邏輯設計",
+        "credits": 3
+      },
+      {
+        "name": "邏輯設計實驗",
+        "credits": 1
+      },
+      {
+        "name": "線性代數",
+        "credits": 3
+      },
+      {
+        "name": "組合語言與系統程式",
+        "credits": 3
+      },
+      {
+        "name": "資料結構",
+        "credits": 3
+      },
+      {
+        "name": "電子電路學",
+        "credits": 3
+      },
+      {
+        "name": "計算機網路",
+        "credits": 3
+      },
+      {
+        "name": "演算法",
+        "credits": 3
+      },
+      {
+        "name": "計算機組織",
+        "credits": 3
+      },
+      {
+        "name": "作業系統",
+        "credits": 3
+      },
+      {
+        "name": "作業系統實驗",
+        "credits": 1
+      },
+      {
+        "name": "資訊專題（一）",
+        "credits": 2
+      },
+      {
+        "name": "資訊專題（二）",
+        "credits": 2
+      }
+    ],
+    "courseCount": 21,
+    "courseOfferingRestriction": {
+      "default": "所列必修課須由資訊工程學系開課，始認列為畢業學分",
+      "exception": "因不可抗拒理由，須事先提出申請並經同意",
+      "automaticCrossDepartmentEquivalence": false
+    }
+  },
+  "departmentProfessionalElective": {
+    "minimumCredits": 30,
+    "offeringUnitCreditCap": {
+      "maximumCredits": 9,
+      "eligibleOfferingUnits": [
+        "電機工程學系",
+        "電機資訊學院學士班"
+      ],
+      "note": "依115學年度明細表原文；不代表其他系課程均可採計，仍須依系上課程認定"
+    }
+  },
+  "excludedExternalCoursesFromGraduationTotal": [
+    {
+      "group": "資訊工程相關課程",
+      "courses": [
+        "計算機概論",
+        "機率論",
+        "計算機結構",
+        "資訊網路",
+        "Unix與系統管理",
+        "資料庫管理系統",
+        "程式設計",
+        "人工智慧概論",
+        "電子學"
+      ]
+    },
+    {
+      "group": "電機工程學系開設課程",
+      "courses": [
+        "電路學（一）",
+        "電子學（一）",
+        "工程數學（一）",
+        "工程數學（三）",
+        "信號與系統"
+      ]
+    },
+    {
+      "group": "電機資訊學院學士班開設課程",
+      "courses": [
+        "電子學概論"
+      ]
+    }
+  ],
+  "specialRequirements": [
+    {
+      "id": "retake-calculus-physics",
+      "rule": "微積分（一）、微積分（二）、普通物理學、普通物理學實驗重修若無法在本系補修，限在電機資訊、理、工學院系所選課補修",
+      "status": "official"
+    },
+    {
+      "id": "project-course-substitution",
+      "rule": "資訊專題（三）可抵資訊專題（一）或資訊專題（二）",
+      "status": "official",
+      "substitutionCount": 1
+    },
+    {
+      "id": "foreign-entry-additional-credits",
+      "rule": "入學資格屬修業年限少於國內高級中等學校及專科學校之國外同等學校畢業生（例如海外中五學制），畢業學分至少增加12學分",
+      "additionalCredits": 12,
+      "status": "official"
+    }
+  ],
+  "minor": {
+    "status": "separateRegulation",
+    "title": "國立中興大學資訊工程學系輔系實施要點"
+  },
+  "doubleMajor": {
+    "status": "separateRegulation",
+    "title": "國立中興大學資訊工程學系雙主修實施要點"
+  },
+  "crossDisciplinaryExpertise": {
+    "offered": true,
+    "eligibleProgram": "學士班",
+    "duplicateCourseRule": "與本系、雙主修、輔系或其他跨域專長應修課程重複者，由跨域專長系所或學院指定相關選修補足",
+    "externalStudentRule": "外系學生依本系跨域專長實施要點辦理"
+  },
+  "unverifiedOrPending": {
+    "items": [
+      "116學年度及以後版本尚未核實，不得自動沿用115版",
+      "系專業選修實際可採計課程清單與個別課程認定仍需取得當年度課程規劃表",
+      "輔系、雙主修及跨域專長的細部課程清單須另行結構化"
+    ]
+  },
+  "automationPolicy": {
+    "unverifiedRulesMustNotBeCountedAsSatisfied": true,
+    "courseEquivalenceRequiresOfficialApproval": true,
+    "inProgressCoursesAreNotCompleted": true,
+    "departmentRequiredCoursesNeedOfferingDepartmentMatch": true
+  }
+}
