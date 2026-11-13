@@ -9,3 +9,20 @@
 @media(min-width:1600px){.map-grid{grid-template-columns:310px minmax(700px,1fr) 350px}.course-tiles{grid-template-columns:repeat(auto-fill,minmax(165px,1fr))}.course-tile{min-height:70px}.course-name{font-size:12px}}
 
 .import-panel{margin:14px 0;background:#fff;border:1px solid var(--line);border-radius:13px;padding:14px 16px}.import-panel summary{cursor:pointer;font-size:12px;font-weight:800;color:var(--green)}.import-panel p{font-size:10px;color:var(--muted);line-height:1.7}.import-row{display:grid;grid-template-columns:130px 150px minmax(220px,1fr) auto;gap:10px;align-items:end}.import-row label{display:grid;gap:5px;font-size:10px;font-weight:700;color:#536158}.import-row select,.import-row input{min-height:38px;border:1px solid var(--line);border-radius:8px;padding:7px;background:#fff;font:inherit;font-size:11px;max-width:100%}.import-status{font-size:10px;color:var(--muted);margin-top:9px}@media(max-width:850px){.import-row{grid-template-columns:1fr 1fr}.import-row label:nth-child(3){grid-column:1/-1}.import-row button{grid-column:1/-1}}
+
+.rule-section{margin-top:13px;padding:11px;background:#f7faf8;border:1px solid #e3ebe5;border-radius:11px}
+.rule-section h4{font-size:10px;margin:10px 0 7px;color:#41584b}
+.rule-section h4:first-child{margin-top:0}
+.rule-note{font-size:10px;line-height:1.65;color:#627168;margin:6px 0}
+.rule-note b{color:var(--green)}
+.rule-note.warning{background:#fff7e7;border-radius:8px;padding:8px;color:#765b28}
+.rule-chips{display:flex;flex-wrap:wrap;gap:5px}
+.rule-chip{display:inline-flex;padding:5px 8px;border:1px solid #c9dfd0;border-radius:7px;background:#eaf5ee;color:#285b3d;font-size:9px;font-weight:700}
+.rule-chip.lab{background:#edf3fa;border-color:#cfdae9;color:#385574}
+.rule-chip.optional{background:#fff;border-color:#dce5df;color:#68776f}
+.credit-equation{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;font-size:9px;text-align:center}
+.credit-equation span,.credit-equation b{padding:8px 4px;background:#edf3ef;border-radius:7px}
+.credit-equation b{grid-column:1/-1;background:#dcefe2;color:#245d3e;font-size:11px}
+.credit-gap{margin-top:8px;padding:10px;border:1px solid #ead9b2;background:#fff8e9;border-radius:9px}
+.credit-gap strong{font-size:11px;color:#805e1d}
+.credit-gap p{margin:5px 0 0;font-size:9px;line-height:1.6}
