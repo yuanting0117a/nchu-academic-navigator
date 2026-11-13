@@ -79,6 +79,7 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   await tick();
   assert(elements.dataLoadStatus.textContent.includes("資料載入成功"), "data should load");
   assert(elements.planTiles.querySelectorAll("[data-plan]").length === data.requirements.length, "all plan tiles should render");
+  assert(elements.courseGroups.innerHTML.includes("本系電機學士班必修"), "course eligibility label should render");
   assert(elements.courseGroups.querySelectorAll("[data-course]").length === data.courses.length, "all course tiles should render");
   assert(elements.courseGroups.innerHTML.includes("本系電機學士班必修"), "course eligibility label should render");
   assert(elements.courseCount.textContent === "69 / 69 項", "initial course count should be complete");\n  assert(elements.courseGroups.innerHTML.includes("本系電機學士班必修"), "course eligibility should be visible");
@@ -121,5 +122,9 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   assert(elements.yearNotice.textContent.includes("115入學適用性尚待系辦確認"), "115 year should show applicability warning");
   assert(elements.planTiles.innerHTML.includes("115適用性待確認"), "115 year status should be visible");
 
+  window.dispatchEvent({type:"nchu-import-courses",detail:[{id:"external-test",name:"外系測試課",credits:2,dept:"資訊工程學系",externalSeats:"5",eligibilityStatus:"has-external-quota",group:"當期開課（官方匯入）",plans:[],status:"pending"}]});
+  assert(elements.courseGroups.innerHTML.includes("外系名額 5"), "external course quota should be visible");
+  filters.find(x => x.dataset.filter === "external").click();
+  assert(elements.courseCount.textContent === "1 / 70 項", "external filter should show outside-department courses");
   console.log("Course-map interaction smoke test passed: load, plan → courses, course → plans, search, filters, and admission-year warning.");
 })().catch(error => { console.error(error); process.exitCode = 1; });
