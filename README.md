@@ -1,7 +1,7 @@
 # 中興大學學業導航系統
 
 Repository: `nchu-academic-navigator`  
-Version: `v1.0.0`
+Version: `v1.1.0`
 
 中興大學全校系所學業導航工具。以目前電機工程學系學籍作為初始起點，並可比較其他系所作為「可能的最終畢業系所」的修課與轉系路徑。
 
@@ -41,6 +41,7 @@ Repository → Settings → Pages → Deploy from a branch → Branch: `main` �
 - 補上115學年度起提前畢業新門檻、英文能力檢定最新版、體育必修2學分（不計畢業學分），並確認服務學習（一）（二）自113學年度起廢止且溯及尚未畢業學生。
 - 官方資料詳見 [`data/school-wide-rules.md`](data/school-wide-rules.md)。
 - 首個系所正式結構化資料已建立：電機工程學系114學年度起入學適用，包含128總學分、通識28、系專業必修55、系專業選修至少27、五大專業學程與專題條件，詳見 [`data/departments/electrical-engineering-bachelor-114.json`](data/departments/electrical-engineering-bachelor-114.json)。
+- 新增115學年度全校教學單位目錄：11個學院及1個不分院學程，共96個系、所、學位學程單位。這是全校單位索引，不代表96個單位都有學士班；未匯入畢業條件的單位均明確標記待處理，詳見 [`data/academic-units-115.json`](data/academic-units-115.json)。
 - 英文能力畢業檢定與通識英文課程學分已拆成兩個獨立判斷項目。
 - 尚未確認的專題學分歸屬、專業學程細節及115學年度版本均標記待確認，不會自動計入。
 
