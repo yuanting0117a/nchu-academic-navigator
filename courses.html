@@ -27,7 +27,7 @@
  <div class="tabs"><button class="tab active" data-mode="plan">方案找課程</button><button class="tab" data-mode="course">課程找方案</button></div>
  <div id="planMode" class="mode-panel">
   <label>選擇要探索的方案<select id="plan"><option value="ee-required">電機系專業必修</option><option value="ee-elective">電機系專業選修</option><option value="general">通識學分</option><option value="cross">跨系／跨域修課</option><option value="minor">輔系／學分學程</option><option value="double">雙主修</option></select></label>
-  <p class="muted small">方案篩選依正式採計規則決定。尚未建立課號級對照的課程會標示「待核實」，不會因為課名相似就亮成符合。</p>
+  <p id="planNotice" class="muted small">目前尚未匯入經核實的電機系課號級採計對照，因此此階段不會把任何課程標成符合；匯入課程會保留在清單中，並標示待核實。</p>
  </div>
  <div id="courseMode" class="mode-panel hidden">
   <p class="muted small">先從課程清單選一門課，查看它可能涉及的方案。尚無正式採計依據時，系統會明確顯示「待核實」，不會自動認列學分。</p>
