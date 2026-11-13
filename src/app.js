@@ -1,5 +1,5 @@
 (function(){const $=id=>document.getElementById(id),key="nchu-navigator-v1";let state={profile:{},courses:[]};try{state={...state,...JSON.parse(localStorage.getItem(key)||"{}")}}catch(e){}const save=()=>localStorage.setItem(key,JSON.stringify(state)),esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-$("college").innerHTML+ = ""; 
+ 
 function departments(){const c=window.NCHU_DATA.colleges.find(x=>x.id===$("college").value),d=$("department");d.disabled=!c||!c.departments.length;d.innerHTML=c&&c.departments.length?'<option value="">選擇系所</option>'+c.departments.map(x=>'<option>'+x+'</option>').join(""):'<option>系所清單建置中</option>'}
 window.NCHU_DATA.colleges.forEach(c=>$("college").add(new Option(c.name,c.id)));$("college").value=state.profile.college||"";departments();$("department").value=state.profile.department||"";
 ["year","level"].forEach(id=>$(id).addEventListener("change",()=>{state.profile[id]=$(id).value;save()}));$("college").addEventListener("change",()=>{state.profile.college=$("college").value;state.profile.department="";departments();save()});$("department").addEventListener("change",()=>{state.profile.department=$("department").value;save()});
