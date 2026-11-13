@@ -1633,7 +1633,8 @@
               "通識28、系專業必修55、系專業選修至少27；18學分差額仍待系辦釐清",
               "五大學程核心、跨學程核心與實驗、畢業專題等特別規定"
             ],
-            "status": "已建檔；部分學程學分與課程細節待核實"
+            "status": "已建檔；部分學程學分與課程細節待核實",
+            "sourceUrl": "https://www.ee.nchu.edu.tw/Pic/DocRegulation/17466153950240%281%29.pdf"
           },
           {
             "id": "transfer",
@@ -1645,7 +1646,8 @@
               "核准後依轉入系適用年級／年度規定重新檢查",
               "原修課程須逐科申請抵免或認列"
             ],
-            "status": "校級流程有資料；各目標系條件逐系補齊中"
+            "status": "校級流程有資料；各目標系條件逐系補齊中",
+            "sourceUrl": "https://oaa.nchu.edu.tw/zh-tw/rule"
           },
           {
             "id": "double-major",
@@ -1657,7 +1659,8 @@
               "至少完成加修系全部專業必修；不足40學分等情況依辦法補足",
               "分一般完成、放棄雙主修、符合條件申請以加修系畢業等不同分支"
             ],
-            "status": "校級規則已整理；各系課程表需逐系核對"
+            "status": "校級規則已整理；各系課程表需逐系核對",
+            "sourceUrl": "https://oaa.nchu.edu.tw/_run.php?file=682b91cd03efb6e0b537eb3383e49ab4510e7319.pdf&name=R1-01%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E7%AC%AC88%E6%AC%A1%E6%95%99%E5%8B%99%E6%9C%83%E8%AD%B0%E7%B4%80%E9%8C%84.pdf&work=down"
           },
           {
             "id": "college-bachelor",
@@ -1669,7 +1672,8 @@
               "學士班學生於修業年限最後一年第一學期註冊日前申請",
               "各學院審定畢業資格"
             ],
-            "status": "校級設置準則已核實；各院實際開設清單待逐院確認"
+            "status": "校級設置準則已核實；各院實際開設清單待逐院確認",
+            "sourceUrl": "https://oaa.nchu.edu.tw/upfile/file/bab95581adfc529526a5795000f7858b29ac3f12.pdf"
           },
           {
             "id": "university-bachelor",
@@ -1681,7 +1685,8 @@
               "上述課程合計至少48學分；畢業總學分至少128",
               "同名重複課程須另修其他課程補足；可依規定放棄原系或校學士路徑"
             ],
-            "status": "校級規則與申請流程已核實"
+            "status": "校級規則與申請流程已核實",
+            "sourceUrl": "https://uibp.nchu.edu.tw/upload/download/2511050905350000001.pdf"
           }
         ]
       },
@@ -1699,7 +1704,8 @@
               "輔系學分原則上在主系最低畢業學分以外加修",
               "各系自訂科目、學分與順序；未修完可依期限申請放棄"
             ],
-            "status": "校級規則已核實；各系輔系課程表需逐系匯入"
+            "status": "校級規則已核實；各系輔系課程表需逐系匯入",
+            "sourceUrl": "https://oaa.nchu.edu.tw/_run.php?file=682b91cd03efb6e0b537eb3383e49ab4510e7319.pdf&name=R1-01%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E7%AC%AC88%E6%AC%A1%E6%95%99%E5%8B%99%E6%9C%83%E8%AD%B0%E7%B4%84.pdf&work=down"
           },
           {
             "id": "cross-specialty",
@@ -1711,7 +1717,8 @@
               "與主修、雙主修、輔系或其他專長重複者須補修指定課程",
               "完成後於畢業證書加註；能否列主系選修由主系認定"
             ],
-            "status": "校級辦法114.11.5修正版已核實；完整專長清單待整理"
+            "status": "校級辦法114.11.5修正版已核實；完整專長清單待整理",
+            "sourceUrl": "https://oaa.nchu.edu.tw/upfile/file/317a9833128ff917bca357f3670c73e21ed4e07f.pdf"
           },
           {
             "id": "credit-program",
@@ -1723,7 +1730,8 @@
               "至少6學分須非原主修、雙主修、輔系應修課程",
               "申請需召集人同意；完成後申請學程證明"
             ],
-            "status": "校級辦法已核實；各學程清單與課程待持續匯入"
+            "status": "校級辦法已核實；各學程清單與課程待持續匯入",
+            "sourceUrl": "https://www.nchu.edu.tw/_run.php?file=09638cfd03eba7d2c4f6d487882b551936556e1d.pdf&name=1.%E8%B7%A8%E9%A0%98%E5%9F%9F%E5%AD%B8%E5%88%86%E5%AD%B8%E7%A8%8B%E6%9A%A8%E5%BE%AE%E5%AD%B8%E5%88%86%E5%AD%B8%E7%A8%8B%E5%AF%A6%E6%96%BD%E8%A6%81%E9%BB%9E%EF%BC%881130425%EF%BC%89.pdf&work=down2"
           },
           {
             "id": "micro-program",
@@ -1735,7 +1743,8 @@
               "至少4學分須非原主修、雙主修、輔系應修課程",
               "同名課程可符合不同學程要求，但畢業學分只計一次"
             ],
-            "status": "校級辦法已核實；各微學程清單待整理"
+            "status": "校級辦法已核實；各微學程清單待整理",
+            "sourceUrl": "https://www.nchu.edu.tw/_run.php?file=09638cfd03eba7d2c4f6d487882b551936556e1d.pdf&name=1.%E8%B7%A8%E9%A0%98%E5%9F%9F%E5%AD%B8%E5%88%86%E5%AD%B8%E7%A8%8B%E6%9A%A8%E5%BE%AE%E5%AD%B8%E5%88%86%E5%AD%B8%E7%A8%8B%E5%AF%A6%E6%96%BD%E8%A6%81%E9%BB%9E%EF%BC%881130425%EF%BC%89.pdf&work=down2"
           },
           {
             "id": "exploration",
@@ -1747,7 +1756,8 @@
               "主修／雙主修／輔系／跨域專長規劃課程、通識、體育、英文檢定等不得申請",
               "及格後改列通過且不列GPA；申請後不得要求恢復原成績計算"
             ],
-            "status": "校級辦法與申請公告已核實"
+            "status": "校級辦法與申請公告已核實",
+            "sourceUrl": "https://oaa.nchu.edu.tw/upfile/file/881fc4882eabb8ff0f6d40338a51428749d09af8.pdf"
           },
           {
             "id": "cross-school",
@@ -1759,7 +1769,8 @@
               "跨校雙主修須完成加修系全部專業必修",
               "跨校輔系須達該輔系規定總學分"
             ],
-            "status": "校級規則已核實；各年度合作名單依公告"
+            "status": "校級規則已核實；各年度合作名單依公告",
+            "sourceUrl": "https://oaa.nchu.edu.tw/_run.php?file=ae9f5e6c6a8f022b5872e49bfaaa185248e29747.pdf&name=L2-32%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E8%B7%A8%E6%A0%A1%E9%9B%99%E4%B8%BB%E4%BF%AE%E5%8F%8A%E8%BC%94%E7%B3%BB%E4%BF%AE%E8%AE%80%E8%BE%A6%E6%B3%95.pdf&work=down"
           }
         ]
       },
@@ -1777,7 +1788,8 @@
               "成績、班級名次、操行等條件依入學年度分開判斷",
               "提出申請後仍須系主任與註冊組審核"
             ],
-            "status": "校級規則已分年度整理"
+            "status": "校級規則已分年度整理",
+            "sourceUrl": "https://oaa.nchu.edu.tw/zh-tw/rule"
           },
           {
             "id": "exchange-credit",
@@ -1789,7 +1801,8 @@
               "抵免有身分別上限及申請期限",
               "未核准前只列預估，不得算入正式畢業學分"
             ],
-            "status": "校級流程已整理；個人課程仍須逐筆審核"
+            "status": "校級流程已整理；個人課程仍須逐筆審核",
+            "sourceUrl": "https://oaa.nchu.edu.tw/zh-tw/rule"
           }
         ]
       }
