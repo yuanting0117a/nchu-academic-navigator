@@ -41,7 +41,8 @@ $("importBtn").onclick=async()=>{if(!loadedFile)return;try{let added=[];if(/\.cs
 $("exportJson").onclick=()=>download(JSON.stringify({schemaVersion:1,source:"NCHU official course query export",exportedAt:new Date().toISOString(),courses},null,2),"nchu-courses.json","application/json");
 $("clearData").onclick=()=>{if(confirm("確定清除此裝置匯入的全部課程資料？")){courses=[];selectedId=null;save();$("importMessage").textContent="已清除本機課程資料。"}};
 function download(content,name,type){const a=document.createElement("a"),u=URL.createObjectURL(new Blob([content],{type}));a.href=u;a.download=name;a.click();URL.revokeObjectURL(u)}
-$("plan").addEventListener("change",render);\n["search","deptFilter","creditFilter","termFilter"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));
+$("plan").addEventListener("change",render);
+["search","deptFilter","creditFilter","termFilter"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{mode=b.dataset.mode;document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b));$("planMode").classList.toggle("hidden",mode!=="plan");$("courseMode").classList.toggle("hidden",mode!=="course");render()});
 render();
 })();
