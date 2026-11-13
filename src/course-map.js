@@ -27,7 +27,7 @@ function renderPlans(){
 }
 function courseVisible(c){
  const q=query.trim().toLowerCase();
- const text=(c.name+" "+c.group+" "+(c.source||"")+" "+(c.courseNo||"")+" "+(c.dept||"")+" "+(c.teacher||"")+" "+(c.categoryLabel||"")+" "+(c.requiredType||"")+" "+(c.section||"")).toLowerCase();
+ const text=(c.name+" "+c.group+" "+(c.source||"")+" "+(c.courseNo||"")+" "+(c.dept||"")+" "+(c.teacher||"")+" "+(c.aliases||[]).join(" ")+" "+(c.categoryLabel||"")+" "+(c.requiredType||"")+" "+(c.section||"")).toLowerCase();
  const typeOk=filter==="all"||(filter==="required"&&c.group==="專業必修")||(filter==="program"&&c.group.includes("學程"))||(filter==="lab"&&c.group==="專業實驗")||(filter==="project"&&c.group.includes("畢業專題"));
  return typeOk&&(!q||text.includes(q));
 }
