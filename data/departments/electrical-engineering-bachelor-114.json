@@ -10,7 +10,12 @@
     "from": 114,
     "to": null,
     "label": "114學年度起入學適用",
-    "status": "officially_published_but_115_entry_version_not_independently_confirmed"
+    "status": "114學年度起入學適用版本已找到；截至2026-11-13，電機系大學部規章列表仍只找到此版本，未找到獨立115學年度版本；115入學適用性需系辦確認",
+    "autoApplyThroughAdmissionYear": 114,
+    "requiresManualConfirmationForAdmissionYear": [
+      115
+    ],
+    "latestOfficialDepartmentListing": "https://www.ee.nchu.edu.tw/wb_regulation01.asp?ano=167&cno=19&pageno=1&url=13"
   },
   "verifiedAt": "2026-11-13",
   "officialSources": [
