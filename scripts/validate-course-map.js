@@ -14,6 +14,9 @@ for (const course of data.courses) {
 const required = data.courses.filter(x => x.group === "專業必修");
 assert.strictEqual(required.length, 20, "EE professional required courses should be 20");
 assert.strictEqual(required.reduce((n, x) => n + (x.credits || 0), 0), 55, "EE professional required credits should sum to 55");
+const electricalLabs = data.courses.filter(x => /^電工實驗/.test(x.name));
+assert.strictEqual(electricalLabs.length, 3, "electrical labs must remain three separate courses");
+assert(electricalLabs.every(x => x.credits === 1), "each electrical lab should remain one credit");
 assert.strictEqual(data.generalEducation.reduce((n, x) => n + x.credits, 0), 28, "GE categories should total 28");
 assert.strictEqual(data.creditStructure.total, 128, "graduation total should be 128");
 assert.strictEqual(data.creditStructure.unclassifiedDifference, 18, "unclassified graduation-credit difference should remain explicit");
@@ -31,6 +34,8 @@ assert(!data.courses.some(x => x.id.startsWith("project-option-")), "unverified 
 assert(data.sources.every(x => x.title && /^https:\/\//.test(x.url)), "each source needs an official URL");
 assert(data.pathwayRules.categories.length >= 3, "degree and study pathways missing");
 assert(data.pathwayRules.categories.flatMap(x=>x.items).length >= 10, "pathway coverage incomplete");
+const externalPathways = JSON.parse(fs.readFileSync("data/academic-pathways-115.json", "utf8"));
+assert(externalPathways.categories.flatMap(x=>x.items).length >= 10, "separate pathway data file missing or incomplete");
 assert(data.courseSelectionRules.rules.length >= 4, "course selection policy details missing");
 assert(data.projectGuidelines.requirements.length >= 4, "project guideline details missing");
 assert(data.projectGuidelines.currentAnnouncement && data.projectGuidelines.currentAnnouncement.source, "current project announcement missing");
