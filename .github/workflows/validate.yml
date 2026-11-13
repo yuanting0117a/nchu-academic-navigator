@@ -26,6 +26,7 @@ jobs:
           node --check src/course-catalog.js
           node --check src/course-map.js
           node --check src/course-import.js
+          node --check src/ge-self-learning.js
           node scripts/validate-course-map.js
           node scripts/test-course-map-interactions.js
           node -e "JSON.parse(require('fs').readFileSync('data/course-map/ee-undergraduate-114.json','utf8'))"
@@ -40,6 +41,7 @@ jobs:
           test -f styles-course-map.css
           test -f src/course-map.js
           test -f src/course-import.js
+          test -f src/ge-self-learning.js
           test -f data/course-map/ee-undergraduate-114.json
           test -f scripts/validate-course-map.js
           test -f .github/workflows/deploy-pages.yml
