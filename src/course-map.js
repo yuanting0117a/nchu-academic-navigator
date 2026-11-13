@@ -8,7 +8,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const sourceByTitle=title=>(data.sources||[]).find(s=>s.title===title);
 function statusLabel(s){return s==="verified"?"規則已核實":s==="verified-partial"?"部分核實":"待確認"}
 function effectiveStatus(s){return admissionYear==="115"?"pending":s}
-function courseStatus(c){return admissionYear==="115"?"115適用性待確認":c.status==="verified"?"規則已核實":"細項待確認"}
+function courseStatus(c){return admissionYear==="115"?"115適用性待確認":c.status==="verified"?"規則已核實":c.group==="當期開課（官方匯入）"?"採計待核實":"細項待確認"}
 function planById(id){return data.requirements.find(p=>p.id===id)}
 function setSelection(type,id){
  if(type==="plan"){selectedPlan=selectedPlan===id?null:id;selectedCourse=null}
@@ -57,7 +57,7 @@ function renderDetail(){
   const official=c.source==="114學年度畢業條件明細表"?sourceByTitle(data.sources[0].title):sourceByTitle(data.sources[1].title);
   host.innerHTML='<div><div class="detail-kicker">SELECTED COURSE</div><h3>'+esc(c.name)+'</h3><span class="status '+(admissionYear==="115"?"pending":c.status==="verified"?"ok":"pending")+'">'+esc(courseStatus(c))+'</span><div class="detail-stats"><div class="detail-stat"><small>類別</small><b>'+esc(c.group)+'</b></div><div class="detail-stat"><small>學分</small><b>'+(c.credits===null?"依實際開課資料":c.credits+" 學分")+'</b></div></div><p>'+esc(c.source||"官方課程規劃")+'。目前顯示的是課程規劃／畢業規定層級，不代表本學期確實開課或保證可選。</p></div><div><b style="font-size:11px">關聯方案</b><div class="related-list">'+related.map(p=>'<div class="related-row"><span>'+esc(p.name)+'</span><span class="status pending">'+(admissionYear==="115"?"待確認":statusLabel(p.status))+'</span></div>').join("")+'</div><div class="detail-links"><a href="'+esc(official?.url||data.sources[0].url)+'" target="_blank" rel="noopener">查看官方依據 ↗</a><a href="'+esc(data.sources[3].url)+'" target="_blank" rel="noopener">查詢當學期實際開課 ↗</a></div></div>';
  }else if(selectedPlan){
-  const p=planById(selectedPlan),items=data.courses.filter(c=>c.plans.includes(p.id));
+  const p=planById(selectedPlan),items=allCourses().filter(c=>c.plans.includes(p.id));
   host.innerHTML='<div><div class="detail-kicker">SELECTED PLAN</div><h3>'+esc(p.name)+'</h3><span class="status '+(admissionYear==="115"?"pending":p.status==="verified"?"ok":"pending")+'">'+(admissionYear==="115"?"115適用性待確認":statusLabel(p.status))+'</span><div class="detail-stats"><div class="detail-stat"><small>規定學分</small><b>'+(p.credits===undefined?"依規定":p.credits+" 學分")+'</b></div><div class="detail-stat"><small>關聯項目</small><b>'+items.length+' 項</b></div></div><p>'+esc(p.description)+'</p></div><div><b style="font-size:11px">亮起的相關課程</b><div class="related-list">'+items.map(c=>'<div class="related-row"><span>'+esc(c.name)+'</span><span class="status '+(c.status==="verified"?"ok":"pending")+'">'+(admissionYear==="115"?"待確認":c.status==="verified"?"已核實":"細項待核")+'</span></div>').join("")+'</div><div class="detail-links"><a href="'+esc(data.sources[0].url)+'" target="_blank" rel="noopener">查看114學年度畢業條件明細表 ↗</a><a href="'+esc(data.sources[1].url)+'" target="_blank" rel="noopener">查看系上課程規劃 ↗</a></div></div>';
  }else{
   host.innerHTML='<div class="detail-empty">點選左側任一學分方案，相關課程就會亮起。<br>也可以直接點選中央任一課程，反向查看它連結到哪些方案。<br><br>這裡會顯示學分、規定、適用年度與官方來源。</div>';
