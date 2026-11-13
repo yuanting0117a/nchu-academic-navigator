@@ -1,7 +1,7 @@
 # 中興大學學業導航系統
 
 Repository: `nchu-academic-navigator`  
-Version: `v1.4.0`
+Version: `v1.4.1`
 
 中興大學全校系所學業導航工具。以目前電機工程學系學籍作為初始起點，並可比較其他系所作為「可能的最終畢業系所」的修課與轉系路徑。
 
@@ -81,3 +81,10 @@ Repository → Settings → Pages → Deploy from a branch → Branch: `main` �
 - 重要限制：目前尚未附上完整 1151 官方匯出資料；需先從官方課程查詢系統匯出各分類 Excel，再匯入頁面。課程清單尚未等於電機系學分採計清單。
 - 1151 官方選課須知再次確認查詢結果可匯出 Excel；官方 PDF 連結及分類清單見 [source-research.md](data/course-catalog/source-research.md)。
 - 新增 GitHub Actions 靜態檔案與 JavaScript 語法檢查工作流程：`.github/workflows/validate.yml`。
+
+
+### v1.4.1 修正與部署
+- 匯入器支援官方查詢表格欄位名稱、含註記的欄名、重複標題列及多工作表 Excel。
+- 讀取 Excel 時使用儲存格顯示值，保留課號前導 0（例如 0001）。
+- 方案選擇會更新目前的待核實提示；課程反查會列出各方案待核實狀態，不會假裝已建立正式採計對照。
+- 新增 GitHub Pages 自動部署工作流程；是否成功上線仍以 Actions 部署結果及網站實際載入為準。
