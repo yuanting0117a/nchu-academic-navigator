@@ -44,7 +44,12 @@ function render(){
    const card=input.closest("[data-ge-method]"),id=card.dataset.geMethod,field=input.dataset.geField;
    const value=input.type==="checkbox"?input.checked:input.type==="number"?n(input.value,field==="approved"?methods.find(m=>m.id===id).cap:100000):input.value;
    save(id,{[field]:value});
-   if(field==="hours"||field==="approved"||field==="huisun")render();
+   if(id==="micro"&&field==="hours"){
+    const calc=card.querySelector(".ge-self-calc b");if(calc)calc.textContent=estimateHours(value)+" 學分";
+   }
+   if(id==="cross"&&(field==="huisun"||field==="approved")){
+    const calc=card.querySelector(".ge-self-calc b");if(calc)calc.textContent=n(get(id).huisun,100000)>=n(get(id).approved,2)?"目前紀錄數符合已登錄學分數":"講座紀錄數尚不足";
+   }
   };
   input.addEventListener("change",handler);
  });
