@@ -91,6 +91,7 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   const generalPlan=elements.planTiles.querySelectorAll("[data-plan]").find(x=>x.dataset.plan==="general");
   generalPlan.click();
   assert(elements.detailBody.innerHTML.includes("人文領域") && elements.detailBody.innerHTML.includes("統合領域至少4學分"), "detailed general education categories should render");
+  requiredPlan.click();
   assert(elements.courseGroups.innerHTML.includes('class="course-tile lit'), "selecting a plan should highlight related courses");
   assert(elements.courseGroups.innerHTML.includes('class="course-tile dim'), "unrelated courses should be dimmed");
 
