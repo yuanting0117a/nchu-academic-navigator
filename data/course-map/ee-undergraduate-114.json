@@ -109,6 +109,12 @@
       "url": "https://www.ee.nchu.edu.tw/Pic/Announcement/16954675000024%281%29.pdf",
       "type": "official-project-guideline",
       "note": "110年1月7日修訂；規範指導教授、兩學期修課、專題報告與成果展示。"
+    },
+    {
+      "title": "115-2學期電機系專題(一)開始申請公告",
+      "url": "https://www.ee.nchu.edu.tw/wb_announcement02.asp?ano=735&cno=13&pageno=1&url=12",
+      "type": "official-project-term-announcement",
+      "note": "2026-08-26更新；僅適用於公告所指115-2學期修讀專題(一)的學生。"
     }
   ],
   "requirements": [
@@ -1435,6 +1441,15 @@
       "至少需有一位指導教授，並經指導教授同意後簽署專題選課申請表。",
       "專題(二)須繳交成果報告，完成壁報展覽或現場展示並口頭說明。"
     ],
-    "nextStep": "先確認指導教授與專題題目，再依系辦公告完成專題選課申請；專題(一)、(二)的實際課號與名稱依當學期公告。"
+    "nextStep": "先確認指導教授與專題題目，再依系辦公告完成專題選課申請；專題(一)、(二)的實際課號與名稱依當學期公告。",
+    "currentAnnouncement": {
+      "term": "115-2",
+      "published": "2026-08-26",
+      "applicationDeadline": "115/11/27",
+      "resultAnnouncementDeadline": "116/1/22",
+      "courseSelectionWindow": "116/2/15～116/2/19",
+      "note": "此為115-2學期專題(一)公告時程，僅適用於該學期及公告所指年級學生；其他入學年度／年級須以屆時最新公告為準。",
+      "source": "https://www.ee.nchu.edu.tw/wb_announcement02.asp?ano=735&cno=13&pageno=1&url=12"
+    }
   }
 }
