@@ -71,3 +71,19 @@
 .course-period,.course-credit-note{padding:8px 10px;margin:8px 0;border-radius:8px;background:#f2f7f4;font-size:11px;line-height:1.55;color:#456052}
 .course-credit-note{background:#fff8e9;color:#765d31}
 @media(max-width:620px){.ge-credit-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.ge-subcategories{grid-template-columns:1fr}}
+
+/* v2.4.1 interactive general-education self-learning tracker */
+.ge-self-learning{margin:18px 0 22px;padding:20px;border:1px solid #dce7e1;border-radius:18px;background:#fff}
+.ge-self-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:15px}.ge-self-heading h2{margin:5px 0;font-size:21px}.ge-self-heading p{margin:0;color:#65766f;font-size:12px;line-height:1.6}
+.ge-self-summary{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:15px 0;padding:12px;border-radius:11px;background:#f2f7f4}.ge-self-stat{display:flex;align-items:baseline;gap:7px}.ge-self-stat b{font-size:22px;color:#245b40}.ge-self-stat span,.ge-self-summary p{font-size:10px;color:#62736a}.ge-self-summary p{margin:0 0 0 auto}
+.ge-self-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.ge-self-card{border:1px solid #dfe8e2;border-radius:11px;background:#fff;overflow:hidden}.ge-self-card[open]{border-color:#9bbca7;background:#fcfefc}
+.ge-self-card summary{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px;cursor:pointer;list-style:none}.ge-self-card summary::-webkit-details-marker{display:none}
+.ge-self-title{display:grid;gap:4px}.ge-self-title b{font-size:13px;color:#263e32}.ge-self-title small{font-size:10px;color:#688074}
+.ge-self-approved{font-size:10px;font-weight:800;color:#286344;background:#eaf5ee;padding:6px 8px;border-radius:7px;white-space:nowrap}
+.ge-self-content{padding:0 13px 13px}.ge-self-content>p{font-size:11px;line-height:1.7;color:#4e6257;margin:0 0 9px}
+.ge-self-how{padding:9px 10px;background:#f2f7f4;border-radius:8px;font-size:10px;line-height:1.6;color:#54675c}.ge-self-how b{display:block;color:#315b45;margin-bottom:3px}
+.ge-self-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:11px}.ge-self-fields label{display:grid;gap:5px;font-size:10px;font-weight:750;color:#52645a}.ge-self-fields input:not([type=checkbox]),.ge-self-fields select,.ge-self-fields textarea{width:100%;min-height:36px;border:1px solid #dce5df;border-radius:8px;padding:7px 9px;background:white;color:#263a30;font:inherit;font-size:11px}.ge-self-fields textarea{resize:vertical}.ge-self-fields .wide{grid-column:1/-1}.ge-self-fields .ge-self-check{display:flex;align-items:center;gap:7px;padding:8px;border:1px solid #e5ece7;border-radius:8px}.ge-self-fields input[type=checkbox]{width:16px;height:16px;accent-color:#246b49}
+.ge-self-calc{display:flex;flex-direction:column;justify-content:center;gap:3px;padding:8px 10px;border-radius:8px;background:#fff7e8;border:1px solid #efe0bf}.ge-self-calc b{font-size:15px;color:#795b22}.ge-self-calc span{font-size:9px;line-height:1.5;color:#806d4d}
+.ge-self-footnote{margin-top:12px;padding:10px;border-radius:8px;background:#fff8e9;color:#725e37;font-size:10px;line-height:1.65}
+@media(max-width:750px){.ge-self-cards{grid-template-columns:1fr}.ge-self-heading{display:block}.ge-self-heading button{margin-top:10px}.ge-self-summary p{flex-basis:100%;margin:0}.ge-self-fields{grid-template-columns:1fr}.ge-self-fields .wide{grid-column:auto}}
