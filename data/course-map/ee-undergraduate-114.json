@@ -993,6 +993,414 @@
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
+    },
+    {
+      "id": "project-option-1",
+      "name": "信號處理專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-2",
+      "name": "信號處理專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-3",
+      "name": "通信專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-4",
+      "name": "通信專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-5",
+      "name": "多媒體通訊專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-6",
+      "name": "多媒體通訊專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-7",
+      "name": "資訊專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-8",
+      "name": "資訊專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-9",
+      "name": "微處理機專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-10",
+      "name": "微處理機專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-11",
+      "name": "網路專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-12",
+      "name": "網路專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-13",
+      "name": "微電子專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-14",
+      "name": "微電子專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-15",
+      "name": "影像顯示器專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-16",
+      "name": "影像顯示器專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-17",
+      "name": "智慧型系統專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-18",
+      "name": "智慧型系統專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-19",
+      "name": "控制專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-20",
+      "name": "控制專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-21",
+      "name": "系統整合專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-22",
+      "name": "系統整合專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-23",
+      "name": "數位電路專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-24",
+      "name": "數位電路專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-25",
+      "name": "微波專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-26",
+      "name": "微波專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-27",
+      "name": "電子電路專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-28",
+      "name": "電子電路專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-29",
+      "name": "類比電路專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-30",
+      "name": "類比電路專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-31",
+      "name": "超大型積體電路設計專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-32",
+      "name": "超大型積體電路設計專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-33",
+      "name": "系統晶片專題(一)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+    },
+    {
+      "id": "project-option-34",
+      "name": "系統晶片專題(二)",
+      "credits": null,
+      "group": "專題領域選項",
+      "plans": [
+        "project",
+        "ee-double"
+      ],
+      "status": "verified-partial",
+      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
     }
   ],
   "generalEducation": [
@@ -1019,6 +1427,7 @@
     "畢業專題4學分在55學分必修與27學分選修中的歸類待系辦確認，不重複加總。",
     "目前資料不是全校當學期實際開課清單；開課學期、課號、教師及選課限制需由官方課程查詢系統匯入。",
     "電機系輔系與雙主修辦法目前可找到109.08.19修訂版本，114學年度畢業條件表仍引用其附表；最新適用性需系辦確認。",
-    "電機系跨域專長已由114學年度畢業條件表確認有開設，但個別課程規劃表尚未整理，因此不自動關聯課程。"
+    "電機系跨域專長已由114學年度畢業條件表確認有開設，但個別課程規劃表尚未整理，因此不自動關聯課程。",
+    "系網課程地圖另列各學程專題題型（例如資訊專題、控制專題等）；這些是官方規劃的專題領域選項，實際開課名稱、選課代碼與分派方式仍依當學期系辦公告。"
   ]
 }
