@@ -140,6 +140,32 @@
       "title": "國立中興大學院學士學位設置準則",
       "url": "https://oaa.nchu.edu.tw/upfile/file/bab95581adfc529526a5795000f7858b29ac3f12.pdf",
       "type": "official-college-bachelor"
+    },
+    {
+      "title": "國立中興大學通識課程修習須知（114.06.12修正）",
+      "url": "https://oaa.nchu.edu.tw/_run.php?file=82f334352c9d1b109c01bb6b36e9f718dc75f811.pdf&name=L6-01%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E9%80%9A%E8%AD%98%E8%AA%B2%E7%A8%8B%E4%BF%AE%E7%BF%92%E9%A0%88%E7%9F%A5%EF%BC%881140612%EF%BC%89.pdf&work=down",
+      "type": "official-general-education-regulation",
+      "evidence": [
+        "114學年度起入學：通識28學分",
+        "核心素養至少3、語文素養至少8、領域素養至少10",
+        "本國語文兩門各2學分；外國語文至少4至多6學分",
+        "人文社會自然各至少一門，合計6；統合領域至少4"
+      ]
+    },
+    {
+      "title": "國立中興大學通識教育課程實施要點（114.10.22）",
+      "url": "https://oaa.nchu.edu.tw/_run.php?file=335ffec7df3ec3a515154b540a01156357fd49e8.pdf&name=L6-04%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E9%80%9A%E8%AD%98%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E5%AF%A6%E6%96%BD%E8%A6%81%E9%BB%9E%EF%BC%881141022%EF%BC%89.pdf&work=down",
+      "type": "official-general-education-framework",
+      "evidence": [
+        "人文5學群、社會5學群、自然5學群",
+        "統合領域課程類型"
+      ]
+    },
+    {
+      "title": "中興大學博雅通識課綱總覽",
+      "url": "https://oaa.nchu.edu.tw/zh-tw/ge-courses-CI",
+      "type": "official-general-education-course-catalog",
+      "note": "課程名稱與學分數；實際是否於特定學期開課，以當期通識查詢為準。"
     }
   ],
   "requirements": [
@@ -274,7 +300,8 @@
         "微積分 I"
       ],
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大一上"
     },
     {
       "id": "req-1",
@@ -293,7 +320,8 @@
         "微積分 II"
       ],
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大一下"
     },
     {
       "id": "req-2",
@@ -311,7 +339,9 @@
         "普通物理學"
       ],
       "courseUnit": "全年課程",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大一上、大一下（全年）",
+      "creditNote": "全年合計6學分；官方課程規劃未提供上下學期各自拆分學分，故不自行拆成3+3。"
     },
     {
       "id": "req-3",
@@ -330,7 +360,9 @@
         "普通物理實驗"
       ],
       "courseUnit": "全年課程",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大一上、大一下（全年）",
+      "creditNote": "全年合計2學分；官方課程規劃未提供上下學期各自拆分學分，故不自行拆成1+1。"
     },
     {
       "id": "req-4",
@@ -345,7 +377,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大一上"
     },
     {
       "id": "req-5",
@@ -360,7 +393,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大一下"
     },
     {
       "id": "req-6",
@@ -375,7 +409,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大一上"
     },
     {
       "id": "req-7",
@@ -390,7 +425,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大一下"
     },
     {
       "id": "req-8",
@@ -405,7 +441,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大二上"
     },
     {
       "id": "req-9",
@@ -420,7 +457,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大二上"
     },
     {
       "id": "req-10",
@@ -435,7 +473,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大二下"
     },
     {
       "id": "req-11",
@@ -450,7 +489,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大三上"
     },
     {
       "id": "req-12",
@@ -465,7 +505,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大三下"
     },
     {
       "id": "req-13",
@@ -480,7 +521,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大二上"
     },
     {
       "id": "req-14",
@@ -495,7 +537,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大二下"
     },
     {
       "id": "req-15",
@@ -510,7 +553,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大二上"
     },
     {
       "id": "req-16",
@@ -525,7 +569,8 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大二下"
     },
     {
       "id": "req-17",
@@ -540,7 +585,9 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大二上",
+      "creditNote": "各自為獨立半學年課程，各1學分，不合併。"
     },
     {
       "id": "req-18",
@@ -555,7 +602,9 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大二下",
+      "creditNote": "各自為獨立半學年課程，各1學分，不合併。"
     },
     {
       "id": "req-19",
@@ -570,7 +619,9 @@
       "status": "verified",
       "source": "114學年度畢業條件明細表",
       "courseUnit": "獨立科目",
-      "eligibility": "本系電機學士班必修；初選依班級／系級限制"
+      "eligibility": "本系電機學士班必修；初選依班級／系級限制",
+      "recommendedPeriod": "大三上",
+      "creditNote": "各自為獨立半學年課程，各1學分，不合併。"
     },
     {
       "id": "prog-0",
@@ -592,7 +643,8 @@
         "訊號與系統"
       ],
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-1",
@@ -611,7 +663,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-2",
@@ -634,7 +687,8 @@
         "數位信號處理"
       ],
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-3",
@@ -653,7 +707,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-4",
@@ -672,7 +727,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-5",
@@ -691,7 +747,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-6",
@@ -713,7 +770,8 @@
         "電機機械學"
       ],
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-7",
@@ -732,7 +790,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-8",
@@ -751,7 +810,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-9",
@@ -770,7 +830,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-10",
@@ -789,7 +850,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-11",
@@ -808,7 +870,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-12",
@@ -827,7 +890,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-13",
@@ -846,7 +910,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-14",
@@ -865,7 +930,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-15",
@@ -884,7 +950,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-16",
@@ -903,7 +970,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "prog-17",
@@ -922,7 +990,8 @@
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "lab-0",
@@ -941,7 +1010,8 @@
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹",
       "courseUnit": "獨立實驗科目",
-      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定"
+      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "lab-1",
@@ -960,7 +1030,8 @@
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹",
       "courseUnit": "獨立實驗科目",
-      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定"
+      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "lab-2",
@@ -979,7 +1050,8 @@
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹",
       "courseUnit": "獨立實驗科目",
-      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定"
+      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "lab-3",
@@ -998,7 +1070,8 @@
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹",
       "courseUnit": "獨立實驗科目",
-      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定"
+      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "lab-4",
@@ -1017,7 +1090,8 @@
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹",
       "courseUnit": "獨立實驗科目",
-      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定"
+      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "lab-5",
@@ -1036,7 +1110,8 @@
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹",
       "courseUnit": "獨立實驗科目",
-      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定"
+      "eligibility": "本系學程實驗候選；實際修課資格依當期開課設定",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "project-1",
@@ -1079,7 +1154,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-1",
@@ -1094,7 +1170,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-2",
@@ -1109,7 +1186,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-3",
@@ -1124,7 +1202,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-4",
@@ -1139,7 +1218,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-5",
@@ -1154,7 +1234,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-6",
@@ -1169,7 +1250,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-7",
@@ -1184,7 +1266,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-8",
@@ -1199,7 +1282,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-9",
@@ -1214,7 +1298,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-10",
@@ -1229,7 +1314,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-11",
@@ -1244,7 +1330,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-12",
@@ -1259,7 +1346,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-13",
@@ -1274,7 +1362,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-14",
@@ -1289,7 +1378,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-15",
@@ -1304,7 +1394,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-16",
@@ -1319,7 +1410,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-17",
@@ -1334,7 +1426,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "elective-18",
@@ -1349,7 +1442,8 @@
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）",
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     },
     {
       "id": "project-example-3450",
@@ -1419,29 +1513,133 @@
         "訊號與系統"
       ],
       "courseUnit": "獨立科目",
-      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准"
+      "eligibility": "本系專業選修／學程候選；外系選課及抵認須另行核准",
+      "creditNote": "學程課程規劃頁未標示單科學分；以實際開課學期的官方課程查詢資料為準，未取得課號／開課資料前不推估。"
     }
   ],
   "generalEducation": [
     {
       "name": "核心素養",
       "credits": 3,
-      "detail": "10類至少3學分；資訊素養：程式設計與AI應用免修，修習不得採計。"
+      "minimum": 3,
+      "detail": "至少3學分。電機系畢業條件明細表註明免修「資訊素養：程式設計與AI應用」；若仍修習該課，不得採計為通識畢業學分。其餘核心素養課程依通識課程分類及當期開課認定。",
+      "subcategories": [
+        {
+          "name": "資訊素養：程式設計與AI應用",
+          "credits": 1,
+          "requiredFor": "一般新生必修；電機系依系畢業條件免修",
+          "counting": "電機系學生修習不得採計通識畢業學分"
+        },
+        {
+          "name": "其他核心素養課程",
+          "credits": null,
+          "requiredFor": "補足核心素養至少3學分",
+          "counting": "依通識選課系統標示核心素養分類"
+        }
+      ]
     },
     {
       "name": "語文素養",
       "credits": 10,
-      "detail": "本國語文4學分（敘事表達：語文素養2、語文應用2）；外國語文6學分（英語溝通與表達、學術英文聽讀、學術英文說寫各2）。"
+      "minimum": 8,
+      "detail": "電機系要求語文素養至少10學分：本國語文4學分＋外國語文6學分。校級規定最低8學分；本系明細表較高要求優先。",
+      "subcategories": [
+        {
+          "name": "敘事表達：語文素養",
+          "credits": 2,
+          "requiredFor": "必修",
+          "counting": "本國語文"
+        },
+        {
+          "name": "敘事表達：語文應用",
+          "credits": 2,
+          "requiredFor": "必修",
+          "counting": "本國語文"
+        },
+        {
+          "name": "英語溝通與表達",
+          "credits": 2,
+          "requiredFor": "電機系外國語文要求",
+          "counting": "外國語文；通常上學期"
+        },
+        {
+          "name": "學術英文聽讀",
+          "credits": 2,
+          "requiredFor": "電機系外國語文要求",
+          "counting": "外國語文；通常下學期"
+        },
+        {
+          "name": "學術英文說寫",
+          "credits": 2,
+          "requiredFor": "電機系外國語文要求",
+          "counting": "外國語文；大二英文課程"
+        }
+      ]
     },
     {
       "name": "領域素養",
       "credits": 10,
-      "detail": "人文、社會、自然各至少1門，合計至少6學分；統合領域至少4學分。國防教育及工程科技學群課程各至多採計1門。"
+      "minimum": 10,
+      "detail": "至少10學分：人文、社會、自然三領域各至少1門，合計至少6學分；統合領域至少4學分。",
+      "subcategories": [
+        {
+          "name": "人文領域",
+          "credits": null,
+          "requiredFor": "至少1門，與社會、自然合計至少6學分",
+          "groups": [
+            "文學",
+            "歷史",
+            "哲學",
+            "藝術",
+            "文化"
+          ]
+        },
+        {
+          "name": "社會領域",
+          "credits": null,
+          "requiredFor": "至少1門，與人文、自然合計至少6學分",
+          "groups": [
+            "公民與社會",
+            "法律與政治",
+            "心理與教育",
+            "資訊與傳播",
+            "商業與管理"
+          ]
+        },
+        {
+          "name": "自然領域",
+          "credits": null,
+          "requiredFor": "至少1門，與人文、社會合計至少6學分",
+          "groups": [
+            "生命科學",
+            "環境科學",
+            "物質科學",
+            "數學統計",
+            "工程科技"
+          ]
+        },
+        {
+          "name": "統合領域",
+          "credits": 4,
+          "requiredFor": "至少4學分",
+          "groups": [
+            "跨域自主學習",
+            "微型課程",
+            "專業實作類課程",
+            "興通識online",
+            "跨院修課",
+            "通識深耕課程",
+            "通識教育中心認列MOOCs"
+          ]
+        }
+      ]
     },
     {
       "name": "通識總額補足",
       "credits": 5,
-      "detail": "上述三項最低要求合計23學分；通識總額須達28學分，尚須依選課系統分類補足至少5學分。此為最低額度差額提示，不代表指定課程清單。"
+      "minimum": 5,
+      "detail": "依電機系較高語文要求計算，核心3＋語文10＋領域10＝23學分，距離通識總額28學分尚需至少5學分。應依選課系統實際分類補足，不是獨立學群。",
+      "subcategories": []
     }
   ],
   "limitations": [
@@ -1637,19 +1835,6 @@
             "sourceUrl": "https://www.ee.nchu.edu.tw/Pic/DocRegulation/17466153950240%281%29.pdf"
           },
           {
-            "id": "transfer",
-            "name": "轉系／轉入其他系",
-            "award": "轉入系學士學位",
-            "eligibility": "依學校轉系規定及目標系當年度名額、資格與審查；修課相符不等於取得轉入學籍。",
-            "requirements": [
-              "申請與審查依當年度公告",
-              "核准後依轉入系適用年級／年度規定重新檢查",
-              "原修課程須逐科申請抵免或認列"
-            ],
-            "status": "校級流程有資料；各目標系條件逐系補齊中",
-            "sourceUrl": "https://oaa.nchu.edu.tw/zh-tw/rule"
-          },
-          {
             "id": "double-major",
             "name": "雙主修",
             "award": "主系＋第二主修；符合規定時可能申請以加修系畢業",
@@ -1806,6 +1991,62 @@
           }
         ]
       }
+    ]
+  },
+  "generalEducationRules": {
+    "admissionYear": "114學年度起入學",
+    "totalCredits": 28,
+    "coreMinimum": 3,
+    "languageMinimumSchool": 8,
+    "languageMinimumDepartment": 10,
+    "domainMinimum": 10,
+    "domainRules": [
+      "人文、社會、自然各至少1門，三領域合計至少6學分",
+      "統合領域至少4學分",
+      "國防教育類至多採計1門",
+      "工程科技為電機系所屬學群，至多採計1門通識畢業學分",
+      "統合領域跨院修課須修讀所屬學院以外大學部課程，且不得與本系必修名稱相同或相似；採計由系所認定"
+    ],
+    "humanitiesGroups": [
+      "文學",
+      "歷史",
+      "哲學",
+      "藝術",
+      "文化"
+    ],
+    "socialGroups": [
+      "公民與社會",
+      "法律與政治",
+      "心理與教育",
+      "資訊與傳播",
+      "商業與管理"
+    ],
+    "naturalGroups": [
+      "生命科學",
+      "環境科學",
+      "物質科學",
+      "數學統計",
+      "工程科技"
+    ],
+    "integratedTypes": [
+      "跨域自主學習",
+      "微型課程",
+      "專業實作類課程",
+      "興通識online課程",
+      "跨院修課",
+      "通識深耕課程",
+      "通識教育中心認列MOOCs課程"
+    ],
+    "notes": [
+      "每學期通識原則不超過4門；資訊素養、語文素養及統合領域台下指導課程不在此限。",
+      "暑期至他校修習通識課程至多採計4學分。",
+      "超修通識課不得轉採外系學分。",
+      "外系／跨院課程能否採計統合領域，仍須符合校規並由系所認定。"
+    ],
+    "sources": [
+      "https://oaa.nchu.edu.tw/_run.php?file=82f334352c9d1b109c01bb6b36e9f718dc75f811.pdf&name=L6-01%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E9%80%9A%E8%AD%98%E8%AA%B2%E7%A8%8B%E4%BF%AE%E7%BF%92%E9%A0%88%E7%9F%A5%EF%BC%881140612%EF%BC%89.pdf&work=down",
+      "https://oaa.nchu.edu.tw/_run.php?file=335ffec7df3ec3a515154b540a01156357fd49e8.pdf&name=L6-04%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E9%80%9A%E8%AD%98%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E5%AF%A6%E6%96%BD%E8%A6%81%E9%BB%9E%EF%BC%881141022%EF%BC%89.pdf&work=down",
+      "https://oaa.nchu.edu.tw/zh-tw/ge-courses-CI"
     ]
   }
 }
