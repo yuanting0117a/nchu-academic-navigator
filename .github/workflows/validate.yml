@@ -24,6 +24,8 @@ jobs:
           node --check src/app.js
           node --check src/rules.js
           node --check src/course-catalog.js
+          node --check src/course-map.js
+          node -e "JSON.parse(require('fs').readFileSync('data/course-map/ee-undergraduate-114.json','utf8'))"
       - name: Check required static files
         run: |
           test -f index.html
@@ -32,3 +34,5 @@ jobs:
           test -f styles-catalog.css
           test -f styles-header.css
           test -f data/course-catalog/ee-course-mapping.json
+          test -f styles-course-map.css
+          test -f data/course-map/ee-undergraduate-114.json
