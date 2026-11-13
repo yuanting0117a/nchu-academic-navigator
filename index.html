@@ -1,10 +1,28 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173b32"><meta name="description" content="中興大學學業導航系統"><title>中興大學學業導航系統</title><link rel="icon" href="assets/favicon.svg"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css"></head>
-<body><header><div class="brand"><b>興</b><div><strong>中興大學學業導航系統</strong><small>NCHU Academic Navigator　v0.1.0</small></div></div><button id="export">匯出資料</button></header>
-<main><section class="hero"><div><small>YOUR ACADEMIC ROADMAP</small><h1>把修課規定，變成看得懂的路線圖。</h1><p>整理已修、正在修、預計修習的課程，逐步檢查畢業門檻、先修條件與跨域修讀資格。</p></div><aside>● 本機資料模式<br><small>資料儲存在目前裝置</small></aside></section>
-<section class="panel"><div class="heading"><div><small>STUDENT PROFILE</small><h2>我的學籍資料</h2></div><span>可隨時修改</span></div><div class="grid four"><label>入學學年度<select id="year"><option>112</option><option>113</option><option>114</option><option selected>115</option><option>116</option></select></label><label>學制<select id="level"><option value="bachelor">學士班</option><option value="master">碩士班（建置中）</option><option value="doctoral">博士班（建置中）</option></select></label><label>學院<select id="college"><option value="">選擇學院</option></select></label><label>系所<select id="department" disabled><option>請先選擇學院</option></select></label></div><p class="hint">正式規定必須依入學年度與系所逐項核實，尚未核實的資料不會被當成已符合。</p></section>
-<div class="grid two"><section class="panel"><div class="heading"><div><small>COURSE RECORD</small><h2>我的修課紀錄</h2></div><span id="count">0 門課</span></div><form id="courseForm"><label>課程名稱<input id="courseName" required placeholder="例如：微積分（一）"></label><div class="grid two"><label>學分<input id="credits" type="number" min="0" max="20" step=".5" value="3"></label><label>狀態<select id="status"><option value="completed">已修畢</option><option value="inProgress">修課中</option><option value="planned">預計修習</option></select></label></div><label>課程類別<select id="category"><option value="unknown">尚未分類</option><option value="required">系必修</option><option value="elective">系選修</option><option value="general">通識</option><option value="other">其他</option></select></label><button class="primary">＋ 新增課程</button></form><div id="courses"></div></section>
-<section class="panel"><div class="heading"><div><small>REQUIREMENT CHECK</small><h2>學業條件總覽</h2></div><span class="warning">示範規則</span></div><div class="summary"><div class="ring">—</div><div><b>正式系所規則尚未載入</b><p>載入核實資料後，這裡會顯示條件達成狀況。</p></div></div><div id="requirements"></div></section></div>
-<section class="panel"><div class="heading"><div><small>INTERACTIVE FLOWCHART</small><h2>我的學業路線圖</h2></div><span>點選節點查看說明</span></div><div id="flow" class="flow"></div><article id="detail" class="detail"><b>選擇一個流程節點</b><p>查看條件說明、目前狀態與下一步行動。</p></article></section>
-<section class="panel"><small>NEXT ACTIONS</small><h2>接下來可以做什麼？</h2><div class="grid three"><article><b>01 確認學籍</b><p>不同入學年度與系所可能適用不同版本規定。</p></article><article><b>02 整理修課紀錄</b><p>先手動新增，後續加入 CSV／成績單匯入。</p></article><article><b>03 檢查跨域路徑</b><p>輔系、雙主修及學程另檢查資格與申請流程。</p></article></div></section><footer>本工具僅供學業規劃參考，不取代校方正式審查。正式規則須附官方來源及適用年度。</footer></main>
-<script src="src/data.js"></script><script src="src/rules.js"></script><script src="src/app.js"></script></body></html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173b32"><meta name="description" content="中興大學學業導航互動判定機">
+<title>中興大學學業導航系統</title>
+<link rel="icon" href="assets/favicon.svg"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="brand"><b>興</b><div><strong>中興大學學業導航</strong><small>NCHU ACADEMIC NAVIGATOR　v1.3.0</small></div></div><button id="export" class="quiet">匯出紀錄</button></header>
+<main>
+<section class="intro"><div><span class="eyebrow">INTERACTIVE ELIGIBILITY MACHINE</span><h1>學業導航判定機</h1><p>像操作密碼機一樣，選擇條件，系統逐步幫你判斷下一步。</p></div><div class="device-mark"><span>READY</span><b>● ● ●</b><small>LOCAL MODE</small></div></section>
+<section class="machine">
+<div class="machine-top"><div><small>GUIDED CHECK</small><h2 id="stepTitle">先確認目前學籍</h2></div><div class="step-count" id="stepCount">01 / 04</div></div>
+<div class="progress"><i id="progressBar"></i></div>
+<div id="question" class="question"></div>
+<div id="keypad" class="keypad"></div>
+<div class="machine-actions"><button id="back" class="secondary" disabled>← 上一步</button><button id="next" class="primary" disabled>下一步 →</button></div>
+</section>
+<section id="result" class="result hidden"></section>
+<section class="below">
+<div class="below-card"><span class="eyebrow">HOW IT WORKS</span><h3>不是猜答案，是逐項核對</h3><p>每個判定都會區分「已核實」、「待確認」及「不符合」。沒有官方依據的條件，不會被當成已通過。</p></div>
+<div class="below-card"><span class="eyebrow">DATA STATUS</span><h3>目前已建檔</h3><p>電機系：114學年度起入學資料；資工系：115學年度起入學資料。其他系所持續整理中。</p><a href="https://github.com/yuanting0117a/nchu-academic-navigator/tree/main/data/departments">查看系所規則資料 ↗</a></div>
+</section>
+<footer>本工具提供修課與資格規劃參考，不取代校方正式審查。跨系採計、抵免及轉系資格仍以校方核准為準。</footer>
+</main>
+<script src="src/data.js"></script><script src="src/rules.js"></script><script src="src/app.js"></script>
+</body></html>
