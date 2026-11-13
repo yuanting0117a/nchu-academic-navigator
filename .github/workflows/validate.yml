@@ -41,3 +41,4 @@ jobs:
           test -f src/course-import.js
           test -f data/course-map/ee-undergraduate-114.json
           test -f scripts/validate-course-map.js
+          test -f .github/workflows/deploy-pages.yml
