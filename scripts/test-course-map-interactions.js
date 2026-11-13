@@ -103,6 +103,9 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   elements.searchCourse.dispatch("input");
   assert(elements.courseCount.textContent === "20 / 69 項", "required filter should show 20 courses");
 
+  elements.searchCourse.value = "";
+  elements.searchCourse.dispatch("input");
+  filters.find(x => x.dataset.filter === "all").click();
   const addButtons = elements.courseGroups.querySelectorAll("[data-toggle-course]");
   addButtons.find(x => x.dataset.toggleCourse === "req-0").click();
   addButtons.find(x => x.dataset.toggleCourse === "req-1").click();
