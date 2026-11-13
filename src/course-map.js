@@ -11,7 +11,7 @@ try{imported=JSON.parse(localStorage.getItem("nchu-course-map-imports-v1")||"[]"
 function allCourses(){return (data?.courses||[]).concat(imported)}
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const sourceByTitle=title=>(data.sources||[]).find(s=>s.title===title);
-function eligibilityLabel(c){if(c.group==="當期開課（官方匯入）"){const dept=c.dept||c.department||"";return dept.includes("電機")?"本系當期開課 · 採計待核":"外系／全校課程 · 選課資格與採計待核";}return c.eligibility||"依開課單位及當期選課限制確認";}
+function eligibilityLabel(c){if(c.group==="當期開課（官方匯入）"){const dept=c.dept||c.department||"";if(dept.includes("電機"))return "本系當期開課 · 依班級／選課階段確認";if(c.eligibilityStatus==="has-external-quota")return "外系名額 "+c.externalSeats+" · 仍須核對餘額與選課限制";if(c.eligibilityStatus==="no-external-quota")return "未配置外系名額 · 不保證可加選";return "外系／全校課程 · 外系名額未提供，資格待查";}return c.eligibility||"依開課單位及當期選課限制確認";}
 function statusLabel(s){return s==="verified"?"規則已核實":s==="verified-partial"?"部分核實":"待確認"}
 function effectiveStatus(s){return admissionYear==="115"?"pending":s}
 function courseStatus(c){return admissionYear==="115"?"115適用性待確認":c.status==="verified"?"規則已核實":c.group==="當期開課（官方匯入）"?"採計待核實":"細項待確認"}
@@ -34,7 +34,7 @@ function renderPlans(){
 function courseVisible(c){
  const q=query.trim().toLowerCase();
  const text=(c.name+" "+c.group+" "+(c.source||"")+" "+(c.courseNo||"")+" "+(c.dept||"")+" "+(c.teacher||"")+" "+(c.aliases||[]).join(" ")+" "+(c.categoryLabel||"")+" "+(c.requiredType||"")+" "+(c.section||"")).toLowerCase();
- const typeOk=filter==="all"||(filter==="required"&&c.group==="專業必修")||(filter==="program"&&c.group.includes("學程"))||(filter==="lab"&&c.group==="專業實驗")||(filter==="project"&&c.group.includes("畢業專題"))||(filter==="external"&&c.group==="當期開課（官方匯入）");
+ const typeOk=filter==="all"||(filter==="required"&&c.group==="專業必修")||(filter==="program"&&c.group.includes("學程"))||(filter==="lab"&&c.group==="專業實驗")||(filter==="project"&&c.group.includes("畢業專題"))||(filter==="external"&&c.group==="當期開課（官方匯入）"&&!(c.dept||"").includes("電機"));
  return typeOk&&(!q||text.includes(q));
 }
 function renderCourses(){
@@ -52,7 +52,7 @@ function renderCourses(){
    const mine=myCourses.includes(c.id);
    const related=selectedPlan&&c.plans.includes(selectedPlan);
    const dim=selectedPlan&&!related;
-   return '<div class="course-card '+(mine?"in-my-courses":"")+'"><button class="course-tile '+(selected?"active ":"")+(related?"lit ":"")+(dim?"dim":"")+(mine?" mine ":"")+'" data-course="'+esc(c.id)+'"><span class="course-name">'+esc(c.name)+'</span><span class="course-meta"><small>'+(c.credits===null?"學分依開課資料":c.credits+" 學分")+'</small><span class="tiny-status">'+(c.categoryLabel?esc(c.categoryLabel)+" · ":"")+(admissionYear==="115"?"年度待確認":c.status==="verified"?"已核實":c.group==="當期開課（官方匯入）"?"採計待核":"細項待核")+'</span></span></button><button type="button" class="course-add '+(mine?"added":"")+'" data-toggle-course="'+esc(c.id)+'" aria-pressed="'+mine+'">'+(mine?"✓ 已加入我的修課":"＋ 加入修課規劃")+'</button></div>'
+   return '<div class="course-card '+(mine?"in-my-courses":"")+'"><button class="course-tile '+(selected?"active ":"")+(related?"lit ":"")+(dim?"dim":"")+(mine?" mine ":"")+'" data-course="'+esc(c.id)+'"><span class="course-name">'+esc(c.name)+'</span><span class="course-eligibility">'+esc(eligibilityLabel(c))+'</span><span class="course-meta"><small>'+(c.credits===null?"學分依開課資料":c.credits+" 學分")+'</small><span class="tiny-status">'+(c.categoryLabel?esc(c.categoryLabel)+" · ":"")+(admissionYear==="115"?"年度待確認":c.status==="verified"?"已核實":c.group==="當期開課（官方匯入）"?"採計待核":"細項待核")+'</span></span></button><button type="button" class="course-add '+(mine?"added":"")+'" data-toggle-course="'+esc(c.id)+'" aria-pressed="'+mine+'">'+(mine?"✓ 已加入我的修課":"＋ 加入修課規劃")+'</button></div>'
   }).join("")+'</div></section>'
  }).join("");
  host.querySelectorAll("[data-course]").forEach(b=>b.addEventListener("click",()=>setSelection("course",b.dataset.course)));
