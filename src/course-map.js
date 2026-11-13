@@ -79,16 +79,16 @@ function renderCourses(){
 function renderGeneralEducationCourses(){
  const host=$("geCourseGroups");if(!host)return;
  const all=imported.filter(c=>c.category==="general");
- const categories=[...new Set(all.map(c=>c.courseType||c.categoryLabel||"通識類別待確認"))].sort((a,b)=>a.localeCompare(b,"zh-Hant"));
+ const categories=[...new Set(all.map(c=>c.courseType||"通識類別待確認"))].sort((a,b)=>a.localeCompare(b,"zh-Hant"));
  const select=$("geCategoryFilter");
  if(select){const current=geCategoryFilter;select.innerHTML='<option value="">全部通識類別</option>'+categories.map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join("");select.value=categories.includes(current)?current:"";geCategoryFilter=select.value;}
  const q=query.trim().toLowerCase();
- const visible=all.filter(c=>(!geCategoryFilter||(c.courseType||c.categoryLabel||"通識類別待確認")===geCategoryFilter)&&(!q||(c.name+" "+c.courseNo+" "+(c.courseType||"")+" "+(c.dept||"")+" "+(c.teacher||"")).toLowerCase().includes(q)));
+ const visible=all.filter(c=>(!geCategoryFilter||(c.courseType||"通識類別待確認")===geCategoryFilter)&&(!q||(c.name+" "+c.courseNo+" "+(c.courseType||"")+" "+(c.dept||"")+" "+(c.teacher||"")).toLowerCase().includes(q)));
  $("geCourseCount").textContent=visible.length+" / "+all.length+" 門";
  if(!all.length){host.innerHTML='<div class="empty-state">目前尚未匯入通識課程。請在下方選擇「通識課程」，匯入官方通識查詢匯出的 Excel／CSV；通識清單會與非通識課程分開保存及呈現。</div>';return;}
  if(!visible.length){host.innerHTML='<div class="empty-state">沒有符合搜尋／類別條件的通識課程。</div>';return;}
- const grouped=[...new Set(visible.map(c=>c.courseType||c.categoryLabel||"通識類別待確認"))];
- host.innerHTML=grouped.map(g=>{const items=visible.filter(c=>(c.courseType||c.categoryLabel||"通識類別待確認")===g);return '<section class="ge-course-group"><div class="group-head"><h3>'+esc(g)+'</h3><small>'+items.length+' 門</small></div><div class="ge-course-tiles">'+items.map(c=>{const mine=myCourses.includes(c.id);return '<article class="ge-course-card"><div><b>'+esc(c.name)+'</b><small>'+(c.credits===null?"學分待確認":c.credits+" 學分")+' · '+esc(c.courseNo||"無課號")+'</small><small>'+esc(c.dept||"開課單位未提供")+(c.term?" · "+esc(c.term):"")+'</small></div><button type="button" class="course-add '+(mine?"added":"")+'" data-ge-toggle-course="'+esc(c.id)+'" aria-pressed="'+mine+'">'+(mine?"✓ 已加入我的修課":"＋ 加入修課規劃")+'</button></article>';}).join("")+'</div></section>';}).join("");
+ const grouped=[...new Set(visible.map(c=>c.courseType||"通識類別待確認"))];
+ host.innerHTML=grouped.map(g=>{const items=visible.filter(c=>(c.courseType||"通識類別待確認")===g);return '<section class="ge-course-group"><div class="group-head"><h3>'+esc(g)+'</h3><small>'+items.length+' 門</small></div><div class="ge-course-tiles">'+items.map(c=>{const mine=myCourses.includes(c.id);return '<article class="ge-course-card"><div><b>'+esc(c.name)+'</b><small>'+(c.credits===null?"學分待確認":c.credits+" 學分")+' · '+esc(c.courseNo||"無課號")+'</small><small>'+esc(c.dept||"開課單位未提供")+(c.term?" · "+esc(c.term):"")+'</small></div><button type="button" class="course-add '+(mine?"added":"")+'" data-ge-toggle-course="'+esc(c.id)+'" aria-pressed="'+mine+'">'+(mine?"✓ 已加入我的修課":"＋ 加入修課規劃")+'</button></article>';}).join("")+'</div></section>';}).join("");
  host.querySelectorAll("[data-ge-toggle-course]").forEach(b=>b.addEventListener("click",()=>toggleMyCourse(b.dataset.geToggleCourse)));
 }
 function renderDetail(){
