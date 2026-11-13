@@ -20,7 +20,10 @@ assert.strictEqual(data.programRules.programs.length, 5, "five EE programs requi
 for (const program of data.programRules.programs) {
   assert(program.coreRequiredCount > 0 && program.coreRequiredCount <= program.coreCourses.length, "invalid core selection count: " + program.id);
   for (const name of [...program.coreCourses, ...program.relatedLabs]) {
-    assert(data.courses.some(c => c.name === name), "missing program core/lab course: " + program.id + " / " + name);
+    const course = data.courses.find(c => c.name === name);
+    assert(course, "missing program core/lab course: " + program.id + " / " + name);
+    assert(course.plans.includes(program.id), "course not linked to its own program: " + program.id + " / " + name);
+    for (const other of data.programRules.programs) assert(course.plans.includes(other.id), "cross-program option missing: " + other.id + " / " + name);
   }
 }
 assert(!data.courses.some(x => x.id.startsWith("project-option-")), "unverified generated project options must not return");
