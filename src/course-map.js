@@ -11,7 +11,8 @@ try{imported=JSON.parse(localStorage.getItem("nchu-course-map-imports-v1")||"[]"
 function allCourses(){return (data?.courses||[]).concat(imported)}
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const sourceByTitle=title=>(data.sources||[]).find(s=>s.title===title);
-function eligibilityLabel(c){if(c.group==="當期開課（官方匯入）"){const dept=c.dept||c.department||"";return dept.includes("電機")?"本系當期開課 · 採計待核":"外系／全校課程 · 選課資格與採計待核";}return c.eligibility||"依開課單位及當期選課限制確認";}\nfunction statusLabel(s){return s==="verified"?"規則已核實":s==="verified-partial"?"部分核實":"待確認"}
+function eligibilityLabel(c){if(c.group==="當期開課（官方匯入）"){const dept=c.dept||c.department||"";return dept.includes("電機")?"本系當期開課 · 採計待核":"外系／全校課程 · 選課資格與採計待核";}return c.eligibility||"依開課單位及當期選課限制確認";}
+function statusLabel(s){return s==="verified"?"規則已核實":s==="verified-partial"?"部分核實":"待確認"}
 function effectiveStatus(s){return admissionYear==="115"?"pending":s}
 function courseStatus(c){return admissionYear==="115"?"115適用性待確認":c.status==="verified"?"規則已核實":c.group==="當期開課（官方匯入）"?"採計待核實":"細項待確認"}
 function planById(id){return data.requirements.find(p=>p.id===id)}
@@ -65,7 +66,8 @@ function renderDetail(){
   const official=c.group==="當期開課（官方匯入）"?data.sources[3]:c.group.includes("畢業專題")?data.sources[6]:(c.group==="專業必修"?data.sources[0]:data.sources[2]);
   const meta=[c.courseNo?"課號 "+c.courseNo:"",c.dept?"開課單位 "+c.dept:"",c.term?"學期 "+c.term:"",c.categoryLabel?"分類 "+c.categoryLabel:"",c.requiredType?"必選別 "+c.requiredType:"",c.section?"班別 "+c.section:"",c.room?"教室 "+c.room:"",c.teacher?"教師 "+c.teacher:""].filter(Boolean).join(" · ");
   
-const pending=c.group==="當期開課（官方匯入）"||c.status!=="verified";\n  const eligibility=eligibilityLabel(c);
+const pending=c.group==="當期開課（官方匯入）"||c.status!=="verified";
+  const eligibility=eligibilityLabel(c);
   const isProject=c.group.includes("畢業專題");
   const guidance=isProject?data.projectGuidelines:((c.group==="專業必修"||c.group.includes("學程")||c.group==="專業實驗")?data.courseSelectionRules:null);
   const guidanceSource=isProject?data.sources.find(x=>x.type==="official-project-guideline"):data.sources.find(x=>x.type==="official-course-selection-policy");
@@ -100,8 +102,12 @@ const pending=c.group==="當期開課（官方匯入）"||c.status!=="verified";
  }
 }
 
+function renderPathways(){
+ const host=$("pathwayGroups");if(!host||!pathwayData)return;
+ host.innerHTML=pathwayData.categories.map(cat=>'<section class="pathway-category"><h3>'+esc(cat.name)+'</h3><div class="pathway-grid">'+cat.items.map(item=>'<details class="pathway-card"><summary><b>'+esc(item.name)+'</b><small>'+esc(item.award)+'</small></summary><div class="pathway-content"><p>'+esc(item.eligibility)+'</p><ul>'+item.requirements.map(x=>'<li>'+esc(x)+'</li>').join("")+'</ul><span class="pathway-status">'+esc(item.status)+'</span></div></details>').join("")+'</div></section>').join("");
+}
 function render(){
- renderPlans();renderCourses();renderDetail();renderMyCourseSummary();
+ renderPlans();renderCourses();renderDetail();renderMyCourseSummary();renderPathways();
  $("yearNotice").textContent=admissionYear==="114"?"目前以114學年度起入學版本判讀。":"電機系目前可核實的明細表為114學年度起版本；115入學適用性尚待系辦確認，因此不會自動判定符合。";
 }
 $("searchCourse").addEventListener("input",e=>{query=e.target.value;renderCourses()});
