@@ -28,4 +28,8 @@ for (const program of data.programRules.programs) {
 }
 assert(!data.courses.some(x => x.id.startsWith("project-option-")), "unverified generated project options must not return");
 assert(data.sources.every(x => x.title && /^https:\/\//.test(x.url)), "each source needs an official URL");
+assert(data.courseSelectionRules.rules.length >= 4, "course selection policy details missing");
+assert(data.projectGuidelines.requirements.length >= 4, "project guideline details missing");
+assert(data.sources.some(x => x.type === "official-course-selection-policy"), "course selection policy source missing");
+assert(data.sources.some(x => x.type === "official-project-guideline"), "project guideline source missing");
 console.log("Course map validation passed: " + data.courses.length + " courses, " + data.requirements.length + " plans, 5 program rules.");
