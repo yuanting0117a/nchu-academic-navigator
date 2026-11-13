@@ -1,0 +1,15 @@
+{
+  "name": "中興大學學業導航系統",
+  "short_name": "學業導航",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f8f6",
+  "theme_color": "#173b32",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
