@@ -80,6 +80,7 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   assert(elements.dataLoadStatus.textContent.includes("資料載入成功"), "data should load");
   assert(elements.planTiles.querySelectorAll("[data-plan]").length === data.requirements.length, "all plan tiles should render");
   assert(elements.courseGroups.querySelectorAll("[data-course]").length === data.courses.length, "all course tiles should render");
+  assert(elements.courseGroups.innerHTML.includes("本系電機學士班必修"), "course eligibility label should render");
   assert(elements.courseCount.textContent === "69 / 69 項", "initial course count should be complete");\n  assert(elements.courseGroups.innerHTML.includes("本系電機學士班必修"), "course eligibility should be visible");
 
   const requiredPlan = elements.planTiles.querySelectorAll("[data-plan]").find(x => x.dataset.plan === "ee-required");
