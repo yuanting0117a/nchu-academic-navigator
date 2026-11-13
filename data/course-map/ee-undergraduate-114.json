@@ -73,6 +73,30 @@
       "evidence": [
         "114-2學期專題(一)選課規劃名單，列出課號3450、3452、3461的開課示例"
       ]
+    },
+    {
+      "title": "中興大學課程查詢－系所當學期",
+      "url": "https://onepiece.nchu.edu.tw/cofsys/plsql/crseqry_home_now",
+      "type": "official-current-department-course-query",
+      "note": "當學期系所課程查詢；可依學年期、學制、系所、年級及科目名稱篩選。"
+    },
+    {
+      "title": "中興大學課程查詢－通識課程",
+      "url": "https://onepiece.nchu.edu.tw/cofsys/plsql/crseqry_gene2",
+      "type": "official-general-education-course-query",
+      "note": "通識分類與學群查詢；匯入時仍需核對課程實際通識分類。"
+    },
+    {
+      "title": "中興大學課程查詢－綜合查詢",
+      "url": "https://onepiece.nchu.edu.tw/cofsys/plsql/crseqry_all",
+      "type": "official-comprehensive-course-query",
+      "note": "綜合課程查詢，含全校課程分類。"
+    },
+    {
+      "title": "中興大學課程查詢－學程課程",
+      "url": "https://onepiece.nchu.edu.tw/cofsys/plsql/crseqry_m25",
+      "type": "official-program-course-query",
+      "note": "學程課程查詢頁；不同學程類型需再核對其適用對象。"
     }
   ],
   "requirements": [
