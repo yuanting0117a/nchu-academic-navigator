@@ -54,7 +54,7 @@ function renderCourses(){
   const deptOk=!departmentFilter||(c.group==="當期開課（官方匯入）"&&c.category!=="general"&&dept===departmentFilter);
   return nonGeneral&&deptOk&&courseVisible(c)&&(!showOnlyMyCourses||myCourses.includes(c.id));
  });
- $("courseCount").textContent=visible.length+" / "+courses.length+" 項（排除通識匯入）";
+ $("courseCount").textContent=visible.length+" / "+courses.filter(c=>c.group!=="當期開課（官方匯入）"||c.category!=="general").length+" 項非通識課程";
  renderMyCourseSummary();
  if(!visible.length){host.innerHTML='<div class="empty-state">目前沒有符合條件的課程。若尚未匯入官方系所課程資料，請先從下方匯入各系所課程 Excel／CSV。</div>';return}
  const groupKey=c=>c.group==="當期開課（官方匯入）"&&c.category!=="general"?"開課系所｜"+(c.dept||"開課單位待確認"):c.group;
