@@ -27,6 +27,7 @@ jobs:
           node --check src/course-map.js
           node --check src/course-import.js
           node scripts/validate-course-map.js
+          node scripts/test-course-map-interactions.js
           node -e "JSON.parse(require('fs').readFileSync('data/course-map/ee-undergraduate-114.json','utf8'))"
       - name: Check required static files
         run: |
