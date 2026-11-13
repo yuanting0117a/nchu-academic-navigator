@@ -42,6 +42,12 @@
       "url": "https://www.ee.nchu.edu.tw/Pic/DocRegulation/17056638660054%281%29.pdf",
       "type": "official-double-major-regulation",
       "note": "114學年度畢業條件表附表2指向此規定；仍須向系辦確認目前適用版本"
+    },
+    {
+      "title": "114-2學期電機系專題(一)選課公告",
+      "url": "https://www.ee.nchu.edu.tw/wb_announcement02.asp?ano=594&cno=13&pageno=1&url=12",
+      "type": "official-term-course-announcement",
+      "note": "公告列出3450資訊專題(一)、3452控制專題(一)、3461智慧型系統專題(一)等開課示例；非完整清單。"
     }
   ],
   "requirements": [
@@ -420,7 +426,7 @@
         "ee-elective",
         "communication",
         "ee-double",
-        "ee-minor"
+        "control"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -433,8 +439,7 @@
       "plans": [
         "ee-elective",
         "communication",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -447,8 +452,7 @@
       "plans": [
         "ee-elective",
         "communication",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -461,8 +465,7 @@
       "plans": [
         "ee-elective",
         "communication",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -475,8 +478,7 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -489,8 +491,7 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -503,8 +504,7 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -517,8 +517,7 @@
       "plans": [
         "ee-elective",
         "information",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -531,8 +530,7 @@
       "plans": [
         "ee-elective",
         "information",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -545,8 +543,7 @@
       "plans": [
         "ee-elective",
         "information",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -559,8 +556,7 @@
       "plans": [
         "ee-elective",
         "information",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -573,8 +569,7 @@
       "plans": [
         "ee-elective",
         "electronics",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -587,8 +582,7 @@
       "plans": [
         "ee-elective",
         "electronics",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -601,8 +595,7 @@
       "plans": [
         "ee-elective",
         "electronics",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -615,8 +608,7 @@
       "plans": [
         "ee-elective",
         "solidstate",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -629,8 +621,7 @@
       "plans": [
         "ee-elective",
         "solidstate",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -643,8 +634,7 @@
       "plans": [
         "ee-elective",
         "solidstate",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -657,8 +647,7 @@
       "plans": [
         "ee-elective",
         "solidstate",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -671,8 +660,7 @@
       "plans": [
         "ee-elective",
         "communication",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -685,8 +673,7 @@
       "plans": [
         "ee-elective",
         "information",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -699,8 +686,7 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -713,8 +699,7 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -727,8 +712,7 @@
       "plans": [
         "ee-elective",
         "solidstate",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -741,8 +725,7 @@
       "plans": [
         "ee-elective",
         "electronics",
-        "ee-double",
-        "ee-minor"
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -778,9 +761,7 @@
       "group": "通訊學程",
       "plans": [
         "ee-elective",
-        "communication",
-        "ee-double",
-        "ee-minor"
+        "communication"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -792,9 +773,7 @@
       "group": "通訊學程",
       "plans": [
         "ee-elective",
-        "communication",
-        "ee-double",
-        "ee-minor"
+        "communication"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -806,9 +785,7 @@
       "group": "通訊學程",
       "plans": [
         "ee-elective",
-        "communication",
-        "ee-double",
-        "ee-minor"
+        "communication"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -820,9 +797,7 @@
       "group": "資訊學程",
       "plans": [
         "ee-elective",
-        "information",
-        "ee-double",
-        "ee-minor"
+        "information"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -834,9 +809,7 @@
       "group": "資訊學程",
       "plans": [
         "ee-elective",
-        "information",
-        "ee-double",
-        "ee-minor"
+        "information"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -848,9 +821,7 @@
       "group": "資訊學程",
       "plans": [
         "ee-elective",
-        "information",
-        "ee-double",
-        "ee-minor"
+        "information"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -862,9 +833,7 @@
       "group": "系統與控制學程",
       "plans": [
         "ee-elective",
-        "control",
-        "ee-double",
-        "ee-minor"
+        "control"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -876,9 +845,7 @@
       "group": "系統與控制學程",
       "plans": [
         "ee-elective",
-        "control",
-        "ee-double",
-        "ee-minor"
+        "control"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -890,9 +857,7 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate",
-        "ee-double",
-        "ee-minor"
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -904,9 +869,7 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate",
-        "ee-double",
-        "ee-minor"
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -918,9 +881,7 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate",
-        "ee-double",
-        "ee-minor"
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -932,9 +893,7 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate",
-        "ee-double",
-        "ee-minor"
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -946,9 +905,7 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate",
-        "ee-double",
-        "ee-minor"
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -960,9 +917,7 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate",
-        "ee-double",
-        "ee-minor"
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -974,9 +929,7 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate",
-        "ee-double",
-        "ee-minor"
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -988,9 +941,7 @@
       "group": "電子電路學程",
       "plans": [
         "ee-elective",
-        "electronics",
-        "ee-double",
-        "ee-minor"
+        "electronics"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -1002,9 +953,7 @@
       "group": "電子電路學程",
       "plans": [
         "ee-elective",
-        "electronics",
-        "ee-double",
-        "ee-minor"
+        "electronics"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -1016,9 +965,7 @@
       "group": "電子電路學程",
       "plans": [
         "ee-elective",
-        "electronics",
-        "ee-double",
-        "ee-minor"
+        "electronics"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -1030,420 +977,65 @@
       "group": "電子電路學程",
       "plans": [
         "ee-elective",
-        "electronics",
-        "ee-double",
-        "ee-minor"
+        "electronics"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
     },
     {
-      "id": "project-option-1",
-      "name": "信號處理專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-2",
-      "name": "信號處理專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-3",
-      "name": "通信專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-4",
-      "name": "通信專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-5",
-      "name": "多媒體通訊專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-6",
-      "name": "多媒體通訊專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-7",
+      "id": "project-example-3450",
       "name": "資訊專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
+      "credits": 2,
+      "courseNo": "3450",
+      "term": "114-2",
+      "group": "畢業專題開課示例",
       "plans": [
         "project",
         "ee-double"
       ],
       "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+      "source": "電機系114-2學期專題(一)選課公告；此為當學期實際開課示例，非完整清單"
     },
     {
-      "id": "project-option-8",
-      "name": "資訊專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-9",
-      "name": "微處理機專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-10",
-      "name": "微處理機專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-11",
-      "name": "網路專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-12",
-      "name": "網路專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-13",
-      "name": "微電子專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-14",
-      "name": "微電子專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-15",
-      "name": "影像顯示器專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-16",
-      "name": "影像顯示器專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-17",
-      "name": "智慧型系統專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-18",
-      "name": "智慧型系統專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-19",
+      "id": "project-example-3452",
       "name": "控制專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
+      "credits": 2,
+      "courseNo": "3452",
+      "term": "114-2",
+      "group": "畢業專題開課示例",
       "plans": [
         "project",
         "ee-double"
       ],
       "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+      "source": "電機系114-2學期專題(一)選課公告；此為當學期實際開課示例，非完整清單"
     },
     {
-      "id": "project-option-20",
-      "name": "控制專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
+      "id": "project-example-3461",
+      "name": "智慧型系統專題(一)",
+      "credits": 2,
+      "courseNo": "3461",
+      "term": "114-2",
+      "group": "畢業專題開課示例",
       "plans": [
         "project",
         "ee-double"
       ],
       "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+      "source": "電機系114-2學期專題(一)選課公告；此為當學期實際開課示例，非完整清單"
     },
     {
-      "id": "project-option-21",
-      "name": "系統整合專題(一)",
+      "id": "prog-control-signal",
+      "name": "信號與系統",
       "credits": null,
-      "group": "專題領域選項",
+      "group": "系統與控制學程",
       "plans": [
-        "project",
+        "ee-elective",
+        "control",
         "ee-double"
       ],
       "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-22",
-      "name": "系統整合專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-23",
-      "name": "數位電路專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-24",
-      "name": "數位電路專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-25",
-      "name": "微波專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-26",
-      "name": "微波專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-27",
-      "name": "電子電路專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-28",
-      "name": "電子電路專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-29",
-      "name": "類比電路專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-30",
-      "name": "類比電路專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-31",
-      "name": "超大型積體電路設計專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-32",
-      "name": "超大型積體電路設計專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-33",
-      "name": "系統晶片專題(一)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
-    },
-    {
-      "id": "project-option-34",
-      "name": "系統晶片專題(二)",
-      "credits": null,
-      "group": "專題領域選項",
-      "plans": [
-        "project",
-        "ee-double"
-      ],
-      "status": "verified-partial",
-      "source": "電機系學士班畢業專題規劃（系網課程地圖）"
+      "source": "114學年度起畢業條件明細表：系統與控制學程核心課程；系網課程規劃"
     }
   ],
   "generalEducation": [
@@ -1471,6 +1063,111 @@
     "目前資料不是全校當學期實際開課清單；開課學期、課號、教師及選課限制需由官方課程查詢系統匯入。",
     "電機系輔系與雙主修辦法目前可找到109.08.19修訂版本，114學年度畢業條件表仍引用其附表；最新適用性需系辦確認。",
     "電機系跨域專長已由114學年度畢業條件表確認有開設，但個別課程規劃表尚未整理，因此不自動關聯課程。",
-    "系網課程地圖另列各學程專題題型（例如資訊專題、控制專題等）；這些是官方規劃的專題領域選項，實際開課名稱、選課代碼與分派方式仍依當學期系辦公告。"
-  ]
+    "舊版曾把系網列出的專題領域名稱擴寫為34筆一、二學期課程選項；因無法逐筆找到官方課程代碼及當期開課證據，已移除這些推測項目，僅保留官方114-2公告可查的三個專題(一)示例。",
+    "學程核心課程、學程完整課程地圖及畢業條件表存在名稱與分類差異；本頁分開標示核心課程、學程其他課程與當期開課示例，不將所有課程一律視為核心或可無條件認列。",
+    "電機系輔系辦法僅將55學分專業必修列為明確採計項目；若與原主修必修重疊，才需以本系選修補足。系專業選修候選課程不代表已自動核准抵補。"
+  ],
+  "programRules": {
+    "sourceRule": "五大學程中，至少選其中之一作為個人的專業學程，並修完該學程全部核心課程（原文另註「通訊、系統與控制、資訊、固態電子與光電為四選三」）及其相關實驗；另須就其他各學程選修一門核心課程。每門課程只能採計一次。實驗課除自己學程相關實驗外，還須加選一個其他學程的實驗。",
+    "interpretation": "官方條文括號中的「四選三」與個別課程的計算方式，網站只呈現原文及清單，不自行推算通過條件；如需正式判定，應由系辦確認。",
+    "programs": [
+      {
+        "id": "communication",
+        "name": "通訊學程",
+        "coreCourses": [
+          "信號與系統",
+          "通訊系統",
+          "數位訊號處理",
+          "通訊理論"
+        ],
+        "relatedLabs": [
+          "基本通訊實驗"
+        ],
+        "otherCourses": [
+          "寬頻網路",
+          "無線通訊導論",
+          "通訊系統模擬"
+        ]
+      },
+      {
+        "id": "control",
+        "name": "系統與控制學程",
+        "coreCourses": [
+          "自動控制",
+          "現代控制",
+          "電機機械",
+          "信號與系統"
+        ],
+        "relatedLabs": [
+          "自動控制實驗",
+          "電機機械實驗"
+        ],
+        "otherCourses": [
+          "數位控制",
+          "電力電子"
+        ]
+      },
+      {
+        "id": "information",
+        "name": "資訊學程",
+        "coreCourses": [
+          "資料結構",
+          "計算機組織",
+          "微處理機",
+          "作業系統"
+        ],
+        "relatedLabs": [
+          "微處理機實驗"
+        ],
+        "otherCourses": [
+          "物件導向語言",
+          "計算機結構",
+          "計算機網路"
+        ]
+      },
+      {
+        "id": "electronics",
+        "name": "電子電路學程",
+        "coreCourses": [
+          "硬體描述語言設計",
+          "類比電路設計",
+          "超大型積體電路設計導論"
+        ],
+        "relatedLabs": [
+          "超大型積體電路設計實驗"
+        ],
+        "otherCourses": [
+          "數位系統之快速雛型製作",
+          "超大型積體電路設計",
+          "射頻電路設計",
+          "元件特性模擬"
+        ]
+      },
+      {
+        "id": "solidstate",
+        "name": "固態電子與光電學程",
+        "coreCourses": [
+          "半導體工程",
+          "半導體元件",
+          "光電元件",
+          "近代物理"
+        ],
+        "relatedLabs": [
+          "微電子實驗"
+        ],
+        "otherCourses": [
+          "近代物理(一)",
+          "近代物理(二)",
+          "固態工程",
+          "固態電子元件",
+          "固態物理導論",
+          "半導體製程技術概論",
+          "平面顯示器概論"
+        ]
+      }
+    ],
+    "crossProgramRequirement": "必須就其他各學程選修一門核心課程；各課程只能採計一次。",
+    "labRequirement": "除自己所選學程相關實驗外，還須加選一個其他學程的實驗。",
+    "status": "verified-text-manual-interpretation"
+  }
 }
