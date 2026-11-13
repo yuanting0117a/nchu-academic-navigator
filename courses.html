@@ -2,48 +2,22 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#173b32"><meta name="description" content="中興大學全校課程資料庫與電機系學分方案雙向查詢">
-<title>全校課程探索｜中興大學學業導航</title>
-<link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="styles-header.css"><link rel="stylesheet" href="styles-catalog.css">
+<meta name="theme-color" content="#173b32"><meta name="description" content="中興大學電機系課程與學分方案雙向互動導航">
+<title>課程 × 學分方案導航｜中興大學</title>
+<link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="styles-header.css"><link rel="stylesheet" href="styles-course-map.css">
 </head>
 <body>
-<header><div class="brand"><b>興</b><div><strong>中興大學學業導航</strong><small>NCHU ACADEMIC NAVIGATOR　v1.4.2</small></div></div><a class="quiet navlink" href="index.html">學業判定首頁</a></header>
-<main class="catalog-main">
-<section class="catalog-intro"><span class="eyebrow">COURSE CATALOG · EE BASELINE</span><h1>全校課程探索</h1><p>先匯入官方課程查詢系統匯出的 Excel，再用「方案找課程」或「課程找方案」雙向探索。</p></section>
-<section class="import-panel">
- <div class="panel-head"><div><span class="eyebrow">STEP 01 · OFFICIAL DATA</span><h2>匯入官方課程資料</h2></div><span id="dataStatus" class="status-pill">尚未匯入</span></div>
- <p class="muted">請在官方課程查詢系統選定學期與查詢分類，將結果匯出 Excel（.xlsx/.xls）或 CSV 後匯入。系所課程、通識、綜合查詢及學程課程請分別匯出；不同分類可分次匯入，系統會保留班別，不會只按課名去重。</p><p class="muted small">操作參考：<a href="https://oaa.nchu.edu.tw/_run.php?file=a487d940d3f9ac897c3e99cc4fbdddc2798f3c09.pdf&name=%28%E8%AA%B2%E5%8B%99%E7%B5%84%291151-%E9%81%B8%E8%AA%B2%E9%A0%88%E7%9F%A5-%E6%97%A5%E9%96%93%E5%AD%B8%E5%A3%AB-1150617PM1700.pdf&work=down" target="_blank" rel="noopener">115-1 選課須知 ↗</a>（官方說明查詢結果可匯出 Excel）。</p>
- <div class="import-controls">
-  <label>資料學期<select id="term"><option value="1151">115 學年度第 1 學期（1151）</option><option value="1152">115 學年度第 2 學期（1152）</option><option value="1141">114 學年度第 1 學期（1141）</option><option value="1142">114 學年度第 2 學期（1142）</option></select></label>
-  <label>查詢分類<select id="category"><option value="department">系所／學位學程</option><option value="general">通識課程</option><option value="comprehensive">綜合查詢（含微課程）</option><option value="program">學程課程（跨領域學分學程）</option><option value="education">教育學程課程</option><option value="open">全校開放課程（體育／英外語等）</option></select></label>
-  <label class="file-label">選擇匯出檔<input id="file" type="file" accept=".xlsx,.xls,.csv"></label>
-  <button id="importBtn" class="primary" disabled>匯入課程</button>
- </div>
- <div class="import-actions"><button id="exportJson" class="secondary" disabled>匯出標準 JSON</button><button id="clearData" class="secondary" disabled>清除此裝置課程資料</button><a href="https://onepiece.nchu.edu.tw/cofsys/plsql/crseqry_home" target="_blank" rel="noopener">開啟中興官方課程查詢 ↗</a></div>
- <p id="importMessage" class="import-message" aria-live="polite">支援官方匯出 Excel／CSV。若 Excel 無法讀取，可另存為 CSV 再匯入。</p>
+<header><div class="brand"><b>興</b><div><strong>中興大學學業導航</strong><small>NCHU ACADEMIC NAVIGATOR　v2.0.0</small></div></div><a class="quiet navlink" href="index.html">學業判定首頁</a></header>
+<main class="map-main">
+<section class="map-hero"><div><span class="eyebrow">BIDIRECTIONAL COURSE MAP · DESKTOP WORKSPACE</span><h1>課程 × 學分方案導航</h1><p>方案與課程同時展開。選方案看課程，選課程反查方案。</p></div><div class="hero-meta"><span class="meta-pill" id="dataLoadStatus">正在載入官方資料…</span><label class="meta-pill">入學年度 <select id="admissionYear" style="border:0;background:transparent;font:inherit;font-weight:800;color:inherit"><option value="114">114</option><option value="115">115（適用性待確認）</option></select></label></div></section>
+<section class="map-toolbar"><input id="searchCourse" type="search" placeholder="搜尋課程名稱、學程或類別…"><div class="filter-group"><button class="filter-btn active" data-filter="all">全部項目</button><button class="filter-btn" data-filter="required">專業必修</button><button class="filter-btn" data-filter="program">專業學程</button><button class="filter-btn" data-filter="lab">專業實驗</button><button class="filter-btn" data-filter="project">畢業專題</button></div></section>
+<section class="map-grid">
+<aside class="map-panel"><div class="panel-heading"><h2>學分方案與畢業門檻</h2><small>選擇方案</small></div><div class="panel-body"><div class="plan-stack" id="planTiles"><div class="empty-state">正在載入方案…</div></div></div></aside>
+<section class="map-panel"><div class="panel-heading"><h2>電機系課程與規定項目</h2><small id="courseCount">—</small></div><div class="course-area"><div class="course-summary"><strong>所有已整理的官方課程項目</strong><span>點選任一課程可反向查詢</span></div><div class="course-groups" id="courseGroups"><div class="empty-state">正在載入課程…</div></div></div></section>
+<aside class="map-panel detail-panel"><div class="panel-heading"><h2>項目詳細資訊</h2><small>即時判定</small></div><div class="detail-body" id="detailBody"><div class="detail-empty">載入完成後，點選左側方案或中央課程查看詳細資訊。</div></div></aside>
 </section>
-<section class="catalog-panel">
- <div class="catalog-summary"><div><span class="eyebrow">STEP 02 · BIDIRECTIONAL MATCHING</span><h2>方案與課程雙向查詢</h2></div><div class="count-box"><b id="courseCount">0</b><small>筆匯入課程</small></div></div>
- <div class="tabs"><button class="tab active" data-mode="plan">方案找課程</button><button class="tab" data-mode="course">課程找方案</button></div>
- <div id="planMode" class="mode-panel">
-  <label>選擇要探索的方案<select id="plan"><option value="ee-required">電機系專業必修</option><option value="ee-elective">電機系專業選修</option><option value="general">通識學分</option><option value="cross">跨系／跨域修課</option><option value="minor">輔系／學分學程</option><option value="double">雙主修</option></select></label>
-  <p id="planNotice" class="muted small">目前尚未匯入經核實的電機系課號級採計對照，因此此階段不會把任何課程標成符合；匯入課程會保留在清單中，並標示待核實。</p>
- </div>
- <div id="courseMode" class="mode-panel hidden">
-  <p class="muted small">先從課程清單選一門課，查看它可能涉及的方案。尚無正式採計依據時，系統會明確顯示「待核實」，不會自動認列學分。</p>
-  <div id="selectedCourse" class="selected-course">尚未選擇課程</div><div id="planResults" class="plan-results"><span class="tag pending">尚無已核實對照</span></div>
- </div>
- <div class="filters">
-  <input id="search" type="search" placeholder="搜尋課名、課號、教師或開課單位">
-  <select id="deptFilter"><option value="">全部開課單位</option></select>
-  <select id="creditFilter"><option value="">全部學分</option><option value="1">1 學分</option><option value="2">2 學分</option><option value="3">3 學分</option><option value="4">4 學分</option></select>
-  <select id="termFilter"><option value="">全部學期</option></select>
- </div>
- <div class="table-wrap"><table><thead><tr><th>課程</th><th>開課單位／學期</th><th>學分</th><th>判定</th></tr></thead><tbody id="courseRows"><tr><td colspan="4" class="empty">尚未匯入課程。請先匯入官方匯出檔。</td></tr></tbody></table></div>
- <div class="list-footer"><span id="showing">顯示 0 筆</span><span>課程開設 ≠ 可選修 ≠ 可計入畢業學分</span></div>
-</section>
-<section class="source-note"><b>資料判定原則</b><p>課程清單與電機系畢業採計規則分開管理。官方開課資料匯入後仍需核對選課資格；只有具備正式規則或核准依據的課程，才會標記為「已核實採計」。同課號不同班別分開保留。</p><a href="data/course-catalog/source-research.md">查看資料來源調查 ↗</a></section>
-<footer>課程資料由使用者從中興大學官方查詢系統匯入，保存在目前裝置。未經核實的課程對應不會自動算入畢業學分。</footer>
+<div class="map-footer"><b>資料狀態與重要限制：</b> <span id="yearNotice">正在讀取資料。</span> 此頁目前整理的是電機系114學年度起畢業規定及系上公開課程規劃，並非全校完整的當學期開課清單。學程選修與課號級採計仍需逐筆核對；待確認項目不會自動算入畢業學分。<br><a href="https://www.ee.nchu.edu.tw/Pic/DocRegulation/17466153950240%281%29.pdf" target="_blank" rel="noopener">電機系114學年度起畢業條件明細表 ↗</a>　·　<a href="https://www.ee.nchu.edu.tw/wb_introduce01.asp?cno=7&url=22" target="_blank" rel="noopener">電機系學士班課程規劃 ↗</a>　·　<a href="https://onepiece.nchu.edu.tw/cofsys/plsql/crseqry_home" target="_blank" rel="noopener">中興官方課程查詢 ↗</a>　·　<a href="https://github.com/yuanting0117a/nchu-academic-navigator/tree/main/data/course-map" target="_blank" rel="noopener">資料檔與來源 ↗</a></div>
+<footer>本系統提供修課規劃參考，不取代系所正式審查。課程開設學期、課號、授課教師與選課限制，以中興大學官方課程查詢系統當期資料為準。</footer>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script><script src="src/course-catalog.js"></script>
+<script src="src/course-map.js"></script>
 </body></html>
