@@ -34,12 +34,19 @@ class MockElement {
   querySelectorAll(selector) {
     const attr = selector === "[data-plan]" ? "plan" : selector === "[data-course]" ? "course" : null;
     if (!attr) return [];
-    const re = new RegExp('data-' + attr + '="([^"]+)"', "g");
-    return [...this.innerHTML.matchAll(re)].map(match => {
-      const el = new MockElement();
-      el.dataset[attr] = match[1];
-      return el;
-    });
+    if (this._cacheHTML !== this.innerHTML) {
+      this._cacheHTML = this.innerHTML;
+      this._cache = {};
+    }
+    if (!this._cache[selector]) {
+      const re = new RegExp('data-' + attr + '="([^"]+)"', "g");
+      this._cache[selector] = [...this.innerHTML.matchAll(re)].map(match => {
+        const el = new MockElement();
+        el.dataset[attr] = match[1];
+        return el;
+      });
+    }
+    return this._cache[selector];
   }
 }
 const ids = ["searchCourse","planTiles","courseGroups","courseCount","detailBody","yearNotice","dataLoadStatus","admissionYear","importStatus"];
