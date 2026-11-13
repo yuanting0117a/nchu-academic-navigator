@@ -52,6 +52,14 @@
   ],
   "requirements": [
     {
+      "id": "graduation-total",
+      "name": "畢業總學分門檻",
+      "credits": 128,
+      "relation": "total",
+      "status": "verified",
+      "description": "最低畢業總學分128學分（不含體育）。已明列的系必修55、系選修27、通識28合計110，另有18學分分類尚待系辦確認。"
+    },
+    {
       "id": "ee-required",
       "name": "電機系專業必修",
       "credits": 55,
@@ -761,7 +769,8 @@
       "group": "通訊學程",
       "plans": [
         "ee-elective",
-        "communication"
+        "communication",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -773,7 +782,8 @@
       "group": "通訊學程",
       "plans": [
         "ee-elective",
-        "communication"
+        "communication",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -785,7 +795,8 @@
       "group": "通訊學程",
       "plans": [
         "ee-elective",
-        "communication"
+        "communication",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -797,7 +808,8 @@
       "group": "資訊學程",
       "plans": [
         "ee-elective",
-        "information"
+        "information",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -809,7 +821,8 @@
       "group": "資訊學程",
       "plans": [
         "ee-elective",
-        "information"
+        "information",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -821,7 +834,8 @@
       "group": "資訊學程",
       "plans": [
         "ee-elective",
-        "information"
+        "information",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -833,7 +847,8 @@
       "group": "系統與控制學程",
       "plans": [
         "ee-elective",
-        "control"
+        "control",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -845,7 +860,8 @@
       "group": "系統與控制學程",
       "plans": [
         "ee-elective",
-        "control"
+        "control",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -857,7 +873,8 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate"
+        "solidstate",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -869,7 +886,8 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate"
+        "solidstate",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -881,7 +899,8 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate"
+        "solidstate",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -893,7 +912,8 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate"
+        "solidstate",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -905,7 +925,8 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate"
+        "solidstate",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -917,7 +938,8 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate"
+        "solidstate",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -929,7 +951,8 @@
       "group": "固態電子與光電學程",
       "plans": [
         "ee-elective",
-        "solidstate"
+        "solidstate",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -941,7 +964,8 @@
       "group": "電子電路學程",
       "plans": [
         "ee-elective",
-        "electronics"
+        "electronics",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -953,7 +977,8 @@
       "group": "電子電路學程",
       "plans": [
         "ee-elective",
-        "electronics"
+        "electronics",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -965,7 +990,8 @@
       "group": "電子電路學程",
       "plans": [
         "ee-elective",
-        "electronics"
+        "electronics",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -977,7 +1003,8 @@
       "group": "電子電路學程",
       "plans": [
         "ee-elective",
-        "electronics"
+        "electronics",
+        "ee-double"
       ],
       "status": "verified-partial",
       "source": "電機系學程課程介紹（系網公開課程清單）"
@@ -1071,7 +1098,8 @@
     "學程核心課程、學程完整課程地圖及畢業條件表存在名稱與分類差異；本頁分開標示核心課程、學程其他課程與當期開課示例，不將所有課程一律視為核心或可無條件認列。",
     "電機系輔系辦法僅將55學分專業必修列為明確採計項目；若與原主修必修重疊，才需以本系選修補足。系專業選修候選課程不代表已自動核准抵補。",
     "畢業總學分128與已列明的系必修55、系選修27、通識28合計110之間尚有18學分差額；官方明細表未在此處說明差額的認列類別，網站不將其擅自命名為自由選修。",
-    "四個學程（通訊、系統與控制、資訊、固態電子與光電）的核心課程依114學年度明細表註記為四選三；電子電路學程列3門核心課程。跨學程核心課程與實驗要求依官方原文呈現，不自動判定修畢。"
+    "四個學程（通訊、系統與控制、資訊、固態電子與光電）的核心課程依114學年度明細表註記為四選三；電子電路學程列3門核心課程。跨學程核心課程與實驗要求依官方原文呈現，不自動判定修畢。",
+    "雙主修的27學分專業選修需依核准修讀年度及系上規定核定；網站所列系網課程僅作候選查詢，不代表已核准認列。"
   ],
   "programRules": {
     "sourceRule": "五大學程中，至少選其中之一作為個人的專業學程，並修完該學程全部核心課程（原文另註「通訊、系統與控制、資訊、固態電子與光電為四選三」）及其相關實驗；另須就其他各學程選修一門核心課程。每門課程只能採計一次。實驗課除自己學程相關實驗外，還須加選一個其他學程的實驗。",
