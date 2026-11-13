@@ -14,17 +14,33 @@
     {
       "title": "電機系學士班學生畢業條件明細表（114學年度起入學適用）",
       "url": "https://www.ee.nchu.edu.tw/Pic/DocRegulation/17466153950240%281%29.pdf",
-      "type": "official-regulation"
+      "type": "official-regulation",
+      "evidence": [
+        "第二節：畢業總學分128",
+        "第三節：通識28學分及分項限制",
+        "第五節：系專業必修55學分及20門課程",
+        "第六節：系專業選修至少27學分",
+        "第七節：五大學程核心課程、四選三、跨學程核心與實驗、畢業專題",
+        "第十節：跨域專長重複課程補足"
+      ]
     },
     {
       "title": "電機系學士班課程規劃",
       "url": "https://www.ee.nchu.edu.tw/wb_introduce01.asp?cno=7&url=22",
-      "type": "official-curriculum-map"
+      "type": "official-curriculum-map",
+      "evidence": [
+        "學士班課程規劃",
+        "必修課程規劃",
+        "選修課程規劃及學程相關實驗"
+      ]
     },
     {
       "title": "電機系學程課程介紹",
       "url": "https://www.ee.nchu.edu.tw/wb_introduce01.asp?cno=6&url=22",
-      "type": "official-program-description"
+      "type": "official-program-description",
+      "evidence": [
+        "大學部五個學程的專業課程介紹；不等同畢業條件表所列核心課程"
+      ]
     },
     {
       "title": "中興大學課程查詢系統",
@@ -35,19 +51,28 @@
       "title": "電機工程學系選修輔系辦法（109.08.19修訂）",
       "url": "https://www.ee.nchu.edu.tw/Pic/DocRegulation/17056638240055%281%29.pdf",
       "type": "official-minor-regulation",
-      "note": "114學年度畢業條件表附表1指向此規定；仍須向系辦確認目前適用版本"
+      "note": "114學年度畢業條件表附表1指向此規定；仍須向系辦確認目前適用版本",
+      "evidence": [
+        "109.08.19修訂版第2點：專業必修至少55學分，與原系必修重疊須以本系選修補足"
+      ]
     },
     {
       "title": "電機工程學系修讀雙主修辦法（109.08.19修訂）",
       "url": "https://www.ee.nchu.edu.tw/Pic/DocRegulation/17056638660054%281%29.pdf",
       "type": "official-double-major-regulation",
-      "note": "114學年度畢業條件表附表2指向此規定；仍須向系辦確認目前適用版本"
+      "note": "114學年度畢業條件表附表2指向此規定；仍須向系辦確認目前適用版本",
+      "evidence": [
+        "109.08.19修訂版第2點：依核准修讀年度畢業條件完成全部專業必修、專業選修及畢業專題"
+      ]
     },
     {
       "title": "114-2學期電機系專題(一)選課公告",
       "url": "https://www.ee.nchu.edu.tw/wb_announcement02.asp?ano=594&cno=13&pageno=1&url=12",
       "type": "official-term-course-announcement",
-      "note": "公告列出3450資訊專題(一)、3452控制專題(一)、3461智慧型系統專題(一)等開課示例；非完整清單。"
+      "note": "公告列出3450資訊專題(一)、3452控制專題(一)、3461智慧型系統專題(一)等開課示例；非完整清單。",
+      "evidence": [
+        "114-2學期專題(一)選課規劃名單，列出課號3450、3452、3461的開課示例"
+      ]
     }
   ],
   "requirements": [
@@ -89,7 +114,7 @@
       "credits": 4,
       "relation": "required",
       "status": "verified",
-      "description": "畢業專題(一)、(二)各2學分，兩科均須及格並完成專題展示；是否列入55或27學分仍待系辦確認，不重複加總。"
+      "description": "畢業專題(一)、(二)為一整學年課程；專題(一)下學期開授、專題(二)上學期開授，各2學分。兩科均須及格，並完成專題實作展示；兩科名稱不同亦可。其學分是否歸入55學分必修或27學分選修仍待系辦確認，不重複加總。"
     },
     {
       "id": "pe",
@@ -434,7 +459,10 @@
         "ee-elective",
         "communication",
         "ee-double",
-        "control"
+        "control",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -447,7 +475,11 @@
       "plans": [
         "ee-elective",
         "communication",
-        "ee-double"
+        "ee-double",
+        "control",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -460,7 +492,11 @@
       "plans": [
         "ee-elective",
         "communication",
-        "ee-double"
+        "ee-double",
+        "control",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -473,7 +509,11 @@
       "plans": [
         "ee-elective",
         "communication",
-        "ee-double"
+        "ee-double",
+        "control",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -486,7 +526,11 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -499,7 +543,11 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -512,7 +560,11 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -525,7 +577,11 @@
       "plans": [
         "ee-elective",
         "information",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -538,7 +594,11 @@
       "plans": [
         "ee-elective",
         "information",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -551,7 +611,11 @@
       "plans": [
         "ee-elective",
         "information",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -564,7 +628,11 @@
       "plans": [
         "ee-elective",
         "information",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -577,7 +645,11 @@
       "plans": [
         "ee-elective",
         "electronics",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "information",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -590,7 +662,11 @@
       "plans": [
         "ee-elective",
         "electronics",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "information",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -603,7 +679,11 @@
       "plans": [
         "ee-elective",
         "electronics",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "information",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -616,7 +696,11 @@
       "plans": [
         "ee-elective",
         "solidstate",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "information",
+        "electronics"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -629,7 +713,11 @@
       "plans": [
         "ee-elective",
         "solidstate",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "information",
+        "electronics"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -642,7 +730,11 @@
       "plans": [
         "ee-elective",
         "solidstate",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "information",
+        "electronics"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -655,7 +747,11 @@
       "plans": [
         "ee-elective",
         "solidstate",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "information",
+        "electronics"
       ],
       "status": "verified-partial",
       "source": "114學年度畢業條件明細表／系網課程規劃"
@@ -668,7 +764,11 @@
       "plans": [
         "ee-elective",
         "communication",
-        "ee-double"
+        "ee-double",
+        "control",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -681,7 +781,11 @@
       "plans": [
         "ee-elective",
         "information",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -694,7 +798,11 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -707,7 +815,11 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -720,7 +832,11 @@
       "plans": [
         "ee-elective",
         "solidstate",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "information",
+        "electronics"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -733,7 +849,11 @@
       "plans": [
         "ee-elective",
         "electronics",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "control",
+        "information",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "電機系學士班課程規劃／學程介紹"
@@ -1059,7 +1179,11 @@
       "plans": [
         "ee-elective",
         "control",
-        "ee-double"
+        "ee-double",
+        "communication",
+        "information",
+        "electronics",
+        "solidstate"
       ],
       "status": "verified-partial",
       "source": "114學年度起畢業條件明細表：系統與控制學程核心課程；系網課程規劃"
@@ -1099,7 +1223,8 @@
     "電機系輔系辦法僅將55學分專業必修列為明確採計項目；若與原主修必修重疊，才需以本系選修補足。系專業選修候選課程不代表已自動核准抵補。",
     "畢業總學分128與已列明的系必修55、系選修27、通識28合計110之間尚有18學分差額；官方明細表未在此處說明差額的認列類別，網站不將其擅自命名為自由選修。",
     "四個學程（通訊、系統與控制、資訊、固態電子與光電）的核心課程依114學年度明細表註記為四選三；電子電路學程列3門核心課程。跨學程核心課程與實驗要求依官方原文呈現，不自動判定修畢。",
-    "雙主修的27學分專業選修需依核准修讀年度及系上規定核定；網站所列系網課程僅作候選查詢，不代表已核准認列。"
+    "雙主修的27學分專業選修需依核准修讀年度及系上規定核定；網站所列系網課程僅作候選查詢，不代表已核准認列。",
+    "選定個人專業學程後，其他四個學程各須選一門核心課程；為呈現可選範圍，課程方塊會在五個學程方案中互相關聯。此為候選選項提示，不代表所有課程都必須修習。"
   ],
   "programRules": {
     "sourceRule": "五大學程中，至少選其中之一作為個人的專業學程，並修完該學程全部核心課程（原文另註「通訊、系統與控制、資訊、固態電子與光電為四選三」）及其相關實驗；另須就其他各學程選修一門核心課程。每門課程只能採計一次。實驗課除自己學程相關實驗外，還須加選一個其他學程的實驗。",
