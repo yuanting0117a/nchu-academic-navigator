@@ -20,19 +20,6 @@
           "sourceUrl": "https://www.ee.nchu.edu.tw/Pic/DocRegulation/17466153950240%281%29.pdf"
         },
         {
-          "id": "transfer",
-          "name": "轉系／轉入其他系",
-          "award": "轉入系學士學位",
-          "eligibility": "依學校轉系規定及目標系當年度名額、資格與審查；修課相符不等於取得轉入學籍。",
-          "requirements": [
-            "申請與審查依當年度公告",
-            "核准後依轉入系適用年級／年度規定重新檢查",
-            "原修課程須逐科申請抵免或認列"
-          ],
-          "status": "校級流程有資料；各目標系條件逐系補齊中",
-          "sourceUrl": "https://oaa.nchu.edu.tw/zh-tw/rule"
-        },
-        {
           "id": "double-major",
           "name": "雙主修",
           "award": "主系＋第二主修；符合規定時可能申請以加修系畢業",
