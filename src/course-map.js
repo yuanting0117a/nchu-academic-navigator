@@ -42,6 +42,7 @@ function renderCourses(){
  const groups=[...new Set(courses.map(c=>c.group))];
  const visible=courses.filter(c=>courseVisible(c)&&(!showOnlyMyCourses||myCourses.includes(c.id)));
  $("courseCount").textContent=visible.length+" / "+courses.length+" 項";
+ renderMyCourseSummary();
  if(!visible.length){host.innerHTML='<div class="empty-state">找不到符合條件的課程或規定項目。</div>';return}
  host.innerHTML=groups.map(g=>{
   const items=visible.filter(c=>c.group===g);if(!items.length)return "";
@@ -55,7 +56,6 @@ function renderCourses(){
  }).join("");
  host.querySelectorAll("[data-course]").forEach(b=>b.addEventListener("click",()=>setSelection("course",b.dataset.course)));
  host.querySelectorAll("[data-toggle-course]").forEach(b=>b.addEventListener("click",e=>{e.stopPropagation();toggleMyCourse(b.dataset.toggleCourse)}));
- renderMyCourseSummary();
 }
 function renderDetail(){
  const host=$("detailBody");
