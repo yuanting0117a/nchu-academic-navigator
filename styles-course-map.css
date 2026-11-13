@@ -29,3 +29,6 @@
 
 .cross-program-group{margin:7px 0 10px;padding:8px;background:#fff;border:1px solid #e3ebe5;border-radius:8px}
 .cross-program-group>b{display:block;margin-bottom:6px;font-size:9px;color:#53665a}
+
+.guidance-list{margin:7px 0 0;padding-left:17px;display:grid;gap:6px}
+.guidance-list li{font-size:10px;line-height:1.65;color:#53645a}
