@@ -88,6 +88,9 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   const requiredPlan = elements.planTiles.querySelectorAll("[data-plan]").find(x => x.dataset.plan === "ee-required");
   requiredPlan.click();
   assert(elements.detailBody.innerHTML.includes("電機系專業必修"), "plan detail should render");
+  const generalPlan=elements.planTiles.querySelectorAll("[data-plan]").find(x=>x.dataset.plan==="general");
+  generalPlan.click();
+  assert(elements.detailBody.innerHTML.includes("人文領域") && elements.detailBody.innerHTML.includes("統合領域至少4學分"), "detailed general education categories should render");
   assert(elements.courseGroups.innerHTML.includes('class="course-tile lit'), "selecting a plan should highlight related courses");
   assert(elements.courseGroups.innerHTML.includes('class="course-tile dim'), "unrelated courses should be dimmed");
 
