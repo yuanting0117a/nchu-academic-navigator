@@ -1,0 +1,788 @@
+{
+  "source": {
+    "title": "115學年度國立中興大學系所學位學程簡稱一覽表",
+    "url": "https://www.nchu.edu.tw/about/mid/18",
+    "updatedAt": "115.07.30",
+    "verifiedAt": "2026-11-13",
+    "scope": "教學單位系、所、學位學程清單；不包含各院附屬中心與行政單位"
+  },
+  "notes": [
+    "此目錄用於建立校級學術單位索引，不代表每個單位都有學士班。",
+    "undergraduateDegreeCandidate僅依單位名稱及類型作初步分類，仍須核對招生與授予學位資料。",
+    "研究所及碩博士學程保留在全校目錄，但目前導航MVP優先匯入學士班畢業條件。",
+    "創新產業暨國際學院未列入該115學年度簡稱表的學位授予單位，故不自行加入為畢業目標。",
+    "校級微生物基因體學博士學位學程列為不分院學程。"
+  ],
+  "collegeCount": 12,
+  "unitCount": 96,
+  "units": [
+    {
+      "college": "文學院",
+      "name": "中國文學系",
+      "shortName": "中文系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "文學院",
+      "name": "外國語文學系",
+      "shortName": "外文系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "文學院",
+      "name": "歷史學系",
+      "shortName": "歷史系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "文學院",
+      "name": "台灣人文創新學士學位學程",
+      "shortName": "台文學士學程",
+      "unitType": "bachelor_program",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "文學院",
+      "name": "圖書資訊學研究所",
+      "shortName": "圖資所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "文學院",
+      "name": "台灣文學與跨國文化研究所",
+      "shortName": "台文所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "文學院",
+      "name": "台灣與跨文化研究國際博士學位學程",
+      "shortName": "跨文化學程",
+      "unitType": "doctoral_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "文學院",
+      "name": "數位人文與文創產業學士學位學程",
+      "shortName": "文創學程",
+      "unitType": "bachelor_program",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "農藝學系",
+      "shortName": "農藝系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "園藝學系",
+      "shortName": "園藝系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "森林學系",
+      "shortName": "森林系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "應用經濟學系",
+      "shortName": "應經系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "植物病理學系",
+      "shortName": "植病系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "昆蟲學系",
+      "shortName": "昆蟲系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "動物科學學系",
+      "shortName": "動科系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "土壤環境科學系",
+      "shortName": "土環系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "水土保持學系",
+      "shortName": "水保系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "食品暨應用生物科技學系",
+      "shortName": "食生系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "生物產業機電工程學系",
+      "shortName": "生機系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "生物科技學研究所",
+      "shortName": "生技所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "生物產業管理研究所",
+      "shortName": "生管所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "食品安全研究所",
+      "shortName": "食安所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "農業企業經營管理碩士在職專班",
+      "shortName": "農企業碩專班",
+      "unitType": "in_service_master",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "生物科技學士學位學程",
+      "shortName": "生技學程",
+      "unitType": "bachelor_program",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "景觀與遊憩學士學位學程",
+      "shortName": "景觀學程",
+      "unitType": "bachelor_program",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "生物產業管理進修學士學位學程",
+      "shortName": "生管學程",
+      "unitType": "continuing_bachelor_program",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "國際農企業學士學位學程",
+      "shortName": "國農企學程",
+      "unitType": "bachelor_program",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "景觀與遊憩碩士學位學程",
+      "shortName": "景觀碩士學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "國際農學碩士學位學程",
+      "shortName": "國農碩學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "農業經濟與行銷碩士學位學程",
+      "shortName": "農經學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "植物醫學暨安全農業碩士學位學程",
+      "shortName": "植醫學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "植物暨微生物國際碩士學位學程",
+      "shortName": "植微國碩學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "農業暨自然資源學院",
+      "name": "國際農學博士學位學程",
+      "shortName": "國農博學程",
+      "unitType": "doctoral_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "理學院",
+      "name": "化學系",
+      "shortName": "化學系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "理學院",
+      "name": "應用數學系",
+      "shortName": "應數系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "理學院",
+      "name": "物理學系",
+      "shortName": "物理系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "理學院",
+      "name": "奈米科學研究所",
+      "shortName": "奈米所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "理學院",
+      "name": "統計學研究所",
+      "shortName": "統計所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "理學院",
+      "name": "資料科學與資訊計算研究所",
+      "shortName": "資科所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "理學院",
+      "name": "大數據產學研發博士學位學程",
+      "shortName": "大數據學程",
+      "unitType": "doctoral_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "理學院",
+      "name": "人工智慧與資料科學碩士在職學位學程",
+      "shortName": "人工智慧學程",
+      "unitType": "in_service_master",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "工學院",
+      "name": "土木工程學系",
+      "shortName": "土木系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "工學院",
+      "name": "機械工程學系",
+      "shortName": "機械系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "工學院",
+      "name": "環境工程學系",
+      "shortName": "環工系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "工學院",
+      "name": "化學工程學系",
+      "shortName": "化工系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "工學院",
+      "name": "材料科學與工程學系",
+      "shortName": "材料系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "工學院",
+      "name": "智慧創意工程學士學位學程",
+      "shortName": "智慧創意學程",
+      "unitType": "bachelor_program",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "工學院",
+      "name": "精密工程研究所",
+      "shortName": "精密所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "工學院",
+      "name": "生醫工程研究所",
+      "shortName": "醫工所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "工學院",
+      "name": "智慧工程科技國際博士學位學程",
+      "shortName": "智科國際博士學程",
+      "unitType": "doctoral_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "生命科學系",
+      "shortName": "生科系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "分子生物學研究所",
+      "shortName": "分生所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "生物化學研究所",
+      "shortName": "生化所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "生物醫學研究所",
+      "shortName": "生醫所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "生命科學院碩士在職專班",
+      "shortName": "生科院碩專班",
+      "unitType": "in_service_master",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "基因體暨生物資訊學研究所",
+      "shortName": "基資所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "精準健康碩士學位學程",
+      "shortName": "精準健康碩士",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "醫學生物科技博士學位學程",
+      "shortName": "醫科學程",
+      "unitType": "doctoral_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "轉譯醫學博士學位學程",
+      "shortName": "轉譯醫學學程",
+      "unitType": "doctoral_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "生技產業創新研發與管理博士學位學程",
+      "shortName": "生創博士學程",
+      "unitType": "doctoral_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "生命科學院",
+      "name": "跨域創新生技國際博士學位學程",
+      "shortName": "跨域創新生技博士學程",
+      "unitType": "doctoral_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "獸醫學院",
+      "name": "獸醫學系",
+      "shortName": "獸醫系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "獸醫學院",
+      "name": "微生物暨公共衛生學研究所",
+      "shortName": "微衛所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "獸醫學院",
+      "name": "獸醫病理生物學研究所",
+      "shortName": "獸病所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "管理學院",
+      "name": "財務金融學系",
+      "shortName": "財金系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "管理學院",
+      "name": "企業管理學系",
+      "shortName": "企管系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "管理學院",
+      "name": "行銷學系",
+      "shortName": "行銷系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "管理學院",
+      "name": "資訊管理學系",
+      "shortName": "資管系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "管理學院",
+      "name": "會計學系",
+      "shortName": "會計系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "管理學院",
+      "name": "科技管理研究所",
+      "shortName": "科管所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "管理學院",
+      "name": "運動與健康管理研究所",
+      "shortName": "運健所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "管理學院",
+      "name": "高階經理人碩士在職專班",
+      "shortName": "EMBA",
+      "unitType": "in_service_master",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "管理學院",
+      "name": "創新產業經營學士學位學程(進修學士班)",
+      "shortName": "創經學程",
+      "unitType": "continuing_bachelor_program",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "法政學院",
+      "name": "法律學系",
+      "shortName": "法律系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "法政學院",
+      "name": "國際政治研究所",
+      "shortName": "國政所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "法政學院",
+      "name": "國家政策與公共事務研究所",
+      "shortName": "國務所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "法政學院",
+      "name": "教師專業發展研究所",
+      "shortName": "教研所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "法政學院",
+      "name": "亞洲與中國研究英語碩士學位學程",
+      "shortName": "亞洲中國學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "法政學院",
+      "name": "全球事務研究跨洲碩士學位學程",
+      "shortName": "跨洲學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "電機資訊學院",
+      "name": "電機工程學系",
+      "shortName": "電機系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "電機資訊學院",
+      "name": "資訊工程學系",
+      "shortName": "資工系",
+      "unitType": "department",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "電機資訊學院",
+      "name": "電機資訊學院學士班",
+      "shortName": "電資學士班",
+      "unitType": "bachelor_program",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "電機資訊學院",
+      "name": "通訊工程研究所",
+      "shortName": "通訊所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "電機資訊學院",
+      "name": "光電工程研究所",
+      "shortName": "光電所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "醫學院",
+      "name": "學士後醫學系",
+      "shortName": "學士後醫學系",
+      "unitType": "post_baccalaureate_bachelor_program",
+      "undergraduateDegreeCandidate": true,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "醫學院",
+      "name": "臨床醫學研究所",
+      "shortName": "臨醫所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "醫學院",
+      "name": "臨床護理研究所",
+      "shortName": "臨護所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "醫學院",
+      "name": "中醫藥暨新藥開發研究所",
+      "shortName": "新藥所",
+      "unitType": "graduate_institute",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "醫學院",
+      "name": "組織工程與再生醫學博士學位學程",
+      "shortName": "組醫學程",
+      "unitType": "doctoral_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "循環經濟研究學院",
+      "name": "生物與永續科技碩士學位學程",
+      "shortName": "永續碩士學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "循環經濟研究學院",
+      "name": "特用作物及代謝體碩士學位學程",
+      "shortName": "代謝碩士學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "循環經濟研究學院",
+      "name": "植物保健碩士學位學程",
+      "shortName": "植保碩士學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "循環經濟研究學院",
+      "name": "國際精準農企業發展碩士學位學程",
+      "shortName": "農企碩士學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "循環經濟研究學院",
+      "name": "工業與智慧科技碩士學位學程",
+      "shortName": "智科碩士學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "循環經濟研究學院",
+      "name": "半導體與綠色科技碩士學位學程",
+      "shortName": "半導體碩學程",
+      "unitType": "master_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    },
+    {
+      "college": "不分院學程",
+      "name": "微生物基因體學博士學位學程",
+      "shortName": "微基學程",
+      "unitType": "doctoral_program",
+      "undergraduateDegreeCandidate": false,
+      "requirementDataStatus": "not_yet_imported"
+    }
+  ]
+}
