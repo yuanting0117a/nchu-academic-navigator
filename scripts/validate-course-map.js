@@ -8,7 +8,7 @@ for (const course of data.courses) {
   assert(course.id && !ids.has(course.id), "duplicate or missing course id: " + course.id);
   ids.add(course.id);
   for (const plan of (course.plans || [])) assert(plans.has(plan), "unknown plan " + plan + " in " + course.id);
-  assert(course.name && course.group && course.status, "incomplete course record: " + course.id);
+  assert(course.name && course.group && course.status, "incomplete course record: " + course.id);\n  assert(course.courseUnit && course.eligibility, "course unit / eligibility missing: " + course.id);
 }
 const required = data.courses.filter(x => x.group === "專業必修");
 assert.strictEqual(required.length, 20, "EE professional required courses should be 20");
