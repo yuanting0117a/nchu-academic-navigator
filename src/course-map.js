@@ -1,7 +1,7 @@
 (function(){
 const $=id=>document.getElementById(id);
 const DATA_URL="data/course-map/ee-undergraduate-114.json";
-let data=null,selectedPlan=null,selectedCourse=null,filter="all",query="",admissionYear="114",imported=[],myCourses=[],showOnlyMyCourses=false;
+let data=null,pathwayData=null,selectedPlan=null,selectedCourse=null,filter="all",query="",admissionYear="114",imported=[],myCourses=[],showOnlyMyCourses=false;
 try{myCourses=JSON.parse(localStorage.getItem("nchu-my-courses-v1")||"[]")}catch(e){myCourses=[]}
 const myCourseSet=()=>new Set(myCourses);
 function toggleMyCourse(id){myCourses=myCourses.includes(id)?myCourses.filter(x=>x!==id):[...myCourses,id];localStorage.setItem("nchu-my-courses-v1",JSON.stringify(myCourses));render();}
@@ -11,7 +11,7 @@ try{imported=JSON.parse(localStorage.getItem("nchu-course-map-imports-v1")||"[]"
 function allCourses(){return (data?.courses||[]).concat(imported)}
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const sourceByTitle=title=>(data.sources||[]).find(s=>s.title===title);
-function statusLabel(s){return s==="verified"?"規則已核實":s==="verified-partial"?"部分核實":"待確認"}
+function eligibilityLabel(c){if(c.group==="當期開課（官方匯入）"){const dept=c.dept||c.department||"";return dept.includes("電機")?"本系當期開課 · 採計待核":"外系／全校課程 · 選課資格與採計待核";}return c.eligibility||"依開課單位及當期選課限制確認";}\nfunction statusLabel(s){return s==="verified"?"規則已核實":s==="verified-partial"?"部分核實":"待確認"}
 function effectiveStatus(s){return admissionYear==="115"?"pending":s}
 function courseStatus(c){return admissionYear==="115"?"115適用性待確認":c.status==="verified"?"規則已核實":c.group==="當期開課（官方匯入）"?"採計待核實":"細項待確認"}
 function planById(id){return data.requirements.find(p=>p.id===id)}
@@ -33,7 +33,7 @@ function renderPlans(){
 function courseVisible(c){
  const q=query.trim().toLowerCase();
  const text=(c.name+" "+c.group+" "+(c.source||"")+" "+(c.courseNo||"")+" "+(c.dept||"")+" "+(c.teacher||"")+" "+(c.aliases||[]).join(" ")+" "+(c.categoryLabel||"")+" "+(c.requiredType||"")+" "+(c.section||"")).toLowerCase();
- const typeOk=filter==="all"||(filter==="required"&&c.group==="專業必修")||(filter==="program"&&c.group.includes("學程"))||(filter==="lab"&&c.group==="專業實驗")||(filter==="project"&&c.group.includes("畢業專題"));
+ const typeOk=filter==="all"||(filter==="required"&&c.group==="專業必修")||(filter==="program"&&c.group.includes("學程"))||(filter==="lab"&&c.group==="專業實驗")||(filter==="project"&&c.group.includes("畢業專題"))||(filter==="external"&&c.group==="當期開課（官方匯入）");
  return typeOk&&(!q||text.includes(q));
 }
 function renderCourses(){
@@ -51,7 +51,7 @@ function renderCourses(){
    const mine=myCourses.includes(c.id);
    const related=selectedPlan&&c.plans.includes(selectedPlan);
    const dim=selectedPlan&&!related;
-   return '<div class="course-card '+(mine?"in-my-courses":"")+'"><button class="course-tile '+(selected?"active ":"")+(related?"lit ":"")+(dim?"dim":"")+(mine?" mine ":"")+'" data-course="'+esc(c.id)+'"><span class="course-name">'+esc(c.name)+'</span><span class="course-meta"><small>'+(c.credits===null?"學分依開課資料":c.credits+" 學分")+'</small><span class="tiny-status">'+(c.categoryLabel?esc(c.categoryLabel)+" · ":"")+(admissionYear==="115"?"年度待確認":c.status==="verified"?"已核實":c.group==="當期開課（官方匯入）"?"採計待核":"細項待核")+'</span></span></button><button type="button" class="course-add '+(mine?"added":"")+'" data-toggle-course="'+esc(c.id)+'" aria-pressed="'+mine+'">'+(mine?"✓ 已加入我的修課":"＋ 加入我的修課")+'</button></div>'
+   return '<div class="course-card '+(mine?"in-my-courses":"")+'"><button class="course-tile '+(selected?"active ":"")+(related?"lit ":"")+(dim?"dim":"")+(mine?" mine ":"")+'" data-course="'+esc(c.id)+'"><span class="course-name">'+esc(c.name)+'</span><span class="course-meta"><small>'+(c.credits===null?"學分依開課資料":c.credits+" 學分")+'</small><span class="tiny-status">'+(c.categoryLabel?esc(c.categoryLabel)+" · ":"")+(admissionYear==="115"?"年度待確認":c.status==="verified"?"已核實":c.group==="當期開課（官方匯入）"?"採計待核":"細項待核")+'</span></span></button><button type="button" class="course-add '+(mine?"added":"")+'" data-toggle-course="'+esc(c.id)+'" aria-pressed="'+mine+'">'+(mine?"✓ 已加入我的修課":"＋ 加入修課規劃")+'</button></div>'
   }).join("")+'</div></section>'
  }).join("");
  host.querySelectorAll("[data-course]").forEach(b=>b.addEventListener("click",()=>setSelection("course",b.dataset.course)));
@@ -65,7 +65,7 @@ function renderDetail(){
   const official=c.group==="當期開課（官方匯入）"?data.sources[3]:c.group.includes("畢業專題")?data.sources[6]:(c.group==="專業必修"?data.sources[0]:data.sources[2]);
   const meta=[c.courseNo?"課號 "+c.courseNo:"",c.dept?"開課單位 "+c.dept:"",c.term?"學期 "+c.term:"",c.categoryLabel?"分類 "+c.categoryLabel:"",c.requiredType?"必選別 "+c.requiredType:"",c.section?"班別 "+c.section:"",c.room?"教室 "+c.room:"",c.teacher?"教師 "+c.teacher:""].filter(Boolean).join(" · ");
   
-const pending=c.group==="當期開課（官方匯入）"||c.status!=="verified";
+const pending=c.group==="當期開課（官方匯入）"||c.status!=="verified";\n  const eligibility=eligibilityLabel(c);
   const isProject=c.group.includes("畢業專題");
   const guidance=isProject?data.projectGuidelines:((c.group==="專業必修"||c.group.includes("學程")||c.group==="專業實驗")?data.courseSelectionRules:null);
   const guidanceSource=isProject?data.sources.find(x=>x.type==="official-project-guideline"):data.sources.find(x=>x.type==="official-course-selection-policy");
@@ -110,5 +110,5 @@ $("clearMyCourses").addEventListener("click",clearMyCourses);
 document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.filter;document.querySelectorAll("[data-filter]").forEach(x=>x.classList.toggle("active",x===b));renderCourses()}));
 $("admissionYear").addEventListener("change",e=>{admissionYear=e.target.value;render()});
 window.addEventListener("nchu-import-courses",e=>{imported=e.detail||[];localStorage.setItem("nchu-course-map-imports-v1",JSON.stringify(imported));selectedPlan=null;selectedCourse=null;render();$("importStatus").textContent="本機已保存 "+imported.length+" 筆官方匯入課程；採計關係待核實。";$("dataLoadStatus").textContent="資料載入成功 · "+data.courses.length+" 個規劃項目 · 已匯入 "+imported.length+" 筆";});
-fetch(DATA_URL).then(r=>{if(!r.ok)throw new Error("資料檔讀取失敗（"+r.status+"）");return r.json()}).then(d=>{data=d;render();$("dataLoadStatus").textContent="資料載入成功 · "+d.courses.length+" 個規劃項目"+(imported.length?" · 已匯入 "+imported.length+" 筆":"");$("importStatus").textContent=imported.length?"本機已保存 "+imported.length+" 筆官方匯入課程。":"尚未匯入當期課程。";$("dataLoadStatus").className="meta-pill"}).catch(err=>{$("courseGroups").innerHTML='<div class="empty-state">課程資料載入失敗：'+esc(err.message)+'。請重新整理頁面。</div>'; $("dataLoadStatus").textContent="資料載入失敗"});
+Promise.all([fetch(DATA_URL).then(r=>{if(!r.ok)throw new Error("課程資料讀取失敗（"+r.status+"）");return r.json()}),fetch("data/academic-pathways-115.json").then(r=>{if(!r.ok)throw new Error("學位路徑資料讀取失敗（"+r.status+"）");return r.json()})]).then(([d,p])=>{data=d;pathwayData=p;render();$("dataLoadStatus").textContent="資料載入成功 · "+d.courses.length+" 個規劃項目"+(imported.length?" · 已匯入 "+imported.length+" 筆":"");$("importStatus").textContent=imported.length?"本機已保存 "+imported.length+" 筆官方匯入課程。":"尚未匯入當期課程。";$("dataLoadStatus").className="meta-pill"}).catch(err=>{$("courseGroups").innerHTML='<div class="empty-state">課程資料載入失敗：'+esc(err.message)+'。請重新整理頁面。</div>'; $("dataLoadStatus").textContent="資料載入失敗"});
 })();
