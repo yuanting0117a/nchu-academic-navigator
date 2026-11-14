@@ -36,7 +36,7 @@ function render(){
  const satisfied=eligible.filter(c=>progress(c).done).length,pct=Math.round(satisfied/eligible.length*100);
  host.innerHTML='<div class="audit-top"><div><span class="eyebrow">GRADUATION REQUIREMENT CHECK</span><h2>畢業條件總覽</h2><p>全部條件同時展開。綠燈＝目前符合；紅燈＝尚未符合；黃燈＝已安排未來課程，可與紅燈並存。未來安排不會增加符合率。</p></div><div class="audit-percent"><strong>'+pct+'%</strong><span>條件符合率</span><div class="audit-progress"><i style="width:'+pct+'%"></i></div><small>'+satisfied+' / '+eligible.length+' 項條件符合</small></div></div><div class="audit-legend"><span><i class="lamp green"></i>已符合</span><span><i class="lamp red"></i>尚未符合</span><span><i class="lamp gray"></i>不適用／不列入</span><span><i class="lamp yellow"></i>未來安排</span></div><div class="audit-grid">'+items.map(c=>{
  const p=progress(c),st=state(c,p),future=hasFuture(c),lights=st==="both"?'<i class="lamp red"></i><i class="lamp yellow"></i>':st==="green"?'<i class="lamp green"></i>':st==="gray"?'<i class="lamp gray"></i>':'<i class="lamp red"></i>';
- const shown=st==="gray"?"免修":(c.unit==="course"?p.value+" / "+p.target+" 門":p.value+" / "+p.target+" 學分");
+ const shown=st==="gray"?"免修":(c.unit==="course"?"要求：至少1門":"要求：至少"+p.target+"學分");
  const rows=(allocations[c.id]||[]).map(a=>{let x=list.find(y=>y.id===a.courseId);return x?'<div class="audit-assigned"><span>'+esc(x.name)+'<small>'+(x.credits??"?")+'學分 · '+(a.state==="done"?"已修畢":"未來安排")+'</small></span><button type="button" data-remove="'+c.id+'" data-id="'+esc(a.courseId)+'">移除</button></div>':""}).join("");
  const opts=list.map(x=>'<option value="'+esc(x.id)+'">'+esc(x.name)+' · '+(x.credits??"?")+'學分 · '+esc(x.dept||x.group||"")+'</option>').join("");
  const aggregate=c.scope==="total"||c.id==="ge-total"||c.id==="ge-domain-total"||c.scope==="exempt";
