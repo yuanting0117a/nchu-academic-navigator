@@ -27,14 +27,15 @@ function totalAmount(){return amount("required")+amount("elective")+geAmount()}
 function domainTotal(){return amount("ge-humanities")+amount("ge-social")+amount("ge-natural")}
 function domainReady(){return ["ge-humanities","ge-social","ge-natural"].every(id=>count(id,"done")>0)&&domainTotal()>=6}
 function progress(c){if(c.id==="total")return {value:totalAmount(),target:128,done:totalAmount()>=128};if(c.id==="ge-total")return {value:geAmount(),target:28,done:geAmount()>=28};if(c.id==="ge-domain-total")return {value:domainTotal(),target:6,done:domainReady()};if(c.scope==="exempt")return {value:0,target:0,done:false};if(c.id==="project")return {value:amount(c.id),target:4,done:amount(c.id)>=4&&count(c.id,"done")>=2};if(c.unit==="course"){let n=count(c.id,"done");return {value:n,target:1,done:n>0}}let v=amount(c.id);return {value:v,target:c.target,done:v>=c.target}}
-function state(c,p){if(c.scope==="exempt")return "gray";let future=count(c.id,"planned")>0;return p.done?"green":future?"both":"red"}
+function hasFuture(c){if(c.id==="total")return Object.values(allocations).flat().some(x=>x.state==="planned");if(c.id==="ge-total")return criteria.filter(x=>x.scope==="ge").some(x=>count(x.id,"planned")>0);if(c.id==="ge-domain-total")return ["ge-humanities","ge-social","ge-natural"].some(id=>count(id,"planned")>0);return count(c.id,"planned")>0}
+function state(c,p){if(c.scope==="exempt")return "gray";return p.done?"green":hasFuture(c)?"both":"red"}
 function render(){
  const host=$("graduationAudit");if(!host)return;
  const list=allCourses(),items=[{id:"total",name:"畢業總學分",target:128,scope:"total",note:"至少128學分，不含體育；已明列的系必修55、系選修27、通識28合計110，另有18學分分類待系辦確認。"},{id:"ge-total",name:"通識總額",target:28,scope:"total",note:"通識至少28學分；由下方通識分類配置加總，不重複配置。"},...criteria];
  const eligible=items.filter(c=>!["total","ge-total","ge-domain-total","ge-exempt"].includes(c.id));
  const satisfied=eligible.filter(c=>progress(c).done).length,pct=Math.round(satisfied/eligible.length*100);
  host.innerHTML='<div class="audit-top"><div><span class="eyebrow">GRADUATION REQUIREMENT CHECK</span><h2>畢業條件總覽</h2><p>全部條件同時展開。綠燈＝目前符合；紅燈＝尚未符合；黃燈＝已安排未來課程，可與紅燈並存。未來安排不會增加符合率。</p></div><div class="audit-percent"><strong>'+pct+'%</strong><span>條件符合率</span><div class="audit-progress"><i style="width:'+pct+'%"></i></div><small>'+satisfied+' / '+eligible.length+' 項條件符合</small></div></div><div class="audit-legend"><span><i class="lamp green"></i>已符合</span><span><i class="lamp red"></i>尚未符合</span><span><i class="lamp gray"></i>不適用／不列入</span><span><i class="lamp yellow"></i>未來安排</span></div><div class="audit-grid">'+items.map(c=>{
- const p=progress(c),st=state(c,p),future=count(c.id,"planned"),lights=st==="both"?'<i class="lamp red"></i><i class="lamp yellow"></i>':st==="green"?'<i class="lamp green"></i>':st==="gray"?'<i class="lamp gray"></i>':'<i class="lamp red"></i>';
+ const p=progress(c),st=state(c,p),future=hasFuture(c),lights=st==="both"?'<i class="lamp red"></i><i class="lamp yellow"></i>':st==="green"?'<i class="lamp green"></i>':st==="gray"?'<i class="lamp gray"></i>':'<i class="lamp red"></i>';
  const shown=st==="gray"?"免修":(c.unit==="course"?p.value+" / "+p.target+" 門":p.value+" / "+p.target+" 學分");
  const rows=(allocations[c.id]||[]).map(a=>{let x=list.find(y=>y.id===a.courseId);return x?'<div class="audit-assigned"><span>'+esc(x.name)+'<small>'+(x.credits??"?")+'學分 · '+(a.state==="done"?"已修畢":"未來安排")+'</small></span><button type="button" data-remove="'+c.id+'" data-id="'+esc(a.courseId)+'">移除</button></div>':""}).join("");
  const opts=list.map(x=>'<option value="'+esc(x.id)+'">'+esc(x.name)+' · '+(x.credits??"?")+'學分 · '+esc(x.dept||x.group||"")+'</option>').join("");
@@ -46,6 +47,6 @@ function render(){
 }
 function save(){localStorage.setItem(KEY,JSON.stringify(allocations));render()}
 window.addEventListener("nchu-import-courses",render);
-document.addEventListener("click",e=>{if(e.target?.id==="showMyCourses"||e.target?.id==="clearMyCourses")setTimeout(render,0)});
+document.addEventListener("click",e=>{if(e.target?.id==="showMyCourses"||e.target?.id==="clearMyCourses"||e.target?.hasAttribute("data-toggle-course")||e.target?.hasAttribute("data-ge-toggle-course"))setTimeout(render,0)});
 fetch("data/course-map/ee-undergraduate-114.json").then(r=>r.json()).then(d=>{window.nchuCourseMapData=d;render()}).catch(()=>{let h=$("graduationAudit");if(h)h.textContent="畢業條件資料載入失敗，請重新整理。"});
 })();
