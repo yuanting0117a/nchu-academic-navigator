@@ -32,7 +32,7 @@ function state(c,p){if(c.scope==="exempt")return "gray";return p.done?"green":ha
 function render(){
  const host=$("graduationAudit");if(!host)return;
  const list=allCourses(),items=[{id:"total",name:"畢業總學分",target:128,scope:"total",note:"至少128學分，不含體育；已明列的系必修55、系選修27、通識28合計110，另有18學分分類待系辦確認。"},{id:"ge-total",name:"通識總額",target:28,scope:"total",note:"通識至少28學分；由下方通識分類配置加總，不重複配置。"},...criteria];
- const eligible=items.filter(c=>!["total","ge-total","ge-domain-total","ge-exempt"].includes(c.id));
+ const eligible=items.filter(c=>!["total","ge-total","ge-exempt"].includes(c.id));
  const satisfied=eligible.filter(c=>progress(c).done).length,pct=Math.round(satisfied/eligible.length*100);
  host.innerHTML='<div class="audit-top"><div><span class="eyebrow">GRADUATION REQUIREMENT CHECK</span><h2>畢業條件總覽</h2><p>全部條件同時展開。綠燈＝目前符合；紅燈＝尚未符合；黃燈＝已安排未來課程，可與紅燈並存。未來安排不會增加符合率。</p></div><div class="audit-percent"><strong>'+pct+'%</strong><span>條件符合率</span><div class="audit-progress"><i style="width:'+pct+'%"></i></div><small>'+satisfied+' / '+eligible.length+' 項條件符合</small></div></div><div class="audit-legend"><span><i class="lamp green"></i>已符合</span><span><i class="lamp red"></i>尚未符合</span><span><i class="lamp gray"></i>不適用／不列入</span><span><i class="lamp yellow"></i>未來安排</span></div><div class="audit-grid">'+items.map(c=>{
  const p=progress(c),st=state(c,p),future=hasFuture(c),lights=st==="both"?'<i class="lamp red"></i><i class="lamp yellow"></i>':st==="green"?'<i class="lamp green"></i>':st==="gray"?'<i class="lamp gray"></i>':'<i class="lamp red"></i>';
