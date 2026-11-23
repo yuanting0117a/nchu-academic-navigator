@@ -36,6 +36,14 @@ for (const program of data.programRules.programs) {
 }
 assert(!data.courses.some(x => x.id.startsWith("project-option-")), "unverified generated project options must not return");
 assert(data.sources.every(x => x.title && /^https:\/\//.test(x.url)), "each source needs an official URL");
+const eeGroup = data.generalEducationRules.departmentAffiliation;
+assert(eeGroup && eeGroup.department === "電機工程學系" && eeGroup.group === "工程科技", "EE general-education affiliation group must be explicit");
+assert.strictEqual(eeGroup.maxCountedCourses, 1, "EE affiliated-group GE cap should be one course");
+assert(data.sources.some(x => x.id === eeGroup.sourceId && x.type === "official-general-education-affiliation"), "EE affiliation source missing");
+assert(data.sources.some(x => x.id === eeGroup.pageSourceId && x.type === "official-general-education-course-page"), "current GE center page source missing");
+const geTransfer = data.generalEducationRules.creditTransfer;
+assert(geTransfer && geTransfer.term === "115-1" && geTransfer.status === "closed", "115-1 GE transfer period must be marked closed");
+assert(data.sources.some(x => x.id === geTransfer.sourceId && x.type === "official-general-education-credit-transfer"), "GE credit-transfer source missing");
 assert(data.pathwayRules.categories.length >= 3, "degree and study pathways missing");
 assert(data.pathwayRules.categories.flatMap(x=>x.items).length >= 10, "pathway coverage incomplete");
 const externalPathways = JSON.parse(fs.readFileSync("data/academic-pathways-115.json", "utf8"));

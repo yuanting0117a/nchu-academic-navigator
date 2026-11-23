@@ -113,3 +113,21 @@
 .audit-assigned-list{display:grid;gap:5px;min-height:18px}.audit-assigned{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 7px;border:1px solid #e8eee9;border-radius:7px;font-size:9px}.audit-assigned small{display:block;color:#718077;margin-top:2px}.audit-assigned button{border:0;background:transparent;color:#9a5550;font-size:9px;cursor:pointer}.audit-empty{color:#9aa69e;font-size:9px}
 .audit-add-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:5px;margin-top:9px}.audit-add-row select{min-width:0;width:100%;height:31px;border:1px solid var(--line);border-radius:7px;padding:0 6px;background:#fff;font:inherit;font-size:9px}.audit-add-row button{border:1px solid var(--line);border-radius:7px;background:#f8faf8;padding:0 8px;font-size:9px;color:#40584a;cursor:pointer}.audit-footnote{margin:13px 0 0;padding:10px 11px;border-radius:8px;background:#f5f8f6;color:#68786f;font-size:9px;line-height:1.7}
 @media(max-width:1100px){.audit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.graduation-audit{padding:14px}.audit-top{display:block}.audit-percent{margin-top:12px}.audit-grid{grid-template-columns:1fr}}
+
+
+/* v2.6.2 general-education eligibility and credit-transfer evidence */
+.ge-policy-grid{display:grid;grid-template-columns:1fr;gap:8px;margin:11px 0}
+.ge-policy-card{padding:11px;border:1px solid #d8e5dc;border-radius:10px;background:#f8fbf9}
+.ge-policy-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.ge-policy-head>div{display:grid;gap:4px}.ge-policy-head small{font-size:9px;color:#687a70}.ge-policy-head strong{font-size:14px;color:#244d3d}
+.ge-policy-limit{display:inline-block;margin:8px 0 3px;padding:5px 8px;border-radius:7px;background:#e9f3ec;color:#285a40;font-size:11px;font-weight:850}
+.ge-policy-card p{margin:5px 0;font-size:10px;line-height:1.65;color:#4e6257}
+.ge-policy-card>small{display:block;font-size:9px;line-height:1.55;color:#77847c}
+.ge-transfer-details{margin:12px 0;padding:10px;border:1px solid #e3e9e4;border-radius:10px;background:#fff}
+.ge-transfer-details summary{display:flex;justify-content:space-between;align-items:center;gap:8px;cursor:pointer;list-style:none}
+.ge-transfer-details summary::-webkit-details-marker{display:none}
+.ge-transfer-details summary b{font-size:10px;color:#344d3e}
+.ge-transfer-details>p{margin:9px 0;font-size:10px;line-height:1.65}
+.ge-transfer-details h5{margin:10px 0 5px;font-size:10px;color:#41584b}
+.ge-transfer-details .guidance-list{margin:0;padding-left:18px}
+.ge-transfer-details .guidance-list li{font-size:10px;line-height:1.65;margin:3px 0}

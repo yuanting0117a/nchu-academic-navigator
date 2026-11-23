@@ -166,6 +166,42 @@
       "url": "https://oaa.nchu.edu.tw/zh-tw/ge-courses-CI",
       "type": "official-general-education-course-catalog",
       "note": "課程名稱與學分數；實際是否於特定學期開課，以當期通識查詢為準。"
+    },
+    {
+      "id": "ge-affiliation-groups-1111",
+      "title": "各學系隸屬學群一覽表（通識中心目前連結之1111版）",
+      "url": "https://oaa.nchu.edu.tw/_run.php?file=9c95bce18a6ff5a2419957b62e18efd1f4d14247.pdf&name=%E5%90%84%E5%AD%B8%E7%B3%BB%E9%9A%B8%E5%AD%B8%E7%BE%A4%E4%B8%80%E8%A6%BD%E8%A1%A81111.pdf&work=down",
+      "type": "official-general-education-affiliation",
+      "note": "通識中心115學年度課程頁仍列為各學系隸屬學群查詢附件；表列電機工程學系隸屬工程科技。文件標示1111版，尚未找到較新版附件。",
+      "evidence": [
+        "表列電機工程學系隸屬學群為工程科技",
+        "文件首頁說明所屬學群課程至多採計1門"
+      ]
+    },
+    {
+      "id": "ge-credit-transfer-1151",
+      "title": "115-1通識學分抵免流程與注意事項",
+      "url": "https://oaa.nchu.edu.tw/zh-tw/news-detail/content-p.2130",
+      "type": "official-general-education-credit-transfer",
+      "publishedAt": "2026-09-04",
+      "note": "僅記錄115-1申請流程；受理期限已過，下一學期應以新公告為準。",
+      "evidence": [
+        "抵免所屬學系隸屬學群課程至多採計一門",
+        "原修學分不得少於欲抵免課程學分",
+        "課程相似授課週次原則至少達目標課程二分之一",
+        "通識中心線上審查通過後仍須完成系所端抵免"
+      ]
+    },
+    {
+      "id": "ge-center-page-115",
+      "title": "通識中心115學年度通識課程頁",
+      "url": "https://oaa.nchu.edu.tw/zh-tw/unit-page-p.237/page-detail.2415",
+      "type": "official-general-education-course-page",
+      "checkedAt": "2026-11-23",
+      "evidence": [
+        "頁面列出115-1通識選課手冊",
+        "頁面仍列出各學系隸屬學群一覽表"
+      ]
     }
   ],
   "requirements": [
@@ -2047,6 +2083,46 @@
       "https://oaa.nchu.edu.tw/_run.php?file=82f334352c9d1b109c01bb6b36e9f718dc75f811.pdf&name=L6-01%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E9%80%9A%E8%AD%98%E8%AA%B2%E7%A8%8B%E4%BF%AE%E7%BF%92%E9%A0%88%E7%9F%A5%EF%BC%881140612%EF%BC%89.pdf&work=down",
       "https://oaa.nchu.edu.tw/_run.php?file=335ffec7df3ec3a515154b540a01156357fd49e8.pdf&name=L6-04%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E9%80%9A%E8%AD%98%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E5%AF%A6%E6%96%BD%E8%A6%81%E9%BB%9E%EF%BC%881141022%EF%BC%89.pdf&work=down",
       "https://oaa.nchu.edu.tw/zh-tw/ge-courses-CI"
-    ]
+    ],
+    "departmentAffiliation": {
+      "department": "電機工程學系",
+      "group": "工程科技",
+      "maxCountedCourses": 1,
+      "status": "verified-with-version-caveat",
+      "verifiedAt": "2026-11-23",
+      "applicableVersion": "電機系114學年度起入學通識條件；115學年度系所版本仍待確認",
+      "explanation": "工程科技是電機系隸屬通識學群；所屬學群課程不是完全禁止修習，而是至多採計1門為通識畢業學分。",
+      "versionNote": "通識中心115學年度課程頁仍連結1111版隸屬學群清單；目前未找到更新版，因此保留清單版本提醒。",
+      "sourceId": "ge-affiliation-groups-1111",
+      "pageSourceId": "ge-center-page-115"
+    },
+    "crossCollegeRule": {
+      "description": "修習所屬學院以外之大學部課程，且未與所屬學系必修科目名稱相同或相似，得採計為領域素養學分。",
+      "decision": "採計標準由學生所屬學系認定。",
+      "sourceUrl": "https://oaa.nchu.edu.tw/_run.php?file=82f334352c9d1b109c01bb6b36e9f718dc75f811.pdf&name=L6-01%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E9%80%9A%E8%AD%98%E8%AA%B2%E7%A8%8B%E4%BF%AE%E7%BF%92%E9%A0%88%E7%9F%A5%EF%BC%881140612%EF%BC%89.pdf&work=down"
+    },
+    "creditTransfer": {
+      "term": "115-1",
+      "publishedAt": "2026-09-04",
+      "applicationPeriod": "115年8月3日至115年9月18日",
+      "status": "closed",
+      "note": "此為已結束的115-1流程，不代表目前仍可申請；下一期時間須以通識中心新公告為準。",
+      "requirements": [
+        "申請課程須先核對通識中心公告的可抵免課程表；教務系統列出全校課程，不代表全部都能抵為通識。",
+        "原課程內容相似的授課週次原則上須達目標課程總週次二分之一以上，由通識中心認定；沒有本校對應通識科目時不能抵免。",
+        "原修課程學分數不得少於本校欲抵免課程學分數。",
+        "抵免所屬學系隸屬學群課程，至多採計一門為通識畢業學分。"
+      ],
+      "documents": [
+        "最新版且完整的歷年成績單，並劃記欲抵免科目。",
+        "原校課程大綱須包含完整授課週次；未載明週次時，另附教師教學進度表。"
+      ],
+      "steps": [
+        "登入興大入口 → 教務資訊系統 → 畢業離校 → 學分抵免系統，線上送出申請。",
+        "通識中心線上審查；通過後列印抵免申請單。",
+        "持申請單至所屬系所辦理後續抵免；系所程序完成後才算全部辦妥。"
+      ],
+      "sourceId": "ge-credit-transfer-1151"
+    }
   }
 }
